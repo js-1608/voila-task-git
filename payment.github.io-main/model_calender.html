@@ -1,0 +1,4861 @@
+<?php
+
+
+
+error_reporting(0);
+
+session_start();
+
+
+
+$servername = "localhost";
+
+$username = "voilausers";
+
+$password = "Wo!A*L#ART00d!o_voila";
+
+$dbname = "windsjga_studiovoila";
+
+
+
+
+
+try {
+
+
+
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+
+	}catch(PDOException $e) {
+
+  echo "Connection failed: " . $e->getMessage();
+
+}
+
+
+
+
+
+?>
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- for modal -->
+
+    <link rel="stylesheet" href="./mega_menu/menu.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="./mega_menu/menu.css">
+
+
+
+
+
+    <title>Calender</title>
+	
+	
+
+
+<style>
+/* //extra start  */
+.headingfoecalen {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.subcategoryname {
+    text-align: center;
+    font-size: 12px;
+    width: 145px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    height: 30px;
+    justify-content: center;
+    line-height: 15px;
+
+}
+.dropbtn.modelcalenderheads {
+    color: #ca324c !important;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+}
+#anker_inside_big\ modalcalenderheads {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 15px;
+
+}
+img.imgiconsize {
+    max-width: 100% !important;
+}
+.subcategoryimgandname {
+    width: 150px;
+    display: grid;
+}
+.row12modelq {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+.btn-close {
+    padding: 5px !important;
+    font-size: 10px;
+    opacity: 0.9;
+    border: 1px solid #727272;
+}
+.spancatmem {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+
+}
+/* .spancatmem::-webkit-scrollbar {
+    display: none;
+} */
+.modal-header { 
+    position: sticky !important;
+    top: 0 !important;
+    background-color: white !important;
+    z-index: 9;
+}
+.modal-dialog {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.columnmodelq {
+    width: 100%;
+    float: right;
+    height: auto;
+    display: block;
+
+}
+.columnmodelq a {
+    padding: 0;
+    display: grid;
+    text-align: left;
+    place-items: left;
+    width: 100%;
+
+}
+
+
+
+
+
+/* //extra end  */
+a, p, h2, span {
+
+    color: #000000 !important;
+
+    text-decoration: none;
+
+    background-color: transparent;
+
+}
+
+.headingfrontpageabc {
+    text-transform: capitalize;
+    color: #d01f5b !important;
+    font-size: 30px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 2px;
+}
+
+.msqdesign {
+
+    display: flex;
+
+    width: 94%;
+
+    justify-content: space-between;
+
+    margin: 5px auto 0px;
+
+    font-size: 11px;
+
+}
+
+#headingmsq {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.carousel-caption {
+
+    position: absolute;
+
+    right: 15%;
+
+    bottom: 0 !important;
+
+    padding-top: 0 !important;
+
+    padding-bottom: 0px;
+
+    color: #fff;
+
+    text-align: center;
+
+    margin-top: 30px !important;
+
+}
+
+
+.nameandpric {
+
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+    align-items: center;
+    margin: 5px auto 0;
+    position: relative;
+    height: 25px;
+}
+
+form#menu_filter_form {
+    text-align: center;
+    margin: 0px 0 20px;
+}
+select.selectpicker {
+    font-size: 13px;
+    padding: 0 5px;
+    margin: 0 10px 0 0;
+    height: 26px;
+    width: 200px;
+}
+
+.model_view_profile_page {
+
+    width: 100px;
+
+    position: absolute;
+
+    top: 10px;
+
+    right: -7px;
+
+    font-size: 13px;
+
+    color: #c30069;
+
+}
+
+#date\&day {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+}
+
+.carousel-indicators .active {
+
+    background-color: #080808;
+
+}
+
+.carousel-indicators {
+
+    bottom: -20px;
+
+}
+
+.carousel-indicators li {
+
+    border: 1px solid #000;
+
+
+
+}
+
+.glyphicon-chevron-left:before {
+
+    content: "\e079";
+
+    color: black;
+
+}
+
+.glyphicon-chevron-right:before {
+
+    color: black;
+
+}
+
+
+
+.carousel-inner {
+
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    /* display: flex !important;
+
+    justify-content: center !important; */
+
+}
+
+.carousel-inner>.item.active, .carousel-inner>.item.next.left, .carousel-inner>.item.prev.right {
+
+    -webkit-transform: translate3d(0,0,0);
+
+    transform: translate3d(0,0,0);
+
+    /* left: 60px; */
+
+}
+
+    .right.carousel-control, .left.carousel-control {
+    background: none !important;
+    width: 35px;
+
+}
+.monthfor_booking, .year {
+
+    font-size: 21px;
+    margin: 0;
+    font-weight: 500;
+    background: white;
+    margin-bottom: 10px;
+    color: black !important;
+}
+
+.heading_forbooking {
+
+    font-size: 30px;
+    letter-spacing: 0;
+    margin: 0;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: inherit;
+
+
+
+}
+
+.booking_ecommerceShoot {
+    text-align: center;
+    width: 100%;
+    background: white;
+}
+
+.item.active {
+    background: white !important;
+}
+  .bookingcardingcale {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+
+}
+
+.bookingcardingcale_li {
+    border-radius: 14px;
+    width: 20%;
+    box-shadow: -2px 1px 10px 0px rgb(0 0 0 / 20%);
+    padding: 0 10px;
+    line-height: 5px;
+    text-align: center;
+    position: relative;
+    margin: 10px 5px 0;
+
+}
+.glyphicon {
+    position: relative;
+    top: 400px !important;
+}
+.glyphicon-arrow-right:before {
+    content: "\e092";
+    border: 0;
+    background: #0000008a;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 13px;
+    color: white;
+    opacity: 1 !important;
+}
+.glyphicon-arrow-left:before {
+    content: "\e091";
+    border: 0;
+    background: #0000008a;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 13px;
+    color: white;
+    opacity: 1 !important;
+}
+span.glyphicon.glyphicon-arrow-right {
+    right: 10px;
+}
+span.glyphicon.glyphicon-arrow-left {
+    left: 10px;
+}
+
+.booknowmodelbooking_calender_p, .bookinginfor {
+    margin: 13px auto;
+    padding: 5px;
+    font-size: 13px;
+    box-shadow: 0px 3px 6px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 80%;
+    font-weight: 600;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: #3C7CF9;
+    color: white;
+}
+.closed {
+    color: red !important;
+    background: white !important;
+    cursor: not-allowed !important;
+}
+
+    .msq {
+    float: right;
+    margin: 10px 30px;
+
+}
+
+    .progressionbar {
+
+    position: relative;
+
+    width: 100%;
+
+}
+
+.nameofthemodelbooking, .nameoftheshoot {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+.profile_calender_models {
+    font-size: 10px;
+    color: #d01f1f !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+}
+
+.date, .day {
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+
+}
+
+    #img_for_model_booking {
+        width: 99%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    progress {
+
+        border: none;
+
+        width: 98%;
+
+        height: 12px;
+
+        background: #8bd574;
+
+    }
+
+
+
+progress {
+
+  color: lightblue;
+
+  border-radius: 20px;
+
+
+
+}
+
+
+
+progress::-moz-progress-bar {
+
+  background: lightblue;
+
+  border-radius: 20px;
+
+
+
+}
+
+
+
+progress::-webkit-progress-value {
+  background: radial-gradient(circle at 10% 20%, rgb(122, 209, 91) 0%, rgb(213, 230, 230) 100.2%);
+  border-radius: 20px;
+}
+
+
+
+
+progress::-webkit-progress-bar {
+
+    background: rgb(241, 240, 240);
+border-radius: 20px;
+box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.1) inset;
+
+
+
+
+}
+
+ul.bookingcardingcale_mob {
+
+    display: none;
+
+}
+
+.carousel-indicators {
+
+    display: none !important;
+
+}
+
+span.imageforcalenderbook {
+
+    height: auto;
+
+    overflow: hidden;
+
+    display: block;
+
+}
+
+.dropdown {
+
+    width: 100%;
+
+}
+
+a#anker_inside {
+
+    line-height: 14px;
+
+    width: 65%;
+
+}
+
+.hidden {
+    display: none;
+}
+.glyphicon {
+    position: relative;
+    top: 200px !important;
+}
+select.form_selection {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 2px;
+}
+.modelcalenderheads {
+    font-size: 18px !important;
+    font-weight: 800;
+    padding: 0 !important;
+}
+.model_calender_flexing {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+    align-items: center;
+}
+.dropbtn.modelcalenderheads {
+    margin: 0;
+}
+.modal-body {
+    padding: 0 10px !important;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    li.bookingcardingcale_li {
+    width: 32.5%;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+.bookingcardingcale {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
+    width: 100vw;
+}
+li.bookingcardingcale_li {
+    width: 47%;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.carousel-inner>.item {
+    position: relative;
+    display: block !important;
+}
+.right.carousel-control, .left.carousel-control {
+    background: none !important;
+    width: 35px;
+    display: none;
+}
+.headingfoecalen {
+    font-size: 11px;
+    }
+.subcategoryname {
+    width: 95px;
+    margin-left: 5px;
+}
+.spancatmem {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.subcategoryimgandname {
+    width: 100px;
+}
+.dropbtn.modelcalenderheads {
+    font-size: 15px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select.form_selection {
+    font-size: 13px;
+    width: 48%;
+}
+    .carousel-control {
+    position: fixed !important;
+    }
+    p.headingfrontpageabc {
+    font-size: 20px;
+    }
+    h2.monthfor_booking, span.year {
+    font-size: 18px;
+    }
+    li.bookingcardingcale_li {
+    width: 48%;
+    margin-right: 5px;
+    border-radius: 5px;
+    }
+    .bookingcardingcale {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 96vw;
+    }
+
+    p.heading_forbooking {
+
+    font-size: 100%;
+
+    letter-spacing: 8px;
+
+    margin: 0;
+
+    color: black;
+
+}
+
+ul.bookingcardingcale_mob {
+
+    display: none;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    list-style-type: none;
+
+    justify-content: space-around;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+}
+.carousel-inner {
+    position: relative;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+ul.bookingcarding {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* width: 93vw; */
+    justify-content: space-between;
+}
+li.bookingcardingcale_li {
+    width: 45vw;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+#date\&day {
+    width: 140px;
+}
+}
+
+
+
+</style>
+	
+	
+	
+
+</head>
+
+<body>
+
+
+
+<?php
+
+
+
+
+		
+
+
+
+    $startdate = strtotime("last monday - 7 days");
+
+
+    $enddate = strtotime("+6 weeks", $startdate);
+
+
+    $firstweek_day =  date("Y-m-d", $startdate);
+
+    $today_week_day =  date('Y-m-d');
+
+
+
+
+
+	function getDatesFromRange($start, $end, $format = 'Y-m-d') {
+    $array = array();
+    $interval = new DateInterval('P1D');
+
+    $realEnd = new DateTime($end);
+    $realEnd->add($interval);
+
+    $period = new DatePeriod(new DateTime($start), $interval, $realEnd);
+
+    foreach($period as $date) { 
+        $array[] = $date->format($format); 
+    }
+
+    return $array;
+}
+
+
+?> <br>
+    <p class="headingfrontpageabc">Shoot Booking Calender</p>
+
+
+
+	<form id = "menu_filter_form" method= "POST" action = "">
+						
+		<select class="selectpicker" onchange = "submit_filter_form()"  name="menu_filter" >
+
+				<option value="0">All Photoshoots</option>
+				
+			
+				<option value="1" <?php if(  isset($_REQUEST['menu_filter']) && ( $_REQUEST['menu_filter'] ==	1) ){echo "selected";} ?> >Men</option>
+
+				<option value="2" <?php if(  isset($_REQUEST['menu_filter']) && ( $_REQUEST['menu_filter'] ==	2) ){echo "selected";} ?> >Women</option>
+
+				<option value="3" <?php if(  isset($_REQUEST['menu_filter']) && ( $_REQUEST['menu_filter'] ==	3) ){echo "selected";} ?> >Kids</option>
+
+		</select>
+	
+	
+	</form>
+
+
+<?php 
+	
+
+	if(isset($_REQUEST['menu_filter'])){
+		
+		$menu_filter = $_REQUEST['menu_filter'];
+		
+		if($menu_filter == 0){
+			
+				$lnk = "https://voilastudio.co.in/booking_calender.php";
+			 
+               echo    "  <script> 
+    
+                            window.location.href = '$lnk';
+        
+                        </script>
+                ";
+          
+                exit;
+			
+				
+			
+		}
+		
+		
+		
+?>		
+		
+		
+<div class="desktop_version">
+<section class="booking_ecommerceShoot"> 
+
+   
+<!--<p class="heading_forbooking">Model Booking Calender <?php if($menu_filter == '1'){ echo "For Men"; } 
+														   if($menu_filter == '2'){ echo "For Women"; } 
+														   if($menu_filter == '3'){ echo "For Kids"; }	?> </p>    -->    
+
+
+<div class="container1">
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <!-- <li data-target="#myCarousel" data-slide-to="0"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>-->
+    
+        
+      </ol>
+      
+      
+      <div class="carousel-inner">
+      
+			<?php 
+						
+				 $today_date =  date('Y-m-d');
+				//echo "<br>";
+				
+				$get_calender_last_date = "SELECT * FROM `calender`  order by photoshoot_date desc  ";
+				$get_calender_last_date_run = $conn->prepare($get_calender_last_date);
+				$get_calender_last_date_run->execute();
+
+				$get_calender_last_date_rows = $get_calender_last_date_run->fetch(PDO::FETCH_ASSOC);
+				$last_photoshoot_date = $get_calender_last_date_rows['photoshoot_date'];
+	
+				//$next_day_from_last_day =  date('Y-m-d', strtotime('+1 day', strtotime($last_photoshoot_date)))
+					
+				$givenDate = $last_photoshoot_date;
+				$timestampForGivenDate = strtotime ( $givenDate );
+				$englishText = '+1 day';
+				$requireDateFormat = "Y-m-d";
+				$last_photoshoot_next_date = date($requireDateFormat,strtotime ( $englishText , $timestampForGivenDate )) ;	
+
+
+	
+				$calender_filled_dates_array = array();
+				$calender_filled_dates_array = getDatesFromRange($today_date, $last_photoshoot_date);
+				//print_r($calender_filled_dates_array);
+				
+				//echo "<br>";
+				
+				$men_shoot_calender_date_array = array();
+				$get_calender_men_shoot = "SELECT * FROM `calender` where menu = '$menu_filter' and  photoshoot_date >= '$today_date'  ";
+				$get_calender_men_shoot_run = $conn->prepare($get_calender_men_shoot);
+				$get_calender_men_shoot_run->execute();
+
+				while($get_calender_men_shoot_rows = $get_calender_men_shoot_run->fetch(PDO::FETCH_ASSOC)){
+				
+						array_push($men_shoot_calender_date_array,$get_calender_men_shoot_rows['photoshoot_date']);
+				}	
+				
+				
+				 $calender_date_array = count($men_shoot_calender_date_array);
+			
+				
+				
+				$no_added_open_days = 24 - $calender_date_array;
+				
+		
+				$last_open_shoot_date = date('Y-m-d', strtotime('+'.$no_added_open_days.' days', strtotime($last_photoshoot_date)));
+				
+	
+				
+				$calender_open_dates_array = array();
+				
+				$calender_open_dates_array = getDatesFromRange($last_photoshoot_next_date, $last_open_shoot_date);
+				
+				//print_r($calender_open_dates_array);
+				
+				$menu_sort_all_dates = array();
+				$menu_sort_all_dates = array_unique(array_merge($men_shoot_calender_date_array,$calender_open_dates_array), SORT_REGULAR);
+				
+
+				$total_dates_count  = count($menu_sort_all_dates); 
+				
+				
+				
+				$total_carousel = round($total_dates_count/6);
+			
+				
+						
+				$total_dates_remain = $total_dates_count%6;
+				
+				$x = 0 ;
+				
+				for( $i =0; $i < $total_carousel ; $i++ ){
+				
+						
+			?>
+			
+            <div class="item <?php if($i == 0){ ?> active <?php } ?>" >
+    
+	
+                <ul class="bookingcarding">
+					
+					<?php 
+					
+						for( $y = 0; $y < 6 ; $y++ ){
+							
+							
+						
+					 	$calender_date = $menu_sort_all_dates[$x];
+						
+						if(strlen($calender_date) > 0){
+						
+					 	$get_booking_next_calender = "SELECT * FROM `calender` where photoshoot_date = '$menu_sort_all_dates[$x]'  ";
+						
+						
+						$get_booking_next_calender_run = $conn->prepare($get_booking_next_calender);
+
+						$get_booking_next_calender_run->execute();
+
+
+
+						$result_count     = $get_booking_next_calender_run->rowcount();
+
+					
+						$model_shoot_date_details =  date('Y-m-d', strtotime($menu_sort_all_dates[$x]));
+
+
+
+                        $date_array = explode("-",$model_shoot_date_details);
+
+                        $date_year = $date_array[0];
+
+                        $date_month = $date_array[1];
+
+                        $date_day = $date_array[2];
+
+
+						
+
+
+                        $day_name = date('D', strtotime($model_shoot_date_details));
+
+
+
+					    if($day_name != 'Sun'){
+
+							if($result_count > 0){
+
+
+
+
+
+													$get_booking_next_calender_rows = $get_booking_next_calender_run->fetch(PDO::FETCH_ASSOC);
+
+
+
+													$photoshoot_date =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+													$photoshoot_date_modal =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+
+													$photoshoot_date = date("d-m-Y", strtotime($photoshoot_date));
+
+
+
+													$current_date = date('d-m-Y');
+
+
+
+													$current_date_cmp = new DateTime();
+
+													$photoshoot_date_cmp = new DateTime($photoshoot_date);
+
+
+
+
+
+													$photoshoot_day =  $get_booking_next_calender_rows['day'];
+
+
+
+
+
+													$photoshoot_month =  $get_booking_next_calender_rows['month'];
+
+													$photoshoot_day_num = date("d", strtotime($photoshoot_date));
+
+													$photoshoot_date_day = date("D", strtotime($photoshoot_date));
+													
+													$photoshoot_date_month = date("M", strtotime($photoshoot_date));
+													
+
+
+
+
+
+
+
+													$menu = $get_booking_next_calender_rows['menu'];
+
+													$model_id = $get_booking_next_calender_rows['model_id'];
+
+													$model_type = $get_booking_next_calender_rows['model_type'];
+
+
+
+													$get_model='';
+
+
+
+
+
+													if($model_type == 'indian'){
+
+
+
+													if($menu_filter == '1' ){
+
+														 $get_model = "select * from indian_model where  sex = 'm' and id = $model_id ";
+
+
+
+													}
+
+
+
+													if($menu_filter == '2' ){
+
+
+
+																 $get_model = "select * from indian_model where sex = 'f' and id = $model_id ";
+
+													}
+
+
+													if($menu_filter == '3' ){
+
+
+
+																 $get_model = "select * from kids_model where  id = $model_id ";
+
+													}
+
+
+
+													}
+
+
+
+													if($model_type == 'international'){
+
+
+
+														if($menu_filter == '1' ){
+
+																	$get_model = "select * from international_model where  sex = 'm' and id = $model_id ";
+
+																}
+
+
+
+														if($menu_filter == '2' ){
+
+
+
+																	 $get_model = "select * from international_model where sex = 'f' and id = $model_id ";
+
+															  }
+
+
+
+													}
+
+
+
+
+
+													$get_model_run = $conn->prepare($get_model);
+
+													$get_model_run->execute();
+
+													$get_model_rows = $get_model_run->fetch(PDO::FETCH_ASSOC);
+
+													$model_name = $get_model_rows['model_name'];
+
+													$model_sex = $get_model_rows['sex'];
+
+													$primary_model_image= $get_model_rows['model_primary_image'];
+
+
+
+													$msq_complete = $get_booking_next_calender_rows['msq_complete'];
+
+													if( $msq_complete >= 130){
+			
+														$msq_complete = 130;
+													}
+	
+
+													$msq = $get_booking_next_calender_rows['msq'];
+
+
+
+													$booking_percent = ($msq_complete/$msq)*100;
+
+
+
+
+						
+							
+					?>
+				
+                   
+
+													<li class="bookingcardingcale_li">
+
+													<br>
+													
+												
+
+													<span class="imageforcalenderbook">
+													<p id="date&day"><span class="date"><?php echo $photoshoot_day_num; ?>/<?php echo $photoshoot_date_month; ?></span><span class="day"><?php echo $photoshoot_date_day; ?> </span></p>
+
+													<img id="img_for_model_booking" src="<?php if($menu_filter != 3){  if($model_type == 'indian'){ ?>https://voilastudio.co.in/voilastudio_myntra/images/model_images/indian_model/<?php echo $primary_model_image; ?> <?php } ?>
+
+													<?php  if($model_type == 'international'){ ?>https://voilastudio.co.in/voilastudio_myntra/images/model_images/international_model/<?php echo $primary_model_image; ?>
+																						 <?php } }
+
+													if($menu_filter == 3){
+													?>
+
+																						https://voilastudio.co.in/voilastudio_myntra/images/model_images/kids_model/<?php echo $primary_model_image; ?>
+
+																						<?php }
+
+																						 ?>"
+
+																								alt=""  height="350px;" width="262px;" >
+
+
+
+																								</span>
+
+													<div class="nameandpric">
+
+													<p class="nameofthemodelbooking"><?php echo $model_name; ?></p>
+
+
+													<?php
+
+														if($menu_filter != 3 ){
+													?>
+
+													<a class="profile_calender_models" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo $model_type; ?>">View Profile</a>
+
+													<?php } ?>
+
+
+
+													<?php
+
+														if($menu_filter == 3 ){
+													?>
+
+													<a class="profile_calender_models" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo 'kids' ?>">View Profile</a>
+
+													<?php } ?>
+
+
+
+
+
+													<!-- <p id="date&day"><span class="date"><?php echo $photoshoot_day_num; ?></span>/<span class="day"><?php echo $photoshoot_date_day; ?> </span></p> -->
+
+													</div>
+
+													<div class="progressionbar">
+
+
+
+													   <?php if($current_date_cmp >  $photoshoot_date_cmp ){ ?>
+
+
+
+														<p class="msqdesign"><span id="headingmsq">Booked <b class="bookedvalues"> <?php echo "100%"; ?></b></span> </p>
+
+
+
+														<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo '130'; //echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+
+														<?php }else{
+
+
+
+															  if(($current_date_cmp) == ($photoshoot_date_cmp)) {
+
+														?>
+
+
+
+																<p class="msqdesign"><span id="headingmsq">Booked  <b class="bookedvalues"><?php  echo round($booking_percent).'%';?></b></span></p>
+
+																<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+
+
+
+														<?php }else{ ?>
+
+
+
+																<p class="msqdesign"><span id="headingmsq">Booked  <b class="bookedvalues"><?php  echo round($booking_percent).'%';?></b></span></p>
+
+																<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+														<?php } } ?>
+
+
+
+													</div>
+
+
+
+
+													<?php if($current_date_cmp <  $photoshoot_date_cmp ){ ?>
+
+
+
+														<!--	<button type="button" class="bookinginfor" data-bs-toggle="modal" 
+																		data-bs-target="#myModal_<?php echo $photoshoot_date_modal; ?>_<?php echo $model_id ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu; ?>"
+																		>BOOK NOW</button>
+														-->
+															
+															<?php 
+																	if($booking_percent == 100){
+															?>
+															
+																<button type="button" class="booknowmodelbooking_calender_p closed"> CLOSED </button>
+														
+																	<?php }else{ ?>
+																
+																
+															<button type="button" class="bookinginfor" 
+																	onclick = "booknow_modal('<?php echo $photoshoot_date_modal; ?>','<?php echo $model_id ?>','<?php echo $model_type; ?>','<?php echo $model_sex; ?>','<?php echo $menu; ?>','<?php echo ''; ?>')" >BOOK NOW</button>
+																
+
+																
+																	<?php } ?>	
+																
+
+													<?php } else {
+
+
+
+															if(($current_date_cmp) ==  ($photoshoot_date_cmp)) {
+
+													?>
+															<!--
+															<button type="button" class="booknowmodelbooking_calender_p" data-bs-toggle="modal" 
+															data-bs-target="#myModal_<?php echo $photoshoot_date_modal; ?>_<?php echo $model_id ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu; ?>" 
+															>BOOK NOW</button>
+															-->
+															
+															<button type="button" class="booknowmodelbooking_calender_p" 
+																	onclick = "booknow_modal('<?php echo $photoshoot_date_modal; ?>','<?php echo $model_id ?>','<?php echo $model_type; ?>','<?php echo $model_sex; ?>','<?php echo $menu; ?>','<?php echo ''; ?>')"															>BOOK NOW</button>
+															
+													<?php
+
+
+
+															}else{
+
+
+
+													?>
+
+															 <button type="button" class="booknowmodelbooking_calender_p closed"> CLOSED </button>
+
+
+
+													<?php } } ?>
+
+
+
+												</li>
+
+					
+						<?php }else{
+							
+							
+						?>
+								  					
+										<li class="bookingcardingcale_li">
+
+												
+
+										 <br>
+										 <p id="date&day"><span class="date"><?php echo  $date_day; ?>/<?php echo $photoshoot_date_month; ?></span><span class="day"><?php echo $day_name;; ?> </span></p>
+
+										<span class="imageforcalenderbook">
+
+										<img id="img_for_model_booking" src="./assets/img/product_calender/model_default_image.webp"   alt=""  height="350px;" width="262px;" >
+
+										</span>
+
+										<div class="nameandpric">
+
+
+
+											<!-- <select class="selectpicker" name="model_sex" id="model_sex_<?php echo $model_shoot_date_details; ?>">
+
+												<option>Search By Category</option>
+
+												<option value="m">Male</option>
+
+												<option value="f">Female</option>
+
+												<option value="k">Kids</option>
+
+											</select> -->
+
+										   
+
+
+
+										   <p class="nameofthemodelbooking">Open</p> 
+
+
+
+										</div>
+
+
+
+										<div class="progressionbar">
+
+											<p class="msqdesign"><span id="headingmsq">Booked <b class="bookedvalues"><?php echo 0; ?></b></span> </p>
+
+												<progress min="0" max="130" value="0"></progress>
+
+										</div>
+
+
+
+										<!--<button type="button" id = "booking_button_<?php echo $model_shoot_date_details; ?>" 
+											class="booknowmodelbooking_calender_p" data-bs-toggle="modal" 
+											data-bs-target="#myModal_advancebook_<?php echo $model_shoot_date_details; ?>" >BOOK NOW</button>
+										-->
+										
+											
+										<button type="button" id = "booking_button_<?php echo $model_shoot_date_details; ?>" 
+										class="booknowmodelbooking_calender_p" 
+										onclick = "booknow_modal_advance('<?php echo $model_shoot_date_details; ?>')"
+															>BOOK NOW</button>	
+
+
+								</li>
+										
+										
+
+					<?php	}	}
+
+					?>
+					
+						<?php } $x++; } ?>
+		 
+				</ul>
+                
+               
+                <div class="carousel-caption">
+                </div>
+              
+            </div>
+      
+			<?php } ?>
+          
+      
+   
+      </div>
+  
+
+
+
+      
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-arrow-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      
+	  
+      
+    </div>
+  </div>
+
+
+
+
+
+
+</section>
+
+    </div>
+    
+	
+		
+			
+
+<?php			
+	
+	}
+	
+	
+	
+	else
+	
+	{
+
+/////////////////////////////////////////////////////////////
+   /////////     ************************************************************ /////////
+		/////////////////////////////////////////////////////////////
+
+?>
+
+
+
+
+
+
+<div class="desktop_version">
+
+<section class="booking_ecommerceShoot">
+
+
+
+
+<div class="container1">
+
+    <div id="myCarousel" class="carousel slide">
+
+
+      <ol class="carousel-indicators">
+
+
+
+        <?php
+
+
+
+            $total_blocks_represent = 7;
+
+
+
+            if($firstweek_day == $today_week_day){
+
+                $total_blocks_represent = $total_blocks_represent - 1;
+
+            }
+
+
+
+            $total_count = 0;
+
+            while ($total_count < $total_blocks_represent) {
+
+
+
+            ?>
+
+
+
+                 <li data-target="#myCarousel" data-slide-to="<?php echo $total_count; ?>"></li>
+
+
+
+            <?php
+
+
+
+                $total_count++;
+
+
+
+            }
+
+        ?>
+
+
+
+      </ol>
+
+
+
+
+
+    <div class="carousel-inner">
+
+
+
+        <?php
+
+
+
+        $calender_from_date = '';
+
+        $calender_to_date = '';
+
+        $total_week_count_date = 0;
+
+
+
+        $counts = 0;
+
+
+
+        while ($startdate < $enddate) {
+
+
+
+                $counts =  $counts + 1;
+
+
+
+                $starting_dates = date("Y-m-d", $startdate) . "<br>";
+
+
+
+                $Month = date("F", $startdate);
+
+                $month = date("m", $startdate);
+
+                $year = date("Y", $startdate);
+
+
+
+
+
+                $startdate = strtotime("+1 week", $startdate);
+
+                $next_date_to = date("Y-m-d", $startdate);
+
+
+
+                $starting_date_array = explode("-",$starting_dates);
+
+
+
+                $from_day = $starting_date_array[2];
+
+
+
+                $to_day = $from_day + 5;
+
+
+
+                $maxDays=date('t');
+
+
+
+                if(( $maxDays == 30 ) && ($to_day > $maxDays) ){
+
+
+
+                    $to_day =  $to_day -  $maxDays;
+
+                    if(strlen($to_day) == 1){
+
+
+
+                        $to_day = '0'.$to_day;
+
+                    }
+
+
+
+                    $month = $month +1;
+
+                    if(strlen($month) == 1){
+
+
+
+                        $month = '0'.$month;
+
+                    }
+
+
+
+
+
+                    $todate = $year.'-'.$month.'-'.$to_day;
+
+
+
+                }else{
+
+
+
+                    $todate = $year.'-'.$month.'-'.$to_day;
+
+
+
+
+
+                }
+
+
+
+                if( ( $maxDays == 31) && ($to_day > $maxDays) ){
+
+
+
+                    $to_day =  $to_day -  $maxDays;
+
+
+
+                    if(strlen($to_day) == 1){
+
+
+
+                        $to_day = '0'.$to_day;
+
+                    }
+
+
+
+
+
+
+
+                    $month = $month +1;
+
+                    if(strlen($month) == 1){
+
+
+
+                        $month = '0'.$month;
+
+                    }
+
+
+
+
+
+                    $todate = $year.'-'.$month.'-'.$to_day;
+
+
+
+
+
+                }else{
+
+
+
+                    $todate = $year.'-'.$month.'-'.$to_day;
+
+
+
+                }
+
+
+
+        ?>
+
+
+
+
+
+
+
+            <div class="item   <?php if($total_week_count_date == '1'){ echo "active"; } ?>">
+
+
+
+                <!-- <h2 class="monthfor_booking"><?php echo $Month; ?> <span class="year">2023</span> </h2> -->
+
+
+
+                <ul class="bookingcardingcale">
+
+
+
+                   <?php
+
+
+
+                    $today =  date('Y-m-d');
+
+
+
+
+
+                    $countable_days = 8;
+
+                    $starting_countable_date =  date('Y-m-d', strtotime($next_date_to. ' - '.$countable_days.' days'));
+
+					$model_shoot_date_array  = array();
+					
+					$model_shoot_date_array = getDatesFromRange($starting_countable_date, $next_date_to);
+
+					
+					///print_r($model_shoot_date_array);
+					
+				
+					/*foreach($model_shoot_date_array as $model_shoot_date_value){
+
+							echo $model_shoot_date_value;
+							echo "<br>";
+					
+					}*/
+					
+					for($i=0; $i<8; $i++){
+							
+						//echo $model_shoot_date_array[$i];
+						
+						
+						
+						
+						if(isset($_REQUEST['menu_filter'])){
+							
+							$menu = $_REQUEST['menu_filter'];
+								
+							$get_booking_next_calender = "SELECT * FROM `calender` where photoshoot_date = '$model_shoot_date_array[$i]' and  menu = '$menu' ";		
+							
+						}else{
+
+							$get_booking_next_calender = "SELECT * FROM `calender` where photoshoot_date = '$model_shoot_date_array[$i]'  ";
+	
+						}
+							
+						
+						
+
+						
+						
+				
+					
+
+						/*	echo     $get_booking_next_calender = " SELECT * FROM calender where
+
+                                                                photoshoot_date <'$next_date_to' and Photoshoot_date >= '$starting_countable_date'
+
+                                                                order by Photoshoot_date asc  ";
+						*/
+					
+					
+						//echo $get_booking_next_calender = " SELECT * FROM calender where  photoshoot_date = '$model_shoot_date_value' ":
+
+                                                               
+
+					
+
+
+						$get_booking_next_calender_run = $conn->prepare($get_booking_next_calender);
+
+						$get_booking_next_calender_run->execute();
+
+
+
+						$result_count     = $get_booking_next_calender_run->rowcount();
+
+					
+						$model_shoot_date_details =  date('Y-m-d', strtotime($model_shoot_date_array[$i]));
+
+
+
+                                $date_array = explode("-",$model_shoot_date_details);
+
+                                $date_year = $date_array[0];
+
+                                $date_month = $date_array[1];
+
+                                $date_day = $date_array[2];
+
+
+
+
+
+                                $day_name = date('D', strtotime($model_shoot_date_details));
+
+
+
+							if($day_name != 'Sun'){
+
+									if($result_count > 0){
+
+
+
+
+
+													while($get_booking_next_calender_rows = $get_booking_next_calender_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+													$photoshoot_date =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+													$photoshoot_date_modal =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+
+													$photoshoot_date = date("d-m-Y", strtotime($photoshoot_date));
+
+
+
+													$current_date = date('d-m-Y');
+
+
+
+													$current_date_cmp = new DateTime();
+
+													$photoshoot_date_cmp = new DateTime($photoshoot_date);
+
+
+
+
+
+													$photoshoot_day =  $get_booking_next_calender_rows['day'];
+
+
+
+
+
+													$photoshoot_month =  $get_booking_next_calender_rows['month'];
+
+													$photoshoot_day_num = date("d", strtotime($photoshoot_date));
+
+													$photoshoot_date_day = date("D", strtotime($photoshoot_date));
+													
+													$photoshoot_date_month = date("M", strtotime($photoshoot_date));
+
+
+
+
+
+
+
+													$menu = $get_booking_next_calender_rows['menu'];
+
+													$model_id = $get_booking_next_calender_rows['model_id'];
+
+													$model_type = $get_booking_next_calender_rows['model_type'];
+
+
+
+													$get_model='';
+
+
+
+
+
+													if($model_type == 'indian'){
+
+
+
+													if($menu == '1' ){
+
+														 $get_model = "select * from indian_model where  sex = 'm' and id = $model_id ";
+
+
+
+													}
+
+
+
+													if($menu == '2' ){
+
+
+
+																 $get_model = "select * from indian_model where sex = 'f' and id = $model_id ";
+
+													}
+
+
+													  if($menu == '3' ){
+
+
+
+																 $get_model = "select * from kids_model where  id = $model_id ";
+
+													}
+
+
+
+												}
+
+
+
+													if($model_type == 'international'){
+
+
+
+														if($menu == '1' ){
+
+																	$get_model = "select * from international_model where  sex = 'm' and id = $model_id ";
+
+																}
+
+
+
+														if($menu == '2' ){
+
+
+
+																	 $get_model = "select * from international_model where sex = 'f' and id = $model_id ";
+
+															  }
+
+
+
+													}
+
+
+
+
+
+													$get_model_run = $conn->prepare($get_model);
+
+													$get_model_run->execute();
+
+													$get_model_rows = $get_model_run->fetch(PDO::FETCH_ASSOC);
+
+													$model_name = $get_model_rows['model_name'];
+
+													$model_sex = $get_model_rows['sex'];
+
+													$primary_model_image= $get_model_rows['model_primary_image'];
+
+
+
+													$msq_complete = $get_booking_next_calender_rows['msq_complete'];
+
+													if( $msq_complete >= 130){
+			
+														$msq_complete = 130;
+													}
+
+													$msq = $get_booking_next_calender_rows['msq'];
+
+													
+
+													$booking_percent = ($msq_complete/$msq)*100;
+
+													
+
+
+
+
+
+											   ?>
+
+
+
+
+
+													<li class="bookingcardingcale_li">
+
+													<br>
+
+													<span class="imageforcalenderbook">
+													<p id="date&day"><span class="date"><?php echo $photoshoot_day_num; ?>/<?php echo $photoshoot_date_month; ?></span><span class="day"><?php echo $photoshoot_date_day; ?> </span></p>
+
+													<img id="img_for_model_booking" src="<?php if($menu != 3){  if($model_type == 'indian'){ ?>https://voilastudio.co.in/voilastudio_myntra/images/model_images/indian_model/<?php echo $primary_model_image; ?> <?php } ?>
+
+																						 <?php  if($model_type == 'international'){ ?>https://voilastudio.co.in/voilastudio_myntra/images/model_images/international_model/<?php echo $primary_model_image; ?>
+																						 <?php } }
+
+																						 if($menu == 3){
+																						  ?>
+
+																						https://voilastudio.co.in/voilastudio_myntra/images/model_images/kids_model/<?php echo $primary_model_image; ?>
+
+																						<?php }
+
+																						 ?>"
+
+																								alt=""  height="350px;" width="262px;" >
+
+
+
+																								</span>
+
+													<div class="nameandpric">
+
+													<p class="nameofthemodelbooking"><?php echo $model_name; ?></p>
+
+
+													<?php
+
+														if($menu != 3 ){
+													?>
+
+													<a class="profile_calender_models" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo $model_type; ?>">View Profile</a>
+
+													<?php } ?>
+
+
+
+													<?php
+
+														if($menu == 3 ){
+													?>
+
+													<a class="profile_calender_models" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo 'kids' ?>">View Profile</a>
+
+													<?php } ?>
+
+
+
+
+
+													<!-- <p id="date&day"><span class="date"><?php echo $photoshoot_day_num; ?></span>/<span class="day"><?php echo $photoshoot_date_day; ?> </span></p> -->
+
+													</div>
+
+														<div class="progressionbar">
+
+
+
+														   <?php if($current_date_cmp >  $photoshoot_date_cmp ){ ?>
+
+
+
+															<p class="msqdesign"><span id="headingmsq">Booked <b class="bookedvalues"> <?php echo "100%"; ?></b></span> </p>
+
+
+
+															<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo '130'; //echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+
+															<?php }else{
+
+
+
+																  if(($current_date_cmp) == ($photoshoot_date_cmp)) {
+
+															?>
+
+
+
+																	<p class="msqdesign"><span id="headingmsq">Booked  <b class="bookedvalues"><?php  echo round($booking_percent).'%';?></b></span></p>
+
+																	<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+
+
+
+															<?php }else{ ?>
+
+
+
+																	<p class="msqdesign"><span id="headingmsq">Booked  <b class="bookedvalues"><?php  echo round($booking_percent).'%';?></b></span></p>
+
+																	<progress min="0" max="<?php echo $get_booking_next_calender_rows['msq']; ?>" value="<?php echo $get_booking_next_calender_rows['msq_complete']; ?>"></progress>
+
+
+
+
+
+
+
+															<?php } } ?>
+
+
+
+														</div>
+
+
+
+
+
+
+
+													<?php if($current_date_cmp <  $photoshoot_date_cmp ){ ?>
+
+
+
+															<!--<button type="button" class="bookinginfor" data-bs-toggle="modal" 
+															data-bs-target="#myModal_<?php echo $photoshoot_date_modal; ?>_<?php echo $model_id ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu; ?>" >BOOK NOW</button>
+															-->
+															
+															
+															<?php 
+															
+																	if($booking_percent == 100){
+																		
+															?>
+																	<button type="button" class="booknowmodelbooking_calender_p closed"> CLOSED </button>
+														
+																	<?php }else{ ?>	
+																			
+																	<button type="button" class="bookinginfor" 
+															
+																	onclick = "booknow_modal('<?php echo $photoshoot_date_modal; ?>','<?php echo $model_id ?>','<?php echo $model_type; ?>','<?php echo $model_sex; ?>','<?php echo $menu; ?>','<?php echo ''; ?>')"															
+																	>BOOK NOW</button>
+																											
+																		
+																	
+																	<?php  } ?>
+
+													<?php } else {
+
+
+
+															if(($current_date_cmp) ==  ($photoshoot_date_cmp)) {
+
+													?>
+
+															<!--<button type="button" class="booknowmodelbooking_calender_p" data-bs-toggle="modal" data-bs-target="#myModal_<?php echo $photoshoot_date_modal; ?>_<?php echo $model_id ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu; ?>" >BOOK NOW</button>
+															-->
+															
+															<?php
+																			
+																if($booking_percent == 100){			
+																?>	
+																		
+															<button type="button" class="booknowmodelbooking_calender_p closed"> CLOSED </button>
+																	
+															<?php }else{
+															
+															?>
+
+																
+															<button type="button" class="booknowmodelbooking_calender_p" 
+															onclick = "booknow_modal('<?php echo $photoshoot_date_modal; ?>','<?php echo $model_id ?>','<?php echo $model_type; ?>','<?php echo $model_sex; ?>','<?php echo $menu; ?>','<?php echo ''; ?>')"
+															>BOOK NOW</button>	
+																	
+															<?php
+																}																	
+															?>
+															
+														
+															
+	
+
+													<?php
+
+
+
+															}else{
+
+
+
+													?>
+
+															 <button type="button" class="booknowmodelbooking_calender_p closed"> CLOSED </button>
+
+
+
+													<?php } } ?>
+
+
+
+												</li>
+
+
+
+
+
+													<?php }
+
+
+
+
+									}else{
+										
+										  // when booking is open to date /// (No Pre Booking) // 
+										
+										
+										$get_booking_next_calender_open = "SELECT * FROM `calender` where photoshoot_date = '$model_shoot_date_array[$i]'  ";
+	                                           
+
+										$get_booking_next_calender_open_run = $conn->prepare($get_booking_next_calender_open);
+
+										$get_booking_next_calender_open_run->execute();
+
+										$get_booking_next_calender_open_count     = $get_booking_next_calender_open_run->rowcount();
+
+										if($get_booking_next_calender_open_count == 0){
+										
+										?>
+											
+												
+										<li class="bookingcardingcale_li">
+
+
+
+										 <br>
+										 <p id="date&day"><span class="date"><?php echo $date_day; ?>/<?php echo $photoshoot_date_month; ?></span><span class="day"><?php echo $day_name; ?> </span></p>
+
+										<span class="imageforcalenderbook">
+
+										<img id="img_for_model_booking" src="./assets/img/product_calender/model_default_image.webp"   alt=""  height="350px;" width="262px;" >
+
+										</span>
+
+										<div class="nameandpric">
+
+
+
+											<!-- <select class="selectpicker" name="model_sex" id="model_sex_<?php echo $model_shoot_date_details; ?>">
+
+												<option>Search By Category</option>
+
+												<option value="m">Male</option>
+
+												<option value="f">Female</option>
+
+												<option value="k">Kids</option>
+
+											</select> -->
+
+										   
+
+                                            <p class="nameofthemodelbooking">Open</p> 
+
+
+
+
+										</div>
+
+
+
+										<div class="progressionbar">
+
+											<p class="msqdesign"><span id="headingmsq">Booked <b class="bookedvalues"><?php echo 0; ?></b></span> </p>
+
+												<progress min="0" max="130" value="0"></progress>
+
+										</div>
+
+
+
+										<!--<button type="button" id = "booking_button_<?php echo $model_shoot_date_details; ?>" 
+										class="booknowmodelbooking_calender_p" data-bs-toggle="modal" data-bs-target="#myModal_advancebook_<?php echo $model_shoot_date_details; ?>" >BOOK NOW</button>
+										-->
+										
+											<button type="button" id = "booking_button_<?php echo $model_shoot_date_details; ?>" 
+													class="booknowmodelbooking_calender_p" onclick = "booknow_modal_advance('<?php echo $model_shoot_date_details; ?>')"
+											>BOOK NOW</button>	
+
+
+
+								</li>
+												
+										
+										
+									<?php	
+											
+										}else{
+
+										
+											if($_REQUEST['menu_filter']){
+											
+											?>	
+											
+												<li class="bookingcardingcale_li">
+
+
+
+										 <br>
+										 <p id="date&day"><span class="date"><?php echo $day_name; ?>/</span><span class="day"><?php echo $date_day; ?> </span></p>
+
+										<span class="imageforcalenderbook">
+
+										<img id="img_for_model_booking" src="./assets/img/product_calender/model_default_image.webp"   alt=""  height="350px;" width="262px;" >
+
+										</span>
+
+				
+
+													
+
+										<div class="nameandpric">
+
+										   <p class="nameofthemodelbooking"><?php echo "Unavailable"; ?></p>
+										
+										   <p id="date&day"><span class="date"><?php echo $day_name; ?></span>/<span class="day"><?php echo $date_day; ?> </span></p> 
+
+
+
+										</div>
+
+
+
+										<div class="progressionbar">
+
+											<p class="msqdesign"><span id="headingmsq">Booked<b class="bookedvalues"><?php echo 0; ?></b></span> </p>
+
+												<progress min="0" max="130" value="0"></progress>
+
+										</div>
+
+
+
+										<!--<button type="button" id = "booking_button_closed<?php echo $model_shoot_date_details; ?>" 
+										class="booknowmodelbooking_calender_p" data-bs-toggle="modal" data-bs-target="#myModal_advancebook_<?php echo $model_shoot_date_details; ?>" >Closed</button>
+										-->
+										
+											<button type="button" id = "booking_button_<?php echo $model_shoot_date_details; ?>" 
+													class="booknowmodelbooking_calender_p" onclick = "booknow_modal_advance('<?php echo $model_shoot_date_details; ?>')"
+											>BOOK NOW</button>	
+
+
+								</li>
+														
+														
+
+											
+											<?php	}	
+											
+										
+										}
+
+										
+									}						
+						
+						
+						
+						}
+						
+
+						
+					}
+
+
+
+
+
+                        ?>
+
+
+                     <!----------------- Mobile section ------------------------>
+					 
+					 
+					 
+					 	<ul class="bookingcardingcale_mob">
+
+
+
+							<?php
+
+
+
+                    $today =  date('Y-m-d');
+
+
+                    $countable_days = 8;
+
+                    $starting_countable_date =  date('Y-m-d', strtotime($next_date_to. ' - '.$countable_days.' days'));
+
+
+
+
+
+
+
+                     $get_booking_next_calender = " SELECT * FROM calender where
+
+                                                                photoshoot_date <'$next_date_to' and Photoshoot_date >= '$starting_countable_date'
+
+                                                                order by Photoshoot_date asc  ";
+
+
+
+
+
+
+
+
+
+                    $get_booking_next_calender_run = $conn->prepare($get_booking_next_calender);
+
+                    $get_booking_next_calender_run->execute();
+
+
+
+                    $result_count     = $get_booking_next_calender_run->rowcount();
+
+
+
+
+
+
+
+                    if($result_count > 0){
+
+
+
+
+
+                    while($get_booking_next_calender_rows = $get_booking_next_calender_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+                        $photoshoot_date =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+                        $photoshoot_date_modal =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+
+
+
+
+                        $photoshoot_date = date("d-m-Y", strtotime($photoshoot_date));
+
+
+
+                        $current_date = date('d-m-Y');
+
+
+
+                        $current_date_cmp = new DateTime();
+
+                        $photoshoot_date_cmp = new DateTime($photoshoot_date);
+
+
+
+
+
+                        $photoshoot_day =  $get_booking_next_calender_rows['day'];
+
+
+
+
+
+                        $photoshoot_month =  $get_booking_next_calender_rows['month'];
+
+                        $photoshoot_day_num = date("d", strtotime($photoshoot_date));
+
+                        $photoshoot_date_day = date("D", strtotime($photoshoot_date));
+
+
+
+
+
+
+
+                        $menu = $get_booking_next_calender_rows['menu'];
+
+                        $model_id = $get_booking_next_calender_rows['model_id'];
+
+                        $model_type = $get_booking_next_calender_rows['model_type'];
+
+
+
+                        $get_model='';
+
+
+
+
+
+                        if($model_type == 'indian'){
+
+
+
+                            if($menu == '1' ){
+
+                             $get_model = "select * from indian_model where  sex = 'm' and id = $model_id ";
+
+
+
+                        }
+
+
+
+                            if($menu == '2' ){
+
+
+
+                                     $get_model = "select * from indian_model where sex = 'f' and id = $model_id ";
+
+                              }
+
+
+
+
+                             if($menu == '3' ){
+
+
+
+                                     $get_model = "select * from kids_model where  id = $model_id ";
+
+                        }
+
+
+
+                        }
+
+
+
+                        if($model_type == 'international'){
+
+
+
+                            if($menu == '1' ){
+
+                                        $get_model = "select * from international_model where  sex = 'm' and id = $model_id ";
+
+                                    }
+
+
+
+                            if($menu == '2' ){
+
+
+
+                                         $get_model = "select * from international_model where sex = 'f' and id = $model_id ";
+
+                                  }
+
+
+
+                        }
+
+
+
+
+
+                        $get_model_run = $conn->prepare($get_model);
+
+                        $get_model_run->execute();
+
+                        $get_model_rows = $get_model_run->fetch(PDO::FETCH_ASSOC);
+
+                        $model_name = $get_model_rows['model_name'];
+
+                        $model_sex = $get_model_rows['sex'];
+
+                        $primary_model_image= $get_model_rows['model_primary_image'];
+
+
+
+                        $msq_complete = $get_booking_next_calender_rows['msq_complete'];
+
+
+
+                        $msq = $get_booking_next_calender_rows['msq'];
+
+
+
+                        $booking_percent = ($msq_complete/$msq)*100;
+
+
+
+
+
+
+
+                        ?>
+
+
+
+
+
+
+
+
+
+                                <li class="bookingcardingcale_li">
+                                <p id="date&day"><span class="date"><?php echo $photoshoot_day;?>/</span> <span class="day">MON</span></p>
+
+                                    <span class="imageforcalenderbook">
+
+                                    <img id="img_for_model_booking" src="./assets/img/product_calender/model_default_image.webp" alt="">
+
+                                     </span>
+
+                                    <a class="model_view_profile_page" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo $model_type; ?>">View Profile</a>
+
+
+
+                                    <p class="nameofthemodelbooking"><?php echo $model_name; ?></p>
+
+                                    <a class="profile_calender_models" href="model_profile.php?model_id=<?php echo $model_id; ?>&model_type=<?php echo $model_type; ?>">View Profile</a>
+
+                                    <!-- <p id="date&day"><span class="date"><?php echo $photoshoot_day;?></span>/ <span class="day">MON</span></p> -->
+
+                                    <div class="progressionbar">
+
+                                        <p class="msq">msq-20/100</p>
+
+                                        <progress min="0" max="100" value="33"></progress>
+
+                                        <p class="nameoftheshoot">Product Shoot</p>
+
+                                        <p class="msq">msq-50/100</p>
+
+                                        <progress min="0" max="100" value="53"></progress>
+
+                                    </div>
+
+                                    <button class="booknowmodelbooking_calender_p">BOOK NOW</button>
+
+                                </li>
+
+
+
+                            <!--    <li class="bookingcardingcale_li">
+
+                                <span class="imageforcalenderbook">
+
+                                    <img id="img_for_model_booking" src="./best_In_Images/models/model_6.webp" alt="">
+
+                            </span>
+
+                                    <a class="model_view_profile_page" href="">View Profile</a>
+
+                                    <p class="nameofthemodelbooking">David</p>
+
+                                    <p id="date&day"><span class="date">2</span>/ <span class="day">TUE</span></p>
+
+                                    <div class="progressionbar">
+
+                                        <p class="msq">msq-20/100</p>
+
+                                        <progress min="0" max="100" value="32"></progress>
+
+                                        <p class="nameoftheshoot">Product Shoot</p>
+
+                                        <p class="msq">msq-50/100</p>
+
+                                        <progress min="0" max="100" value="13"></progress>
+
+                                    </div>
+
+                                    <button class="booknowmodelbooking_calender_p">BOOK NOW</button>
+
+                                </li>
+
+                              -->
+
+
+
+
+
+                         <?php } } ?>
+
+
+
+                            </ul>
+
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 
+					 <!------------------- Mobile section ------------------------->
+
+
+
+
+
+
+                            <div class="carousel-caption">
+
+
+
+
+
+                            </div>
+
+
+
+            </div>
+
+
+
+
+
+        <?php
+
+
+
+            $total_week_count_date++;
+
+        }
+
+
+
+        ?>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+        <span class="glyphicon glyphicon-arrow-left"></span>
+
+        <span class="sr-only">Previous</span>
+
+      </a>
+
+
+
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+
+        <span class="glyphicon glyphicon-arrow-right"></span>
+
+        <span class="sr-only">Next</span>
+
+      </a>
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+    </div>
+
+
+
+
+
+<?php
+
+
+
+
+
+	}
+
+	
+	
+	
+	////////////////////////////// category modals ////////////////////////////////////////////////
+	
+	
+	$startdate_modal = strtotime("last monday - 7 days");
+
+
+
+    $enddate_modal = strtotime("+6 weeks", $startdate_modal);
+
+
+
+    $firstweek_day =  date("Y-m-d", $startdate);
+
+
+
+    $today_week_day =  date('Y-m-d');
+
+
+
+            while ($startdate_modal < $enddate_modal) {
+
+
+
+                $counts =  $counts + 1;
+
+
+
+                $starting_dates = date("Y-m-d", $startdate_modal) . "<br>";
+
+
+
+                $Month = date("F", $startdate);
+
+                $month = date("m", $startdate);
+
+                $year = date("Y", $startdate);
+
+
+
+
+
+                $startdate_modal = strtotime("+1 week", $startdate_modal);
+
+
+
+                $next_date_to = date("Y-m-d", $startdate_modal);
+
+
+
+                $countable_days = 8;
+
+                $starting_countable_date =  date('Y-m-d', strtotime($next_date_to. ' - '.$countable_days.' days'));
+
+
+			
+					$model_shoot_date_array  = array();
+					
+					$model_shoot_date_array = getDatesFromRange($starting_countable_date, $next_date_to);
+					
+	
+					for($i=0; $i<8; $i++){
+							
+						//echo $model_shoot_date_array[$i];
+						
+						
+						
+						$get_booking_next_calender = "SELECT * FROM `calender` where photoshoot_date = '$model_shoot_date_array[$i]' ";
+
+
+						/*$get_booking_next_calender = " SELECT * FROM calender where  photoshoot_date<'$next_date_to' and 				Photoshoot_date>='$starting_countable_date'  order by Photoshoot_date asc  ";
+						*/
+
+
+							$get_booking_next_calender_run = $conn->prepare($get_booking_next_calender);
+
+							$get_booking_next_calender_run->execute();
+
+
+
+							$result_count     = $get_booking_next_calender_run->rowcount();
+			
+							
+							
+							$model_shoot_date_details =  date('Y-m-d', strtotime($model_shoot_date_array[$i]));
+
+
+
+                            $date_array = explode("-",$model_shoot_date_details);
+
+                            $date_year = $date_array[0];
+
+                            $date_month = $date_array[1];
+
+                            $date_day = $date_array[2];
+
+
+
+
+
+                            $day_name = date('D', strtotime($model_shoot_date_details));
+
+
+							
+							if($day_name  != 'Sun'){
+		
+
+
+							if($result_count > 0){
+
+
+               
+
+
+
+
+								while($get_booking_next_calender_rows = $get_booking_next_calender_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+								$photoshoot_date =  $get_booking_next_calender_rows['photoshoot_date'];
+
+								$photoshoot_date_modal =  $get_booking_next_calender_rows['photoshoot_date'];
+
+
+
+								$photoshoot_date = date("d-m-Y", strtotime($photoshoot_date));
+
+
+
+								$model_id = $get_booking_next_calender_rows['model_id'];
+
+								$model_type = $get_booking_next_calender_rows['model_type'];
+								
+								$menu_cart = $get_booking_next_calender_rows['menu'];
+
+
+
+								if($model_type == 'international'){
+
+
+
+									$get_model_details = " SELECT * FROM international_model where id = '$model_id' ";
+
+
+
+									$get_model_details_run = $conn->prepare($get_model_details);
+
+
+
+									$get_model_details_run->execute();
+
+
+
+									$get_model_details_rows = $get_model_details_run->fetch(PDO::FETCH_ASSOC);
+
+
+
+								}
+
+
+
+								if($model_type == 'indian'){
+
+
+
+									$get_model_details = " SELECT * FROM indian_model where id = '$model_id' ";
+
+
+
+									$get_model_details_run = $conn->prepare($get_model_details);
+
+
+
+									$get_model_details_run->execute();
+
+
+
+									$get_model_details_rows = $get_model_details_run->fetch(PDO::FETCH_ASSOC);
+
+								}
+
+
+
+
+
+								$model_name = $get_model_details_rows['model_name'];
+
+
+
+								$model_sex = $get_model_details_rows['sex'];
+
+
+								//$category = '';
+
+
+
+    ?>
+
+
+
+<div class="modal " id="myModal_<?php echo $photoshoot_date_modal; ?>_<?php echo $model_id; ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu_cart; ?>_<?php echo $category; ?>">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+
+
+                        <div class="modal-header">
+                            <p class="headingfoecalen">please select the category to book your shoot.</p>
+
+                           <!-- <button type="button" class="btn-close" data-bs-dismiss="modal"></button>-->
+						   
+							
+
+                               <a class="modalcloseforcategoryimg"  href=""> <img src="https://img.icons8.com/fluency-systems-regular/48/multiply.png" ></a>
+								
+                        </div>
+
+		
+				<?php 
+					
+		
+					if($menu_cart == '1'){
+					
+				  
+							$get_filter_categories = "SELECT * FROM male_ecomm_categories where status='p' order by serial asc "  ;
+		
+					
+						
+					}
+					
+					if($menu_cart == '2'){
+						
+						
+						$get_filter_categories = "SELECT * FROM female_ecomm_categories where status='p' order by serial asc "  ;
+
+						
+						
+					}
+					
+					if($menu_cart == '3'){
+						
+						
+							
+						$get_filter_categories = "SELECT * FROM kids_ecomm_categories where status='p' order by serial asc "  ;
+
+						
+					}
+					
+						
+						$get_filter_categories_run = $conn->prepare($get_filter_categories);
+
+                        $get_filter_categories_run->execute();
+						
+						
+
+					
+			
+			?>
+
+
+<button class="dropbtn modelcalenderheads
+                                                "><?php 	if($menu_cart == 1){echo "men";}
+																				if($menu_cart == 2){echo "Women";} 
+																				if($menu_cart == 3){echo "Kids";}   ?>
+
+												</button>
+				
+			<select class="form_selection" id = "select_filter_subcategory_<?php echo $photoshoot_date_modal;?>_<?php echo $model_id; ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu_cart; ?>" 
+						onchange ="filter_categories('<?php echo $photoshoot_date_modal; ?>','<?php echo $model_id ?>','<?php echo $model_type; ?>','<?php echo $model_sex; ?>','<?php echo $menu_cart; ?>','<?php echo ''; ?>')" > 
+					
+					
+						<option value = "0">All</option>
+				
+				
+				<?php 
+						
+						
+                        while($get_filter_categories_rows = $get_filter_categories_run->fetch(PDO::FETCH_ASSOC)){
+
+                            $category_id = $get_filter_categories_rows['id'];
+
+						
+				?>
+				
+					<option value = "<?php echo $get_filter_categories_rows['id']; ?>" ><?php echo $get_filter_categories_rows['category_name']; ?></option>
+
+						
+				<?php } ?>			
+							
+						
+				
+			</select>	
+
+		
+
+
+            <div class="modal-body">
+			
+				<div  id="myModal_content_<?php echo $model_shoot_date_details; ?>_<?php echo $model_id; ?>_<?php echo $model_type; ?>_<?php echo $model_sex; ?>_<?php echo $menu_cart; ?>_<?php echo $category; ?>" >
+
+
+                        <div class="navbar">
+
+
+
+                                    <?php
+
+
+
+                                            $sex = $model_sex;
+
+
+
+                                            if($sex == 'm' ){
+
+
+
+                                                $get_menu = "SELECT * FROM menu where id  = 1 "  ;
+
+
+
+                                            }
+
+
+
+                                            if($sex == 'f' ){
+
+
+
+                                                $get_menu = "SELECT * FROM menu where  id =  2 "  ;
+
+
+
+                                            }
+
+
+
+                                            $get_menu_run = $conn->prepare($get_menu);
+
+                                            $get_menu_run->execute();
+
+
+
+                                            while($get_menu_rows = $get_menu_run->fetch(PDO::FETCH_ASSOC)){
+
+                                            $menu = $get_menu_rows['id'];
+
+
+
+                                    ?>
+
+
+
+										<div class="dropdown">
+
+                                               
+
+
+
+                                                <?php
+
+
+
+
+
+                                                        if($menu_cart == 1){
+
+
+
+                                                            $get_categories = "SELECT * FROM male_ecomm_categories where status='p' order by serial desc "  ;
+
+
+
+                                                        }
+
+
+
+
+
+                                                        if($menu_cart == 2){
+
+
+
+                                                            $get_categories = "SELECT * FROM female_ecomm_categories where status='p' order by serial desc "  ;
+
+
+
+                                                        }
+
+
+
+
+
+                                                        if($menu_cart == 3){
+
+
+
+                                                            $get_categories = "SELECT * FROM kids_ecomm_categories where status='p'  order by id desc "  ;
+
+
+
+                                                        }
+
+
+
+                                       
+
+
+                                                        $get_categories_run = $conn->prepare($get_categories);
+
+                                                        $get_categories_run->execute();
+
+
+
+
+
+                                                ?>
+
+
+
+                                            <div class="dropdown-content_ap">
+
+
+
+                                            <div class="row12modelq">
+
+
+
+                                                <?php
+
+
+
+                                                while($get_categories_rows = $get_categories_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+                                                            $category_id = $get_categories_rows['id'];
+
+
+
+                                                    ?>
+
+                                                        <div class="columnmodelq">
+
+
+                                                            <h3 id="h3_anker_tag" >
+
+                                                                <a id="anker_inside_big modalcalenderheads"
+
+                                                                    href="/collections/exterior-deck-flooring"><?php echo $get_categories_rows['category_name']; ?>
+
+                                                                </a>
+
+                                                            </h3>
+															
+															
+															
+                                                            <div class="spancatmem">
+
+
+
+                                                                    <?php
+
+
+
+                                                                            if($menu_cart == '1'){
+
+
+
+                                                                                $get_sub_categories = "SELECT * FROM male_ecomm_subcategories where status='p' and category_id =  '$category_id' and status = 'p'  order by serial desc "  ;
+
+
+
+                                                                            }
+
+
+
+                                                                            if($menu_cart == '2'){
+
+
+
+                                                                                $get_sub_categories = "SELECT * FROM female_ecomm_subcategories where status='p' and category_id =  '$category_id' and status = 'p' order by serial desc "  ;
+
+
+
+                                                                            }
+
+
+
+                                                                            if($menu_cart == '3'){
+
+
+
+                                                                                       $get_sub_categories = "SELECT * FROM kids_ecomm_subcategories where status='p' and category_id =  '$category_id'  and status = 'p' "  ;
+
+
+
+                                                                            }
+
+
+
+
+                                                                            $get_sub_categories_run = $conn->prepare($get_sub_categories);
+
+                                                                            $get_sub_categories_run->execute();
+
+
+
+
+                                                                            while($get_sub_categories_rows = $get_sub_categories_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+                                                                                $sub_category_id = $get_sub_categories_rows['id'];
+
+
+
+                                                                            ?>
+
+
+
+
+                                                                        <span class="subcategoryimgandname">
+																			<a href="" onclick="select_subcategory('<?php echo $menu ?>','<?php echo $category_id ?>','<?php echo $sub_category_id ?>','<?php echo $model_id; ?>','<?php echo $photoshoot_date_modal; ?>')">
+
+																			<?php
+
+																					if($menu_cart == 1){
+
+																			?>
+																				<img src="https://voilastudio.co.in/voilastudio_myntra/images/male_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																			<?php } ?>
+
+
+																			<?php
+
+																					if($menu_cart == 2){
+
+																			?>
+																				<img src="https://voilastudio.co.in/voilastudio_myntra/images/female_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																			<?php } ?>
+
+
+
+																			<?php
+
+																					if($menu_cart == 3){
+
+																			?>
+																					<img src="https://voilastudio.co.in/voilastudio_myntra/images/kids_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																			<?php } ?>
+
+
+
+																				<p class="subcategoryname"><?php echo $get_sub_categories_rows['sub_category_name'];?></p>
+																			</a>
+																		</span>
+
+
+
+
+                                                                            <?php } ?>
+
+
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    <?php }
+
+
+
+                                                    ?>
+                                                </div>
+                                            </div>
+
+
+                                    </div>
+                        </div>
+                                <?php } ?>
+
+
+
+				</div>
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+
+
+                <?php }}else{
+					
+					 ////////////// implement modal for open dates ////
+					 
+				?>
+					 
+								
+						
+
+									<div class="modal" id="myModal_advancebook_<?php echo $model_shoot_date_details; ?>">
+
+
+										<div class="modal-dialog">
+
+
+
+										<div class="modal-content">
+
+
+
+																<div class="modal-header">
+																<p class="headingfoecalen">please select the category to book your shoot.</p>
+
+
+                                                                <a class="modalcloseforcategoryimg"  href=""> <img src="https://img.icons8.com/fluency-systems-regular/48/multiply.png" ></a>
+
+																</div>
+																
+																<div class="model_calender_flexing">
+
+																<select class="form_selection" id = "select_filter_menu_advance_<?php echo $model_shoot_date_details;?>_<?php echo $menu; ?>_<?php echo $model_sex; ?>"
+																		onchange = "submit_filter_form_advance('<?php echo $model_shoot_date_details;?>','<?php echo $menu; ?>','<?php echo $model_sex; ?>')"  name="select_filter_menu_advance" >
+
+																		
+																		<option value="1">Men</option>
+
+																		<option value="2">Women</option>
+
+																		<option value="3">Kids</option>
+
+																</select>
+																		
+																
+										<br>	
+								
+								
+										<?php 
+											
+											//echo $menu_cart; 
+											
+											
+											//echo $_REQUEST['menu_filter'];
+											
+											
+											if(isset($_REQUEST['menu_filter'])){
+											
+											if( $_REQUEST['menu_filter'] == '1'){
+											
+										  
+													$get_filter_categories = "SELECT * FROM male_ecomm_categories where status='p' order by serial asc "  ;
+								
+											
+												
+											}
+											
+											if( $_REQUEST['menu_filter'] == '2'){
+												
+												
+												$get_filter_categories = "SELECT * FROM female_ecomm_categories where status='p' order by serial asc "  ;
+
+												
+												
+											}
+											
+											if( $_REQUEST['menu_filter']== '3'){
+												
+												
+													
+												$get_filter_categories = "SELECT * FROM kids_ecomm_categories where status='p' order by serial asc "  ;
+
+												
+											}
+											
+											}else{
+												
+												$get_filter_categories = "SELECT * FROM male_ecomm_categories where status='p' order by serial asc "  ;
+												
+											}
+											
+											//echo $get_filter_categories;
+											
+											
+											
+												
+												$get_filter_categories_run = $conn->prepare($get_filter_categories);
+
+												$get_filter_categories_run->execute();
+												
+												
+
+											
+									
+									?>
+										
+											<select class="form_selection" id = "select_filter_subcategory_advance_<?php echo $model_shoot_date_details;?>_<?php echo $menu; ?>" 
+													onchange ="filter_categories_advance('<?php echo $model_shoot_date_details; ?>','<?php echo $menu; ?>','<?php echo ''; ?>','<?php echo $model_sex; ?>')" > 
+											
+										
+										
+										<?php 
+												
+												
+													while($get_filter_categories_rows = $get_filter_categories_run->fetch(PDO::FETCH_ASSOC)){
+
+														$category_id = $get_filter_categories_rows['id'];
+
+												
+										?>
+										
+													<option value = "<?php echo $get_filter_categories_rows['id']; ?>" ><?php echo $get_filter_categories_rows['category_name']; ?></option>
+
+												
+										<?php } ?>			
+													
+												
+										
+									</select>
+
+                                                    </div>
+
+
+																<div class="modal-body" >
+																
+																	<div  id="book_advance_modal_content_<?php echo $model_shoot_date_details; ?>" >
+																
+																	<div class="navbar">
+
+																			<?php
+																			
+																				$model_sex = 'f';
+																				
+																				$sex = $model_sex;
+
+																				if($sex == 'm' ){
+
+																					$get_menu = "SELECT * FROM menu "  ;
+
+																				}
+
+																				if($sex == 'f' ){
+																					$get_menu = "SELECT * FROM menu  "  ;
+
+																				}
+																				
+																				
+
+																				$get_menu_run = $conn->prepare($get_menu);
+
+																				$get_menu_run->execute();
+
+
+
+																				while($get_menu_rows = $get_menu_run->fetch(PDO::FETCH_ASSOC)){
+
+																				$menu = $get_menu_rows['id'];
+
+
+																				if($menu != 4){
+
+																			?>
+
+
+
+																			<div class="dropdown">
+											
+																				<button class="dropbtn modelcalenderheads"><?php echo $get_menu_rows['menu']; ?>
+
+																				</button>
+
+																						
+
+																	<?php
+
+
+
+
+
+																		if($get_menu_rows['id'] == 1){
+
+
+
+																										$get_categories = "SELECT * FROM male_ecomm_categories where status='p' order by serial desc "  ;
+
+
+
+																									}
+
+
+																		if($get_menu_rows['id'] == 2){
+
+
+
+																										$get_categories = "SELECT * FROM female_ecomm_categories where status='p' order by serial desc "  ;
+
+
+
+																									}
+
+
+
+																		if($get_menu_rows['id'] == 3){
+
+
+
+																				$get_categories = "SELECT * FROM kids_ecomm_categories where status='p'  order by id asc "  ;
+
+
+
+																		}
+
+
+																		$get_categories_run = $conn->prepare($get_categories);
+
+																		$get_categories_run->execute();
+
+
+
+
+
+																	?>
+
+
+
+																	<div class="dropdown-content_ap">
+
+																	<div class="row12modelq">
+
+																	<?php
+																	while($get_categories_rows = $get_categories_run->fetch(PDO::FETCH_ASSOC)){
+																								$category_id = $get_categories_rows['id'];
+																	?>
+
+																	<div class="columnmodelq">
+																				<h3 id="h3_anker_tag" >
+																								<a id="anker_inside_big modalcalenderheads"
+																									href="/collections/exterior-deck-flooring"><?php echo $get_categories_rows['category_name']; ?>
+																								</a>
+																					</h3>
+
+																					
+																					<div class="spancatmem">
+																					<?php
+
+																					if($get_menu_rows['id'] == '1'){
+
+																					$get_sub_categories = "SELECT * FROM male_ecomm_subcategories where status='p' and category_id =  '$category_id' and status = 'p'  order by serial desc "  ;
+	
+																				    }
+
+
+
+																					if($get_menu_rows['id'] == '2'){
+
+
+
+																					$get_sub_categories = "SELECT * FROM female_ecomm_subcategories where status='p' and category_id =  '$category_id' and status = 'p' order by serial desc "  ;
+
+
+
+																					}
+
+
+
+																					if($get_menu_rows['id'] == '3'){
+
+
+
+																					$get_sub_categories = "SELECT * FROM kids_ecomm_subcategories where status='p' and category_id =  '$category_id'  and status = 'p' "  ;
+
+
+
+																					}
+
+
+
+
+
+											
+
+																	$get_sub_categories_run = $conn->prepare($get_sub_categories);
+
+																	$get_sub_categories_run->execute();
+
+
+																	while($get_sub_categories_rows = $get_sub_categories_run->fetch(PDO::FETCH_ASSOC)){
+
+
+
+																	$sub_category_id = $get_sub_categories_rows['id'];
+
+
+
+																	?>
+
+
+
+
+																	<span class="subcategoryimgandname">
+																	<!--<a href="" onclick="select_subcategory('<?php echo $menu ?>','<?php echo $category_id ?>','<?php echo $sub_category_id ?>','<?php echo $model_id; ?>','<?php echo $photoshoot_date_modal; ?>')"> -->
+																	
+																	<a onclick="select_subcategory_without_model('<?php echo $menu ?>','<?php echo $category_id ?>','<?php echo $sub_category_id ?>','<?php echo $model_shoot_date_details; ?>')" href="">
+
+																	<?php
+
+																			if($menu == 1){
+
+																	?>
+																	<img src="https://voilastudio.co.in/voilastudio_myntra/images/male_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																	<?php } ?>
+
+
+																	<?php
+
+																			if($menu == 2){
+
+																	?>
+																	<img src="https://voilastudio.co.in/voilastudio_myntra/images/female_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																			  <?php } ?>
+
+
+
+																	<?php
+
+																			if($menu == 3){
+
+																	?>
+																			<img src="https://voilastudio.co.in/voilastudio_myntra/images/kids_ecomm/sub_category_images/<?php echo $get_sub_categories_rows['sub_category_images'];?>" class="imgiconsize" alt="">
+
+																	<?php } ?>
+
+
+
+																	<p class="subcategoryname"><?php echo $get_sub_categories_rows['sub_category_name'];?></p>
+																											</a>
+																										</span>
+
+
+
+
+
+																	<?php } ?>
+
+
+																						</div>
+																						</div>
+
+
+
+																					<?php }
+
+
+
+																					?>
+
+
+																				</div>
+
+
+
+																			</div>
+
+
+
+																		</div>
+
+
+
+																				<?php }  } ?>
+
+																	</div>
+																	
+																	</div>
+																	
+																</div>
+															
+
+												</div>
+
+
+										</div>
+
+									</div>
+
+									</div>
+
+
+								</div>		
+								
+				
+					
+				<?php		
+					
+							}
+				
+				
+					}
+				
+				}
+
+
+
+			}
+
+
+	?>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<script>
+
+
+function submit_filter_form_advance(photoshoot_date_modal,menu,model_sex){
+	
+	
+
+	var select_filter_menu_advance = $('#select_filter_menu_advance_'+photoshoot_date_modal+'_'+menu+'_'+model_sex).val(); 
+	
+	
+
+	
+	
+	$.ajax({
+
+			type: "POST",
+
+            url: 'get_filtered_calender_category_advance.php',
+
+            data: {
+
+                photoshoot_date_modal:photoshoot_date_modal,
+
+                select_filter_menu_advance:select_filter_menu_advance,
+				
+				menu:menu,
+				model_sex:model_sex,
+				
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+					//alert("cddsdsdweweas");
+					
+					$("#select_filter_subcategory_advance_"+photoshoot_date_modal+'_'+menu).load("get_open_calender_menu_filter_ajax.php" ,{"select_filter_menu_advance":select_filter_menu_advance});
+					
+					//$('.modal-body').html(data);
+	
+			
+	
+					$('#book_advance_modal_content_'+photoshoot_date_modal).html(data); 
+	
+	
+					$('#myModal_advancebook_'+photoshoot_date_modal).modal('show'); 
+	
+
+
+
+
+
+            },
+
+			error: function(jqXHR, textStatus, errorThrown){
+
+				  alert('error');
+
+			  }
+
+        });
+
+		
+	
+	
+	
+	
+}
+
+
+
+
+function booknow_modal(photoshoot_date_modal,model_id,model_type,model_sex,menu,category){
+			
+		//alert("book model");
+		$('#myModal_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu+'_'+category).modal('show'); 
+	
+}
+
+
+
+function cancel_mymodal(photoshoot_date_modal,model_id,model_type,model_sex,menu,category){
+		//  alert("cancel  modal");
+		
+		$('#myModal_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu+'_').modal('toggle');
+       
+}
+
+
+
+
+function booknow_modal_advance(photoshoot_date_modal){
+			
+
+		$('#myModal_advancebook_'+photoshoot_date_modal).modal('show'); 
+	
+}
+
+
+
+
+function filter_categories_ajax(photoshoot_date_modal,model_id,model_type,model_sex,menu,category){
+	
+	
+
+
+	//	var category = $('#select_filter_subcategory_ajax_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu).find(":selected").val();
+		
+		var category	=	document.getElementById('select_filter_subcategory_ajax_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu).value;
+		
+	
+
+        var photoshoot_date_modal = photoshoot_date_modal;
+
+        var model_id = model_id;
+
+        var model_type = model_type;
+
+        var model_sex = model_sex;
+
+        var menu = menu;
+
+       
+
+
+         $.ajax({
+
+			type: "POST",
+
+            url: 'get_filtered_calender_category.php',
+
+            data: {
+
+                photoshoot_date_modal:photoshoot_date_modal,
+
+                model_id:model_id,
+
+                model_type:model_type,
+
+                model_sex:model_sex,
+
+                menu:menu,
+				
+				category:category,
+
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+			
+					$('.modal-body').html(data);
+	
+					//$('#myModal_content_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu+'_'+category).html(data); 
+	
+					$('#myModal_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu+'_'+category).modal('show'); 
+	
+
+
+            },
+
+			error: function(jqXHR, textStatus, errorThrown){
+
+				  alert('error');
+
+			  }
+
+        });
+
+
+	
+	
+}
+
+
+function filter_categories_advance(photoshoot_date_modal,menu,category,model_sex){
+		
+	
+		
+		var category	=	document.getElementById('select_filter_subcategory_advance_'+photoshoot_date_modal+'_'+menu).value;
+		
+		var select_filter_menu_advance = $('#select_filter_menu_advance_'+photoshoot_date_modal+'_'+menu+'_'+model_sex).val(); 
+		
+
+        var photoshoot_date_modal = photoshoot_date_modal;
+
+        var menu = menu;
+
+
+		
+		
+	
+	
+	 $.ajax({
+
+			type: "POST",
+
+            url: 'get_filtered_calender_category_advance.php',
+
+            data: {
+
+                photoshoot_date_modal:photoshoot_date_modal,
+
+                select_filter_menu_advance:select_filter_menu_advance,
+				
+				menu:menu,
+				model_sex:model_sex,
+				
+				category:category,
+				
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+					
+					
+					//$("#select_filter_subcategory_advance_"+photoshoot_date_modal+'_'+menu).load("get_open_calender_menu_filter_ajax.php" ,{"select_filter_menu_advance":select_filter_menu_advance});
+					
+					//$('.modal-body').html(data);
+					
+					$('#book_advance_modal_content_'+photoshoot_date_modal).html(data); 
+	
+					$('#myModal_advancebook_'+photoshoot_date_modal).modal('show'); 
+	
+
+
+            },
+
+			error: function(jqXHR, textStatus, errorThrown){
+
+				  alert('error');
+
+			  }
+
+        });
+
+		
+	
+		
+		
+	}	
+	
+
+
+
+
+
+
+
+function filter_categories(photoshoot_date_modal,model_id,model_type,model_sex,menu,category){
+	
+
+
+		var category	=	document.getElementById('select_filter_subcategory_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu).value;
+	
+
+        var photoshoot_date_modal = photoshoot_date_modal;
+
+        var model_id = model_id;
+
+        var model_type = model_type;
+
+        var model_sex = model_sex;
+
+        var menu = menu;
+
+
+		
+
+         $.ajax({
+
+			type: "POST",
+
+            url: 'get_filtered_calender_category.php',
+
+            data: {
+
+                photoshoot_date_modal:photoshoot_date_modal,
+
+                model_id:model_id,
+
+                model_type:model_type,
+
+                model_sex:model_sex,
+
+                menu:menu,
+				
+				category:category,
+
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+
+					$('.modal-body').html(data);
+	
+
+					$('#myModal_'+photoshoot_date_modal+'_'+model_id+'_'+model_type+'_'+model_sex+'_'+menu+'_'+category).modal('show'); 
+	
+
+
+            },
+
+			error: function(jqXHR, textStatus, errorThrown){
+
+				  alert('error');
+
+			  }
+
+        });
+
+
+	
+	
+	
+		
+	
+
+	
+}
+
+
+
+	function submit_filter_form(){
+		
+		   //alert('submit_filter_form');
+		
+		   document.getElementById("menu_filter_form").submit();
+	}	
+
+
+
+
+
+
+
+    function select_marketplace(menu,model_id,photoshoot_date,count){
+
+
+            var idcount = count;
+
+
+
+            if(($('#marketplace_ID_'+idcount).is(':checked')) == true){
+
+
+
+                alert('checked');
+
+            }else{
+
+
+
+                 alert('unchecked');
+
+            }
+
+
+
+    }
+
+
+
+
+
+    function select_subcategory(menu_ID,category_ID,sub_category_ID,model_ID,photoshoot_date){
+
+
+
+        var menu = menu_ID;
+
+        var category = category_ID;
+
+        var sub_category = sub_category_ID;
+
+        var model_id = model_ID;
+
+        var photoshoot_Date = photoshoot_date;
+
+        var backdrop_ID = '2';    //defualt backdrop ( shopping portal - myntra )
+
+
+
+
+
+        /*
+
+        alert(menu);
+
+        alert(category);
+
+        alert(sub_category);
+
+        alert(model_id);
+
+        alert(photoshoot_date);
+
+        */
+
+        // Add Default Backdrop //
+
+        // Store Photoshoot date for advance booking
+
+        // ** MSQ (storage or calculation of shoot quantities)  **  not present even in collection detail page //
+
+        //  use ajax for fetch & store data //
+
+
+
+         $.ajax({
+
+			type: "POST",
+
+            url: 'book_modelcalender.php',
+
+            data: {
+
+                menu_id:menu,
+
+                category_id:category,
+
+                sub_category_id:sub_category,
+
+                model_ID:model_id,
+
+                photoshoot_date:photoshoot_Date,
+
+                backdrop_id:backdrop_ID,
+
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+
+
+                response = JSON.parse(data);
+
+
+
+                 //   alert("booking subactegory atrepsonsee");
+
+
+
+                  //   var query = response.query;
+
+
+
+                var shoot_detail_id =  response.shoot_detail;
+
+                var backdrop = response.backdrop;
+
+                var photoshoot_price = response.photoshoot_price;
+
+                var photoshoot_price = 0;
+
+                var photoshoot_date = photoshoot_Date;
+
+
+
+
+
+
+
+
+
+
+
+              /// alert(photoshoot_date);
+
+
+
+                var quantity = 0;
+
+                var extra_angle_style = 0;
+
+                var extra_angle_lifestyle = 0;
+
+                var extra_angle_style_price = 0;
+
+                var extra_angle_lifestyle_price = 0;
+
+
+
+                var videoshoot = 0;
+
+                var videoshoot_price = 0;
+
+
+
+                var extra_angle = 0;
+
+                var extra_angle_price = 0;
+
+
+
+
+
+
+
+                var book_status = 'inactive';
+
+                var book_both = 'false';
+
+                var book_type= 'real';
+
+
+
+                var cartObject = new Object();
+
+                cartObject.id = shoot_detail_id;
+
+                cartObject.quantity = quantity;
+
+                cartObject.extra_angle_style = extra_angle_style;
+
+                cartObject.extra_angle_lifestyle = extra_angle_lifestyle;
+
+                cartObject.extra_angle_style_price = extra_angle_style_price;
+
+                cartObject.extra_angle_lifestyle_price = extra_angle_lifestyle_price;
+
+
+
+
+
+                cartObject.videoshoot = videoshoot;
+
+                cartObject.videoshoot_price = videoshoot_price;
+
+
+
+                cartObject.extra_angle = extra_angle;
+
+                cartObject.extra_angle_price = extra_angle_price;
+
+
+
+
+
+
+
+               // cartObject.custom_shoot = custom_shoot;
+
+               // cartObject.videoshoot = videoshoot;
+
+
+
+
+
+                cartObject.book_status = book_status;
+
+                cartObject.photoshoot_price = photoshoot_price;
+
+                cartObject.photoshoot_date = photoshoot_date;
+
+
+
+                cartObject.book_both = book_both;
+
+                cartObject.book_type = book_type;
+
+
+
+
+
+
+
+
+
+                if (localStorage) {
+
+                                    retrievedObject = localStorage.getItem('myArray');
+
+                                    //alert(retrievedObject);
+
+                                   } else {
+
+                                    alert("Error: This browser is still not supported; Please use google chrome!");
+
+                                }
+
+
+
+
+
+                                var parsedArray = null;
+
+
+
+                                if (retrievedObject){
+
+                                           parsedArray = JSON.parse(retrievedObject);
+
+                                   }
+
+
+
+                                   if(parsedArray == null){
+
+                                           parsedArray = [];
+
+                                   }
+
+
+
+                                var found = false;
+
+
+
+                                if(parsedArray.length == 0){
+
+                                           found = true;
+
+                                }else{
+
+
+
+                                    for (var i=0;i<parsedArray.length;i++){
+
+                                        if (parsedArray[i].id == cartObject.id){
+
+                                                parsedArray[i].photoshoot_date = photoshoot_Date;
+
+                                                localStorage.setItem('myArray', JSON.stringify(parsedArray));
+
+                                                found = false;
+
+                                                break;
+
+
+
+                                        }else{
+
+                                                    found = true;
+
+                                        }
+
+                                    }
+
+                                }
+
+
+
+
+
+
+
+                                //   alert('booking details starts');
+
+
+
+                                   if( found == true){
+
+                                           var cartArrayCount = parsedArray.push(cartObject);
+
+                                   }
+
+
+
+
+
+                                  // $("#cartadd_"+id).text("Cart Added");
+
+
+
+                                  ///   $("#id-cart-value").html(cartArrayCount);
+
+
+
+                                  var localData=localStorage.setItem('myArray', JSON.stringify(parsedArray));
+
+
+
+                                  window.location.href = "collection_detail_latest.php?shoot_detail="+shoot_detail_id+"&backdrop="+backdrop;
+
+
+
+
+
+
+
+
+
+
+
+
+
+            },
+
+			error: function(jqXHR, textStatus, errorThrown){
+
+				  alert('error');
+
+			  }
+
+        });
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    function select_subcategory_without_model(menu_ID,category_ID,sub_category_ID,photoshoot_date){
+
+
+
+        var menu = menu_ID;
+
+        var category = category_ID;
+
+        var sub_category = sub_category_ID;
+
+        var photoshoot_Date = photoshoot_date;
+
+        var backdrop_ID = '2';    //defualt backdrop ( shopping portal - myntra )
+
+        var model_id = 1;
+
+
+
+         $.ajax({
+
+			type: "POST",
+
+            url: 'book_modelcalender.php',
+
+            data: {
+
+                menu_id:menu,
+
+                category_id:category,
+
+                sub_category_id:sub_category,
+
+                model_ID:model_id,
+
+                photoshoot_date:photoshoot_Date,
+
+                backdrop_id:backdrop_ID,
+
+                datatype:true
+
+            },
+
+			cache: false,
+
+            //dataType: "JSON",
+
+            success: function (data) {
+
+
+
+                response = JSON.parse(data);
+
+
+
+                var query = response.query;
+
+
+
+
+
+                var shoot_detail_id =  response.shoot_detail;
+
+                var backdrop = response.backdrop;
+                var photoshoot_price = 0;
+                var photoshoot_date = photoshoot_Date;
+                var quantity = 0;
+                var extra_angle_style = 0;
+                var extra_angle_lifestyle = 0;
+                var extra_angle_style_price = 0;
+                var extra_angle_lifestyle_price = 0;
+
+                var videoshoot = 0;
+                var videoshoot_price = 0;
+                var extra_angle = 0;
+                var extra_angle_price = 0;
+                var book_status = 'inactive';
+                var book_both = 'false';
+                var book_type= 'tentative';
+
+                /*
+
+                var cartObject = new Object();
+
+                cartObject.id = 0;
+
+                cartObject.quantity = quantity;
+
+                cartObject.extra_angle_style = extra_angle_style;
+
+                cartObject.extra_angle_lifestyle = extra_angle_lifestyle;
+
+                cartObject.extra_angle_style_price = extra_angle_style_price;
+
+                cartObject.extra_angle_lifestyle_price = extra_angle_lifestyle_price;
+
+
+
+
+
+                cartObject.videoshoot = videoshoot;
+
+                cartObject.videoshoot_price = videoshoot_price;
+
+
+
+                cartObject.extra_angle = extra_angle;
+
+                cartObject.extra_angle_price = extra_angle_price;
+
+
+
+
+
+
+
+                cartObject.book_status = book_status;
+
+                cartObject.photoshoot_price = photoshoot_price;
+
+                cartObject.photoshoot_date = photoshoot_date;
+
+
+
+                cartObject.book_both = book_both;
+
+                cartObject.book_type = book_type;
+
+
+
+
+
+
+
+
+
+
+
+                if (localStorage) {
+
+                                    retrievedObject = localStorage.getItem('myArray');
+
+                                    //alert(retrievedObject);
+
+                                   } else {
+
+                                    alert("Error: This browser is still not supported; Please use google chrome!");
+
+                                }
+
+
+
+
+
+                                var parsedArray = null;
+
+
+
+                                if (retrievedObject){
+
+                                           parsedArray = JSON.parse(retrievedObject);
+
+                                   }
+
+
+
+                                   if(parsedArray == null){
+
+                                           parsedArray = [];
+
+                                   }
+
+
+
+                                var found = false;
+
+
+
+                                if(parsedArray.length == 0){
+
+                                           found = true;
+                                }else{
+                                    for (var i=0;i<parsedArray.length;i++){
+                                        if (parsedArray[i].id == cartObject.id){
+                                                           found = false;
+                                                           break;
+                                                   }else{
+                                                    found = true;
+                                                }
+                                           }
+                                   }
+
+                                //   alert('booking details starts');
+                                   if( found == true){
+                                           var cartArrayCount = parsedArray.push(cartObject);
+                                   }
+                                  // $("#cartadd_"+id).text("Cart Added");
+                                  ///   $("#id-cart-value").html(cartArrayCount);
+                                  var localData=localStorage.setItem('myArray', JSON.stringify(parsedArray));
+                */
+                                    // window.location.href = "collection_detail_latest.php?shoot_detail="+shoot_detail_id+"&backdrop="+backdrop;
+                                     window.location.href = "collection.php?menu_id="+menu+"&category_id="+category+"&sub_category_id="+sub_category+"&calender_booking_date="+photoshoot_Date;
+            },
+			error: function(jqXHR, textStatus, errorThrown){
+				  alert('error');
+			  }
+        });
+    }
+</script>
+
+
+<script>
+let mybutton1 = document.getElementById("scrollbaricon1");
+let mybutton2 = document.getElementById("scrollbaricon2");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    mybutton1.style.display = "none";
+    mybutton2.style.display = "none";
+
+  } else {
+    mybutton1.style.display = "block";
+    mybutton2.style.display = "block";
+
+  }
+}
+</script>

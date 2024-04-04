@@ -1,0 +1,274 @@
+
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+  
+  
+* {
+      box-sizing: border-box;
+      font-family: 'inter' !important;
+      margin: 0;
+      padding: 0;
+    }
+button, input, a, label {
+  cursor: pointer;
+} 
+h1, h2, h3, h4, h5 {
+    font-family: 'inter' !important;
+  }   
+  p {
+    margin-bottom: 0;
+}
+
+.contact_us_divi_img {
+    width: 100%;
+    position: relative;
+}
+.contact_us_img {
+    width: 100%;
+}
+.contact_info {
+    width: 45%;
+    padding-left: 80px;
+    position: absolute;
+    bottom: 30px;
+}
+.contact_info_heading {
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact_info_paragraph {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.contactus_above {
+    position: absolute;
+    top: 6vw;
+    color: white;
+    width: 45%;
+    font-size: 18px;
+    padding-left: 40px;
+}
+p.contactUs_heading {
+    font-size: 5vw;
+    font-weight: 800;
+    margin-bottom: 10px !important;
+    color: white;
+}
+p.contactUs_paragraph {
+    color: white;
+    font-size: 14px;
+}
+.contact_details_voila {
+    width: 100%;
+    padding: 0 80px;
+}
+.contact_details_phnnumbers {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: left;
+    line-height: 35px;
+
+}
+.contact_details_phnicon {
+    width: 24px;
+    margin-right: 15px;
+}
+.contact_details_linkdivi {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact_details_address_gurugram, .contact_details_address {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+}
+.contact_details_address {
+    width: 100%;
+}
+.map_intenim_gurugram {
+    width: 50%;
+    height: 100%;
+    border-radius: 5px;
+}
+iframe.map_iframe {
+    width: 100%;
+    padding-bottom: 30px;
+    height: 200px;
+}
+.coperate_office_address p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.font-weight_bold {
+    font-weight: 600 !important;
+}
+.label_perso {
+    top: -30px;
+    background: none;
+}
+.input_field_perso:focus ~ .label_perso, .input_field_perso:valid ~ .label_perso {
+    top: -51px !important;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 0 10px;
+  }
+  .getintouch {
+    width: 100%;
+    background-image: url("../../assets/img/contact_us/getintouch_banner.webp");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    padding: 75px 40px 40px;
+}
+.get_in_touch_heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: white;
+}
+.get_in_touch_paragraph {
+    color: white;
+    width: 100%;
+    font-size: 14px;
+}
+.getintouch_heads {
+    width: 400px;
+}
+form.basic_form_detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.form_field_basic, .form_field_message {
+    width: 48%;
+}
+.text_area_message_get_in_touch {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+}
+.input-box_pers {
+    width: 100%;
+    position: relative;
+    margin: 0px auto 5px !important;
+    z-index: 1;
+    top: 0;
+}
+.input_field_perso {
+    border-radius: 5px;
+}
+input.submit_form_get_in_touch {
+    font-size: 18px;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: capitalize;
+    background: white;
+}
+.contact_us_img_mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 900px) {
+    .contact_us_img_mobile {
+        display: block;
+        width: 100%;
+    }
+    .contact_us_img {
+        display: none;
+    }
+    .contact_info {
+        width: 100%;
+        padding-left: 40px;
+        position: relative;
+        bottom: 0;
+}
+.contact_details_phnnumbers {
+    width: 100%;
+}
+.contact_details_address {
+    width: 100%;
+    background-image: linear-gradient(to right, #a739fe70,#fd010530, rgb(255 0 0 / 0%) );
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+}
+.map_intenim_gurugram {
+    margin-left: 20px;
+}
+.contact_info {
+    padding: 0 10px;
+}
+.contact_details_voila {
+    width: 100%;
+    padding: 10px;
+}
+.getintouch_heads {
+    width: 100%;
+}
+p.contactUs_heading {
+    font-size: 20px;
+}
+.contactUs_paragraph {
+    display: none;
+}
+.contact_info_heading {
+    font-size: 14px;
+}
+.contact_info_paragraph {
+    font-size: 12px;
+}
+.contact_details_linkdivi {
+    font-size: 13px;
+}
+.contact_details_address_gurugram, .contact_details_address, .map_intenim_gurugram {
+    width: 100%;
+    margin-left: 0px;
+}
+.coperate_office_address p {
+    font-size: 12px;
+    font-weight: 500;
+}
+.getintouch {
+    width: 100%;
+    background-image: url("../../assets/img/contact_us/get_in_touch_mobile.webp");
+    padding: 15px;
+    height: 100%;
+
+}
+form.basic_form_detail {
+    flex-wrap: wrap;
+}
+
+.form_field_basic, .form_field_message {
+    width: 100%;
+}
+input.submit_form_get_in_touch {
+    font-size: 15px;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: 0;
+    text-transform: capitalize;
+    background: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+    }

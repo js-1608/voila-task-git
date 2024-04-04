@@ -1,0 +1,257 @@
+body {
+    overflow-x: hidden; 
+    font-family: 'Inter';
+}
+.voilaUser{
+    width: 100%;
+    overflow-x: hidden;
+}
+.voilastudio {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.voilastudio h2{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    letter-spacing: 0.1em;    
+}
+
+#usernamePlaceholder{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+/* line-height: 21.78px; */
+
+}
+#stagePlaceholder{
+    color: linear-gradient(90.37deg, #FF0000 34.83%, #7000FF 95.68%);
+
+}
+.gradient-text {
+    font-size: 36px;
+    background-image: linear-gradient(90.37deg, #FF0000 34.83%, #7000FF 95.68%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.voilastudio h3{
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 21.78px;
+    letter-spacing: 0.1em;
+    
+}
+
+#stagePlaceholder{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 600;
+letter-spacing: 0.1em;
+text-align: left;
+
+}
+
+
+
+.voilastudio a {
+    margin: 10px 0;
+    display: block;
+}
+
+
+
+.voilastudio p:last-child {
+    margin-bottom: 0;
+}
+
+.logo {
+    text-decoration: none;
+  }
+  .voilastudio .logo {
+    text-decoration: none;
+}
+
+.partypopper{
+    width: 116px;
+height: 116px;
+
+}
+
+p{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 300;
+line-height: 19.36px;
+}
+a{
+    text-decoration: none;
+}
+
+.voilaName{
+    color: rgb(230, 22, 184);
+    font-size: 20px;
+    font-weight: 600;
+}
+.voilaCopyright{
+    font-size: 20px;
+    font-weight:400;
+    top: 0;
+}
+
+
+
+ /* Flexbox container to center content vertically */
+ .centeredSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Ensure the section covers the full viewport height */
+}
+
+.helpSection{
+    margin-top: 13%;
+}
+
+
+.terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px auto;
+    
+}
+.termsAndConditionBox {
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.VoilaTermsAndCondition {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: justify;
+}
+
+
+.circularDiv {
+    position: fixed;
+    top: -50px; 
+    right: -50px; 
+    /* background-color: #ff0000; */
+    border-radius: 50%;
+    width: 135px;
+    height: 135px; 
+    overflow: hidden; 
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+
+}
+
+.circularDiv2 {
+    position: fixed;
+    left: -20px; 
+    border-radius: 50%;
+    width: 41px;
+    height: 42px; 
+    overflow: hidden; 
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+
+}
+.circularDiv3 {
+    position: fixed;
+    right: -20px; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    overflow: hidden; 
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+
+}
+
+
+
+.VoilaFooter {
+    background-color: #e8e8e8;
+    padding: 10%;
+    margin-top: 3%;
+    /* bottom: 100; */
+    
+}
+
+.VoilaFooter {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.voilastudioLogo {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+    /* overflow: hidden; */
+}
+
+.icons {
+    width: 100%;
+    height: fit-content;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.icons-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex; /* Display list items in a single row */
+}
+
+.icons-list li {
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+.icons-list li:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+.icons-list li a img {
+    width: 35px; /* Adjust width of icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /* .thumbnail {
+        display: none;
+    } */
+    .circularDiv {
+       display: none;
+ 
+    }
+    .circularDiv2 {
+        display: none;
+    }
+    .circularDiv3 {
+        display: none;
+    }
+    .OrderDescription {
+        width: 90%;
+    }
+    .addressDescription {
+        width: 90%;
+    }
+    .termsAndConditionBox{
+        width: 90%;
+    }
+}

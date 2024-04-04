@@ -1,0 +1,356 @@
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter' !important;
+    color: black;
+    letter-spacing: 1px;
+ }
+.active {
+    color: black !important;
+    font-weight: 100 !important;
+    background-color: none !important;
+}
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    display: none !important;
+}
+.active:after {
+   display: none !important;
+}
+.active, .collapsible_mobile:hover {
+    background: white;
+}
+section.product_new {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* .product_background_bannerss {
+    margin-top: 50px;
+} */
+img.productBannerss, img.product_subs_img {
+    width: 100%;
+}
+ul.breadcrum_ul {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 0 25px;
+    position: relative;
+    z-index: 1;
+    max-width: 1600px;
+    margin: 12px 0 0;
+    z-index: 0;
+    list-style: none;
+
+}
+li.breadcrum_ul_li, a.breadcrum_links {
+    font-size: 11px;
+    font-family: 'inter';
+    text-decoration: none;
+    cursor: pointer;
+    color: grey !important;
+    letter-spacing: 1px;
+}
+
+li.breadcrum_ul_li.active {
+    color: black !important;
+    letter-spacing: 1px;
+    font-size: 11px;
+    font-weight: 700 !important;
+}
+ul.product_subs {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+li.container_product_subs {
+    width: 32%;
+    margin: 10px 0 20px 0;
+    
+
+}
+.nameandpricing_product, .places_product  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px 0;
+    font-weight: 600;
+    height: 30px;
+    align-items: baseline;
+    padding-left: 2px;
+}
+p.places_where_product {
+    letter-spacing: 0px;
+    font-size: 12px;
+    font-weight: 100;
+}
+img.arrow_for_booknow {
+    width: 6px;
+}
+.booknow_product_subs {
+    width: 100%;
+    background-color: #3C7CF9;
+    padding: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0%);
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 800;
+    border: 1px solid lightgrey;
+    outline: none;
+    color: white;
+}
+.booknow_product_subs:active {
+    transform: translateY(1px);
+    outline: none;
+}
+img.product_subs_img {
+    width: 100%;
+    /* height: 100%; */
+}
+img.product_subs_img_creat {
+    width: 100%;
+    height: 100%;
+}
+select.marketandfashionportails_subs {
+    width: 115px;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: 100;
+    padding: 3px;
+    border-radius: 5px;
+    height: auto;
+    outline: none;
+    font-size: 13px;
+}
+p.heading_subs {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    margin: 5px 0 0;
+    letter-spacing: 2px;
+    color: black;
+}
+p.heading_subs_mains {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 600;
+}
+p.heading_subs_suks {
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px 0 0;
+    letter-spacing: 2px;
+    color: black;
+}
+p.weboptimize {
+    font-size: 15px;
+    padding: 0;
+    padding: 6px 2px 0;
+    width: 100%;
+    margin: 0;
+}
+.topnav a, .dropdown1 .dropbtn1 {
+    font-weight: 100 !important;
+    color: black !important;
+}
+ul.links li a {
+    font-size: 12px !important;
+    letter-spacing: 1px;
+}
+p.product_name_subs {
+    color: black;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin: 0;
+}
+p.product_name_subs_pricing {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 3px 0 8px;
+    padding-left: 2px;
+}
+i.fas.fa-chevron-left {
+    left: -40px;
+}
+i.fas.fa-chevron-right {
+    right: -55px;
+}
+.nameandpricing_product {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+li.container_product_subs_prod {
+    width: 230px;
+    margin: 6px 0;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.2);
+}
+p.weboptimize {
+    font-size: 10px;
+    margin-top: 20px;
+}
+p.heading_subs_suks_hedingsubs {
+    font-size: 17px;
+    margin: 0;
+    font-weight: 600;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+b.imgproductshootsen {
+    height: auto;
+    overflow: hidden;
+    display: block;
+}
+.bbb_main_container {
+    padding: 0 !important;
+}
+.bbb_viewed_item {
+  padding-top: 0 !important;
+}
+button.booknow_product_subs {
+    outline: none !important;
+}
+img.productBannerssmobile {
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    .bbb_viewed_nav.bbb_viewed_next {
+        margin-top: 0;
+        position: absolute;
+        right: -9px;
+        top: 70px;
+    }
+    .bbb_viewed_prev {
+        margin-right: 15px;
+        margin-top: 0;
+        position: absolute;
+        top: 75px;
+    }
+    ul.product_subs {
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    li.container_product_subs {
+        width: 40%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    li.container_product_subs_prod {
+        width: 32%;
+        margin: 3px 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    p.product_name_subs_pricing {
+        font-size: 11px;
+        font-weight: 600;
+        margin: 7px 0 8px;
+    }
+    ul.breadcrum_ul { 
+        display: none;
+    }
+ 
+    img.productBannerss {
+        display: none;
+    }
+    img.productBannerssmobile {
+        display: block;
+        width: 100%;
+    }
+    p.heading_subs_mains {
+        font-size: 13px;
+        text-align: center;
+        margin: 20px 0 5px;
+        font-weight: 600;
+        padding: 2px;
+
+    }
+    li.breadcrum_ul_li {
+        font-size: 10px !important;
+    }
+    section.product_new {
+        width: 98%;
+    }
+    p.weboptimize, ul.breadcrum_ul {
+        font-size: 11px;
+        padding: 6px 2px 5px;
+    }
+    p.product_name_subs {
+        font-size: 11px;
+    }
+    .bbb_viewed_name {
+        margin-top: 16px;
+    }
+    button.booknow_product_subs {
+        width: 100%;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    ul.product_subs {
+        justify-content: left;
+    }
+    li.container_product_subs {
+        width: 47%;
+        margin: 4px;
+    }
+    p.places_where_product {
+        font-size: 10px;
+        margin: 0;
+    }
+    select.marketandfashionportails_subs {
+        width: 70px;
+        font-size: 8px;
+        height: 100%;
+        background: white;
+    }
+    .row {
+        margin-right: 0px !important;
+    }
+  
+li.container_product_subs_prod {
+    width: 48%;
+    margin: 3px 0;
+}
+p.heading_subs {
+    font-size: 16px;
+    margin-top: 10px;
+}
+b.imgproductshootsen {
+    height: 176px;
+    overflow: hidden;
+    display: block;
+}
+.nameandpricing_product, .places_product {
+    align-items: center;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Options</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .payment-options {
+    width: 50%;
+  }
+  .providers {
+    width: 50%;
+  }
+  .option {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .provider {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="payment-options">
+    <!-- Payment options will go here -->
+    <div class="option" onclick="showProvider('provider1')">Option 1</div>
+    <div class="option" onclick="showProvider('provider2')">Option 2</div>
+    <!-- Add more options as needed -->
+  </div>
+  <div class="providers">
+    <!-- Provider details will go here -->
+    <div id="provider1" class="provider">Provider 1 Details</div>
+    <div id="provider2" class="provider">Provider 2 Details</div>
+    <!-- Add more providers as needed -->
+  </div>
+</div>
+
+<script>
+function showProvider(providerId) {
+  // Hide all providers
+  document.querySelectorAll('.provider').forEach(function(provider) {
+    provider.style.display = 'none';
+  });
+  // Show the selected provider
+  document.getElementById(providerId).style.display = 'block';
+}
+</script>
+</body>
+</html>

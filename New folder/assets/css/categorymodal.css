@@ -1,0 +1,144 @@
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+
+
+
+  * {
+    box-sizing: border-box;
+    font-family: "inter" !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* scrollbar custom starts  */
+
+  .cat_body::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .cat_body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .cat_body::-webkit-scrollbar-thumb {
+    background: lightgray; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .cat_body::-webkit-scrollbar-thumb:hover {
+    background: lightgray; 
+  }
+/* scrollbar custom ends  */
+
+.cat_modal {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); /
+  }
+  
+  /* cat_modal Content */
+  .cat_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The cat_close Button */
+  .cat_close {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 9;
+  }
+  
+  .cat_close:hover,
+  .cat_close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .cat_header {
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+  }
+  
+  .cat_body {
+    padding: 2px 3px;
+    height: 500px;
+    overflow-x: hidden;
+  }
+  p.Categorymainviewall {
+    display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+  @media screen and (max-width: 600px) {
+    .cat_close {
+      top: 5px;
+      right: 15px;     
+     }
+     .cat_body {
+      height: auto;
+      max-height: 600px;
+      margin-top: -25px;
+
+      }
+    .cat_content {
+      width: 90%;
+  }
+  .cat_header {
+    margin-bottom: 28px;
+}
+.Categorymainviewall {
+  font-size: 11px;
+  margin-top: 10px;
+  font-weight: 600;
+
+}
+  
+
+
+}
+  
+  

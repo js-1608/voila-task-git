@@ -1,0 +1,17 @@
+.circle1{
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+    height: 133px;
+    width: 133px;
+     border-radius: 100%;
+}
+body{
+    align-items: center;
+    text-align: center;
+
+}
+
+.imgofvoilafooter{
+    width: 239.66px;
+    height: 5rem;
+
+}

@@ -1,0 +1,90 @@
+.our_journey{
+    padding: 5%;
+}
+.bold-li{
+    font-weight:600;
+    font-family: Inter;
+font-size: 12.17px;
+font-weight: 600;
+line-height: 14.72px;
+text-align: justifY;
+padding: 0% 2%;
+}
+
+.year{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 24.2px;
+text-align: left;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: left;
+}
+
+.image-container > div {
+    flex: 0 0 auto; 
+        margin: 0; 
+}
+.image-container > div >img{
+width: 70px;
+height: 70px;
+/* top: 2457px;
+left: 138px;
+gap: 0px;
+opacity: 0px; */
+box-shadow: 0px 2px 4px 0px #00000040;
+border-radius: 100%;
+}
+
+
+.year-underline{
+    border: 1px solid;
+    border-image-source: linear-gradient(92.54deg, #FFFFFF -7.97%, rgba(116, 7, 255, 0) 178.18%);    
+}
+
+
+.journey2017{
+    margin-top:18%;
+    width: 213px;
+    
+}
+.journey2019{
+    margin-top:8%;
+    width: 241px;
+}
+.journey2021{
+    margin-top:3%;
+    width: 264px;
+}
+.journey2023{
+    width: 265px;
+}
+ul{
+    margin-top: 5%;
+}
+
+
+  .gradient-line {
+    width: 100%; /* Adjust as needed */
+    height: 5px; /* Adjust as needed */
+    background: linear-gradient(to right, rgb(236, 231, 231),#7407FF);
+    width: 45%;
+    height: 0.2rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .year{
+        display: none;
+    }
+    .gradient-line {
+        display: none;
+    }
+  }
+
+
+
+  

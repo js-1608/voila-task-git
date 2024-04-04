@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+
+
+    <style>
+        body {
+       overflow-x: hidden;
+       font-family: 'Inter';
+   }
+
+   .OrderDescription {
+       width: 60%;
+       margin: 5px auto;
+       border: 1px solid #ccc;
+       border-radius: 6px;
+       padding: 20px;
+   }
+
+   /* .dateSection {
+       margin-bottom: 20px;
+   } */
+
+   .product-info {
+       display: flex;
+       align-items: center;
+   }
+
+   .thumbnail {
+       flex: 0 0 100px;
+       margin-right: 10px;
+   }
+
+   .thumbnail img {
+       width: 97.23px;
+       height: 150.98px;
+       /* top: 279.9px; */
+       /* left: 70.72px; */
+       gap: 0px;
+       opacity: 0px;
+   }
+
+   .description {
+       flex: 1;
+   }
+
+
+   table {
+       width: 100%;
+       border-collapse: collapse;
+   }
+
+
+   th,
+   td {
+       padding: 8px;
+   }
+
+   th {
+       text-align: left;
+   }
+
+   td:last-child {
+       text-align: right;
+   }
+
+   .manageOrder {
+       background: linear-gradient(93.41deg, #F93C3C 9.59%, #AE03FF 113.14%);
+       width: 236px;
+       height: 45.16px;
+       border-radius: 7.07px;
+       opacity: 0px;
+       border: none;
+       font-family: 'Inter';
+       font-size: 14.88px;
+       font-weight: 600;
+       line-height: 38.88px;
+       letter-spacing: 0.02em;
+       color: white;
+
+   }
+
+
+   .voilastudio {
+       width: 100%;
+       margin: 50px auto;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .VoilaTermsAndCondition {
+       font-family: 'Inter';
+       font-size: 14px;
+       font-weight: 500;
+       line-height: 16.94px;
+       text-align: justify;
+   }
+
+   .termsAndConditionBox {
+       width: 60%;
+       margin: 50px auto;
+       align-items: center;
+   }
+
+
+
+   .mobileViewThumbnail {
+       width: 50px;
+       height: fit-content;
+       /* top: 279.9px;
+       left: 70.72px; */
+       gap: 0px;
+       opacity: 0px;
+
+   }
+
+ 
+
+   .circularDiv {
+       position: absolute;
+       top: -50px;
+       right: -50px;
+       border-radius: 50%;
+       width: 135px;
+       height: 135px;
+       overflow: hidden;
+       background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+       box-shadow: 0px 4px 13px 0px #00000040;
+
+
+   }
+   .circularDivMobile{
+    position: absolute;
+    top: -50px;
+    right: -5x0px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+    box-shadow: 0px 4px 13px 0px #00000040;
+    overflow: hidden;
+
+
+}
+
+
+.circularDiv2 {
+    position: relative;
+    left: -50px; 
+    border-radius: 50%;
+    width: 100px;
+    height: 100px; 
+    overflow: hidden; 
+    background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+    box-shadow: 0px 4px 13px 0px #00000040;
+
+}
+.circularDiv3 {
+        position: absolute;
+        
+        right: -50px;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px; 
+        overflow: hidden;
+        background: linear-gradient(135.2deg, #FF0000 -36.02%, #7000FF 145.95%);
+        box-shadow: 0px 4px 13px 0px #00000040;
+        overflow: hidden;
+        overflow-x: hidden;
+}
+
+   .voilastudioLogo {
+       width: 100%;
+       margin: 50px auto;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+       margin: 3% auto;
+       overflow: hidden;
+   }
+
+   .addressDescription {
+       align-items: center;
+       text-align: justify;
+       width: 60%;
+       margin: 7% auto;
+       /* padding: 20px; */
+   }
+
+   .Shipping{
+    font-family: 'Inter';
+    font-size: 16.17px;
+    font-weight: 600;
+    line-height: 17.15px;
+    /* text-align: left; */
+    margin: 0% 0% 0% 0%;
+
+    
+   }
+.Address{
+    font-family: 'Inter';
+font-size: 14px;
+font-weight: 400;
+/* line-height: 19px; */
+margin-top: 1%;
+text-align: left;
+
+}
+.Date{
+    font-family: 'Inter';
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+text-align: left;
+color: #02862F;
+}
+.modelName{
+    font-family: 'Inter';
+font-size: 14.17px;
+font-weight: 400;
+/* line-height: 17.15px; */
+
+}
+.orderInfo{
+    margin-top: 5%;
+    font-family: 'Inter';
+font-size: 14.17px;
+font-weight: 600;
+/* line-height: 17.15px; */
+
+}
+.orderType{
+    font-family: 'Inter';
+font-size: 10.45px;
+font-weight: 400;
+line-height: 11.43px;
+margin-top: -2%;
+}
+.orderNote{
+    font-family: 'Inter';
+font-size: 12.99px;
+font-weight: 400;
+line-height: 13.15px;
+color:#FF4048;
+margin-top: 0%;
+}
+
+.tableFont{
+    font-family: 'Inter';
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+letter-spacing: 0.02em;
+color: #000;
+
+}
+.modeOfPayment{
+    font-family: 'Inter';
+    font-size: 14.17px;
+    font-weight: 400;
+    line-height: 17.15px; 
+}
+.orderId{
+text-align: center;
+font-family: 'Inter';
+font-size: 14px;
+font-weight: 600;
+line-height: 16.94px;
+}
+.confirmationMsg{
+font-family: 'Inter';
+font-size: 18px;
+font-weight: 800;
+line-height: 21.78px;
+}
+.orderDetail{
+    font-family: 'Inter';
+font-size: 18px;
+font-weight: 700;
+line-height: 21.78px;
+
+}
+
+
+.content {
+    text-align: center;
+}
+.condition{
+    margin: 3%;
+}
+.contactVoila{
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0%;
+    color: blue;
+    padding: 0%;
+    
+    }
+.VoilaFooter {
+    background-color:#e7e8e8;
+
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.VoilaFooter .logo {
+    display: inline-block;
+}
+
+.voilaName{
+    color: rgb(230, 22, 184);
+    font-size: 20px;
+    font-weight: 400;
+}
+.voilaCopyright{
+    font-size: 16px;
+    font-weight:400;
+    /* top: 0; */
+}
+.icons-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex; /* Display list items in a single row */
+}
+
+.icons-list li {
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+.icons-list li:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+.icons-list li a img {
+    width: 35px; /* Adjust width of icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+   @media only screen and (max-width: 600px) {
+
+    /* .thumbnail {
+        display: none;
+    } */
+    .circularDiv {
+       display: none;
+ 
+    }
+    .circularDiv2 {
+        display: none;
+    }
+    .circularDiv3 {
+        display: none;
+    }
+    .OrderDescription {
+        width: 90%;
+    }
+    .addressDescription {
+        width: 90%;
+    }
+    .termsAndConditionBox{
+        width: 90%;
+    }
+     .VoilaFooter{
+        width: 97%;
+    }
+    .icons-list li a img {
+        width: 25px; /* Adjust width of icons as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .orderInfo{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .orderNote{
+        margin-top: -3%;
+
+    }
+}
+
+@media only screen and (min-width: 601px) {
+
+    .mobileViewThumbnail {
+        display: none;
+    }
+   
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- logo  -->
+    <div class="voilastudioLogo">
+        <div>
+            <div class="circularDiv"></div>
+            <!-- <div class="circularDivMobile"></div> -->
+
+        </div>
+         <img src="./logo.svg" alt="logo">
+    </div>
+    <div style="margin:3% 0% ;text-align: center;">
+        <h1 class="confirmationMsg"> Woohoo! Your order is confirmed.</h1>
+        <h2 class="orderDetail"> Order Details </p>
+            <h2 class="orderId">Order ID- <span>876387687683</span></h2>
+
+    </div>
+
+    <!-- order description -->
+    <div class="OrderDescription">
+        <!-- order date -->
+        <div class="dateSection">
+            Tentative shoot date: <span class="Date">March 26, 2024</span>
+        </div>
+        <!-- order image -->
+        <!-- <img src="./7.svg" alt="Product Thumbnail" class="mobileViewThumbnail"> -->
+
+        <div class="product-info">
+            <div class="thumbnail">
+                <img src="./7.svg" alt="Product Thumbnail">
+            </div>
+            <!-- order detail -->
+            <div class="description">
+                <h3 class="modelName">Model Name :<span>Valentine</span></h3>
+                <p class="orderInfo">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+                    odio. Praesent
+                    libero.</p>
+                <p class="orderType">Fashion Portal</p>
+                <p class="orderType">Garment Size:<span>Top wear-L </span></p>
+                <p class="orderNote">Please send <strong>L</strong> size garment for the shoot.</p>
+            </div>
+        </div>
+
+        <hr>
+        <!-- order bill -->
+        <h3 class="modelName" style="font-weight: 600;">Paid with <span class="modeOfPayment">Debit Card</span></h3>
+        <table class="tableFont">
+            <tr>
+
+                <td>Total shoot amount</td>
+                <td>₹ 14000</td>
+            </tr>
+            <tr>
+                <td>( 18% GST )</td>
+                <td>₹ 250</td>
+            </tr>
+            <tr>
+                <td>Total easy ship amount</td>
+                <td>₹ 14430</td>
+            </tr>
+            <tr>
+                <td>Total Amount</td>
+                <td>₹ 29280</td>
+            </tr>
+
+            <!-- order bill end -->
+        </table>
+        <hr>
+        <table class="tableFont">
+            <tr>
+                <!-- order total -->
+                <td>Amount</td>
+                <td>₹ 14000</td>
+            </tr>
+            <tr>
+                <!-- remaining amount of order -->
+                <td>Remaining Amount</td>
+                <td>₹ 14000</td>
+            </tr>
+        </table>
+    
+    </div>
+ 
+
+    <!-- circular div start -->
+        <div class="circularDiv2"></div>
+   <div class="container">     
+       <div class="circularDiv3"></div>
+    </div>
+  <!-- circular div end -->
+ 
+
+    <!-- order shiping detail -->
+    <div class="addressDescription">
+        <h2 class="Shipping">Shipping address</h2>
+        <h5 class="Address">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </h5>
+
+    </div>
+    <div class="voilastudio">
+        <!-- order checking status button -->
+        <button class="manageOrder">Manage Order</button>
+    </div>
+
+
+    <div class="termsAndConditionBox">
+        <p class="VoilaTermsAndCondition">If you have any questions or need assistance, our dedicated support team is
+            here to help. Simply reach out to us at [support email address], and we'll be happy to assist you.</p>
+        
+    </div>
+
+
+    <div class="condition">
+        <div class="content terms">
+            <a href="#" class="contactVoila">Terms & Conditions</a>
+        </div>
+        <div class="content terms">
+           Need help? <a href="#" class="contactVoila"> &nbsp;Contact us</a>
+        </div>
+    </div>
+
+  <!-- footer section -->
+  <div class="VoilaFooter">
+    <!-- <a href="#" class="logo"><img src="./logo.svg" alt="logo" /></a> -->
+    <p class="voilaCopyright">2017-2023 All Rights ReservedMade & Designed By</p>
+    <p class="voilaCopyright">Intenim Technologies Pvt Ltd.</p>
+
+    <div class="icons">
+        <ul class="icons-list" type="none">
+            <li>
+                <a href="#"><img src="./images/icons/1.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/icons/2.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/icons/3.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/icons/4.png"></a>
+            </li>
+            <li>
+                <a href="#"><img src="./images/icons/5.png"></a>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

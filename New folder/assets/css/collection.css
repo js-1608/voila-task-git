@@ -1,0 +1,754 @@
+
+@font-face{
+  font-family: 'inter';
+  src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+ }
+  * {
+    box-sizing: border-box;
+    font-family: 'inter';
+    margin: 0;
+    padding: 0;
+    /* letter-spacing: 1px; */
+  }
+
+  .headingbasebox1, .sizingovergarment, .headingbasebox1, .nextshootdatecurent, .nextshootdateheadings, .headingbasebox_pricing, .garment_left_on_model, .Booknow_models, .headingbasebox2, .nextdateforshoot, .breadcrum_links_active,.breadcrum_links, #garment_left_on_model, .headingbasebox_pricing, .headingbasebox1 {
+    font-family: 'inter';
+  }
+  .item {
+    background-color: white !important;
+}
+  h1,h2,h3,h4,h5 {
+    font-family: 'inter !important';
+  }
+
+  p.price_detail_block_heading, p.price_total, p.price_total_done {
+    font-size: 15px !important;
+  }
+ 
+img.Banner_img_for_desktop {
+    width: 100%;
+}
+h1.category_name {
+    margin: 25px auto 15px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: black;
+}
+img.background_img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.6;
+}
+.breadcrum {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+  max-width: 1600px;
+  margin: 6px 0 0;
+  z-index: 0
+}
+a.breadcrum_links {
+    font-size: 11px;
+    font-family: 'inter';
+    text-decoration: none;
+    cursor: pointer;
+    color: grey !important;
+    letter-spacing: 1px;
+}
+
+a.breadcrum_links_active {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+}
+.box {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+p.headingbasebox2qwe {
+  margin: 0;
+  display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    color: #D1226C !important;
+
+
+}
+a#view_profile_anchortag {
+  font-weight: 600;
+  color: #D1226C !important;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 2px 2px 6px 3px #ebebeb;
+  padding: 5px 4px;
+  border-radius: 5px;
+  border: 1px solid #0000007a;
+  width: 100px;
+}
+
+p.height_basebox2, p.height_basebox1 {
+  font-size: 13px;
+  margin: 0;
+  /* font-weight: 700; */
+  display: none;
+}
+.sizeaccordtogarment {
+  width: 100%;
+  display: flex;
+  font-size: 11px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 30px;
+}
+span.sizingwithgarment {
+  margin-right: 1px;
+}
+p.topwear {
+  margin-bottom: 2px;
+}
+
+p.headingafterp {
+  font-size: 15px;
+  margin-top: -15px;
+  text-transform: initial;
+}
+
+
+
+
+ul.menu_container {
+  list-style-type: none;
+  width: 96%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  place-content: flex-start;
+
+
+}
+li.menus_li {
+  position: relative;
+  height: auto;
+  margin-bottom: 20px;
+  margin: 6px;
+  max-width: 17.5vw;
+}
+ul.menu_containeryoumay {
+  list-style-type: none;
+  width: 92%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  place-content: flex-start;
+}
+li.menus_li_you {
+  width: 20%;
+  position: relative;
+  height: auto;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+img.trendingyou {
+  width: 60px;
+  position: absolute;
+  right: -8px;
+  top: -9px;
+}
+img.models_img {
+  width: 100%;
+  border-radius: 5px;
+  border: 0;
+  height: auto;
+}
+img.trending {
+  width: 50px;
+  position: absolute;
+  right: -7px;
+  top: -8px;
+}
+.baseboxdivision {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+  margin: 5px auto 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.basebox1, .basebox2  {
+  display: grid;
+  place-items: flex-start;
+  line-height: 6px;
+
+}
+h1.headingbasebox1 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0px;
+  letter-spacing: 0.5px;
+}
+.latestbuttondivs {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+
+p.headingbasebox2 {
+  margin: 0;
+  font-size: 8px;
+  width: 93%;
+  height: 22px;
+  display: flex;
+  padding: 2px;
+  border: 0;
+  box-shadow: none;
+  font-size: 10px;
+  height: 18px;
+  justify-content: end;
+  margin-left: 5px;
+  font-weight: 500;;
+}
+.headingbasebox2:active {
+  transform: translateY(1px);
+}
+p.height_basebox2_circle {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 1px 2px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  height: 15px;
+  font-size: 10px;
+  margin-top: -2px;
+  background-color: #d9d9d9;
+  display: none;
+}
+
+
+img#discription_of_i {
+  width: 10px;
+  object-fit: cover;
+}
+h1.headingbasebox_pricing {
+  font-size: 15px;
+  text-align: left;
+  margin: -3px 1px 0 1px;
+  font-weight: 600;
+}
+.headingbasebox_pricing_fordemand {
+  font-size: 15px;
+  text-align: left;
+  margin: 10px 1px 5px 1px;
+  font-weight: 600;
+
+}
+img.arrow_for_book_now {
+  width: 150px;
+  padding: 5px;
+  margin-left: -11px;
+  margin-top: 5px;
+}
+.Booknow_models {
+  background-color: rgb(60, 124, 249);
+  color: white !important;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  height: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 0;
+  width: 49%;
+  margin: 5px 0 10px;
+}
+.Booknow_models:active {
+  transform: translateY(1px);
+}
+.nextshootdate {
+  width: 99%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7px;
+  margin: 10px auto 13px;
+}
+h3.nextdateforshoot {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  color: black;
+  animation: blinker 3.5s linear infinite;
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+img.eyeiconnewa {
+  width: 12px;
+  margin-right: 2px;
+}
+p.nextshootdateheadings {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 100;
+}
+.nextshootdatecurent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0 -8px;
+}
+.setuponleft {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+p.size {
+  margin: 0;
+  font-size: 15px;
+  display: none;
+}
+a#view_profile_anchortag {
+  text-decoration: none;
+  /* width: max-content; */
+}
+
+
+/* .Booknow_models {
+    width: 108px;
+    background-color: #3C7CF9;
+  color: white;
+  padding: 5px;
+  margin-top: auto;
+  box-shadow: 2px 2px 6px 3px #ebebeb;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 800;
+
+} */
+
+#garment_left_on_model {
+  margin-left: 1px;
+  text-transform: capitalize;
+  font-size: 10px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 11px;
+}
+#garment_left_on_model_next {
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-size: 9px;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+.shootdateswithroms {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+h3.nextdateforshoot_open {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+b.modelindemandblock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.subhead_of_collectionpage {
+  font-size: 20px;
+  text-align: center;
+  margin-top: -18px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+p {
+}
+img.Banner_img_for_mobile {
+  display: none;
+}
+
+/**Tooltip *****/
+/* .tooltipcollection {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+
+.tooltipcollection .tooltipcollectiontext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipcollection .tooltipcollectiontext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
+/**Tooltip ends *****/
+
+
+
+@media screen and (max-width: 1250px) {
+  ul.menu_container, ul.menu_containeryoumay {
+    grid-template-columns: auto auto auto auto;
+  }
+  li.menus_li {
+    max-width: 21.5vw; 
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  li.menus_li {
+    max-width: fit-content;
+}
+  ul.menu_container, ul.menu_containeryoumay {
+    grid-template-columns: auto auto auto;
+  }
+  img.trending {
+    right: -4px;
+    top: -5px;
+}
+}
+@media screen and (max-width: 900px) {
+  .divisionforquotes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+    img.divisionimag {
+    width: 33%;
+    padding: 5px;
+  }
+  }
+
+
+  @media screen and (max-width: 750px) {
+    ul.menu_container, ul.menu_containeryoumay {
+      grid-template-columns: auto auto;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+h1.category_name {
+    margin: 10px auto 5px;
+}
+p.headingbasebox2qwe {
+  font-size: 10px;
+  justify-content: end;
+  width: 98%;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+
+  img.Banner_img_for_desktop {
+    display: none;
+}
+img.Banner_img_for_mobile {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+  p.subhead_of_collectionpage {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+
+  .headingbasebox_pricing_fordemand {
+    font-size: 12px;
+    margin: 5px 1px;
+
+  }
+  .formob {
+    margin-top: -25px !important;
+}
+  ul.menu_containeryoumay {
+    list-style-type: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  li.menus_li_you {
+    width: 48%;
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    margin: 0 auto 20px;
+  }
+  img.eyeiconnewaq {
+    width: 10px !important;
+}
+  a#view_profile_anchortag_abs {
+    font-size: 9px !important;
+    color: #D1226C;
+    display: flex;
+    align-items: center;
+    width: 80px !important;
+  }
+  img.trendingyou {
+    width: 35px !important;
+    position: absolute;
+    right: -4px;
+    top: -5px;
+}
+  h1.headingbasebox1 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  .nextshootdate {
+    width: 99%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 10px;
+  }
+  p.size {
+    display: none;
+}
+  a.breadcrum_links_active {
+    font-size: 11px;
+  }
+  a.breadcrum_links {
+    font-size: 11px;
+  }
+  ul.menu_container  {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 100% !important;
+    justify-content: space-between;
+    gap: 5px;
+}
+h1.category_name {
+  font-size: 18px;
+  line-height: 20px;
+}
+.breadcrum {
+ padding-left: 0px !important; 
+  justify-content: center;
+}
+img.trending {
+  width: 10vw;
+    right: -5px;
+    top: -5px;
+}
+h1.headingbasebox1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+p.height_basebox2, p.height_basebox1, p.nextshootdateheadings {
+  font-size: 9px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+h3.nextdateforshoot {
+  font-size: 9px !important;
+  margin-top: 1px;
+  height: 11px;
+}
+h1.headingbasebox_pricing {
+  font-size: 12px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+p.sizeformodels {
+  display: none !important;
+}
+
+  .breadcrum {
+      padding: 2px 0px 4px 8px !important;
+      justify-content: left;
+      margin: 0;
+      display: none;
+
+}
+
+ a.breadcrum_links, a.breadcrum_links_active {
+  font-size: 10px !important;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  margin: 0;
+
+}
+li.menus_li {
+  width: 48.5%;
+  margin: 0;
+}
+a#view_profile_anchortag {
+  width: 95px;
+  position: absolute;
+  right: -6px;
+  top: 62vw;
+  border: 0;
+  box-shadow: none;
+  background: none;
+}
+
+
+p.headingbasebox2 {
+  margin: 0;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  padding: 2px;
+  border: 0;
+  box-shadow: none;
+  font-size: 10px;
+  height: auto;
+  justify-content: space-evenly;
+  margin-left: 5px;
+  color: #D01F5B;
+  align-items: baseline;
+
+}
+
+.Booknow_models {
+    width: 100%;
+    padding: auto;
+    font-size: 11px;
+    font-weight: 600;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+img.eyeiconnewa {
+  width: 12px;
+}
+h3.nextdateforshoot_open {
+  font-size: 10px;
+}
+#garment_left_on_model {
+  margin-left: 1px;
+  font-size: 9px;
+  text-align: left;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+.nextshootdatecurent {
+  margin: 5px 0 -8px;
+}
+
+.box {
+  margin: 5px auto;
+}
+
+}
+
+/****** other ******/
+.divisionforquotes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  }   
+img.divisionimag {
+  width: 16%;
+  padding: 5px 0px;
+}
+.basebox1 {
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/***** Gradient color text *************/
+
+.text-rainbow-animation {
+  background-image: linear-gradient(to right,#ff1361, #002456, #a300a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-animation 1090s linear infinite;
+  transition: 0.5s cubic-bezier(0, 0, 0.13, 0.18);
+
+}
+
+@keyframes rainbow-animation {
+  to {
+      background-position: 4500vh;
+  }
+}
+

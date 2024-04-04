@@ -1,0 +1,190 @@
+body{
+    background: #F7F7F7;
+  
+        width: 100%;
+        margin: 5px auto;
+        /* border: 1px solid #ccc; */
+        border-radius: 6px;
+        padding: 20px;
+        /* text-align: center; */
+        overflow-x: hidden;
+ 
+}
+.orderId{
+    background: #EFEFEF;
+    height: 33px;
+   width: 60%;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.OrderDescription {
+    width: 60%;
+    margin: 5px auto;
+    padding: 20px;
+}
+
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+.voilaHeader{
+    text-align: center;
+}
+
+/* .voilaOffer{
+height: 153px;
+background: linear-gradient(110.76deg, #4B1680 -0.15%, rgba(255, 0, 0, 0.53) 168.15%);
+box-shadow: 5px 3px 11px 10px #00000040 inset;
+justify-content: center;
+text-align: center;
+align-items: center;
+} */
+
+.voilastudio {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.manageOrder {
+    background: linear-gradient(93.41deg, #F93C3C 9.59%, #AE03FF 113.14%);
+    width: 236px;
+    height: 45.16px;
+    border-radius: 7.07px;
+    opacity: 0px;
+    border: none;
+    font-family: Inter;
+    font-size: 14.88px;
+    font-weight: 600;
+    line-height: 38.88px;
+    letter-spacing: 0.02em;
+    color: white;
+
+}
+
+.voilaOffer {
+    height: 153px;
+    background: linear-gradient(110.76deg, #4B1680 -0.15%, rgba(255, 0, 0, 0.53) 168.15%);
+    box-shadow: 5px 3px 11px 10px #00000040 inset;
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.buttonWrapper {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+
+.voilaOffer h3,
+.voilaOffer button {
+    margin: 0; /* Remove default margins */
+}
+
+.offer{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 800;
+line-height: 38.88px;
+letter-spacing: 0.02em;
+color: white;
+}
+
+
+
+.VoilaFooter{
+    background-color:#f1e8e8;padding: 3%;margin-top: 3%;bottom: 100;
+}
+
+.VoilaFooter {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.VoilaFooter .logo {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.helpSection{
+    text-align: center ;
+    margin: 5%;
+}
+
+.voilaGreeting{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+
+}
+
+.voilaMessage{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+color: #8B8585;
+
+}
+.voilaMessageBox{
+   margin-top: 3%;
+}
+.orderLink{
+    font-family: Inter;
+font-size: 12px;
+font-weight: 300;
+line-height: 14.52px;
+text-align: left;
+color: #3C7CF9;
+
+}
+
+.customFontStyle{
+    font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.78px;
+
+}
+
+.helpSection{
+    font-family: Inter;
+font-size: 16.1px;
+font-weight: 400;
+line-height: 19.48px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  
+    .OrderDescription {
+        width: 90%;
+    }
+    .addressDescription {
+        width: 90%;
+    }
+    .termsAndConditionBox{
+        width: 90%;
+    }
+}

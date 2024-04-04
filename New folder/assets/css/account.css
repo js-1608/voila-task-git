@@ -1,0 +1,436 @@
+
+
+
+   @font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+
+
+
+  * {
+    box-sizing: border-box;
+    font-family: 'inter';
+  }
+
+  h1,h2,h3,h4,h5 {
+    margin: 0;
+    padding: 0;
+  }
+  section.account_section {
+    width: 100%;
+    position: relative;
+}
+
+
+  div#account_user {
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    justify-content: flex-start;
+}
+
+.buttonsforaccounts {
+    display: grid;
+    width: 260px;
+    place-content: end;
+    margin-left: 30px;
+    margin-top: 85px;
+}
+#account_buttons_shoot,#account_buttons {
+    border: 0;
+    background-color: white;
+    padding: 2px 0;
+    font-size: 16px;
+    outline: none;
+}
+p#account_buttons {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* button#account_buttons_shoot {
+    border-bottom: 1px solid;
+} */
+.account_details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.shootsdetails {
+    width: 60%;
+    /* border: 1px solid; */
+    height: 600px;
+    /* position: absolute;
+    top: 68px;
+    left: 400px; */
+}
+span.account_dilivered {
+    display: flex;
+    width: 200px;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+img.dilivered_icons {
+    width: 54px;
+    height: 52px;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: lightgrey;
+}
+p.dilivered_colors {
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #8a51b5;
+}
+h1.allslotbooking {
+    margin: 40px 0 0 0;
+    /* border-bottom: 1px solid; */
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/****** Profile**********/
+
+    .image-upload>input {
+  display: none;
+}
+label.label_for_upload {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin: 9px 0px;
+    justify-content: center;
+}
+
+img#profileuploadicons {
+    width: 80%;
+    padding: 5px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+label.label_for_upload_address {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+.profile_division {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+h4.Profile_user_name {
+    padding: 10px;
+    margin: 2px;
+    width: 200px;
+}
+input.profile_fname {
+    border: 0;
+    /* border-bottom: 1px solid; */
+    outline: 0;
+    text-transform: uppercase;
+}
+input.profile_submit {
+    width: 60%;
+    padding: 15px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+/********** Addressmodal*************/
+        
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 400px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /******************** Shoot***************************/
+  img.model_img {
+    width: 175px;
+    border-radius: 20px;
+    border: 0;
+    margin-left: 80px;
+  }
+  .modelCarding {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-top: 20px;
+}
+.model_details_account {
+    margin-left: 40px;
+}
+.model_measurements_account {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.models_heading_delivery {
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+}
+p.measurement_models {
+    width: 130px;
+}
+div#showingid {
+    display: block;
+}
+section.account_section {
+    width: 100%;
+    position: relative;
+    min-height: 98vh;
+    margin: 60px 10px;
+
+}
+.topnav a, .dropdown1 .dropbtn1 {
+    font-weight: 500 !important;
+  }
+
+  .footer-title {
+    font-size: 22px !important;
+  }
+
+  h3#Shoots {
+    margin: 20.5px;
+}
+
+
+
+/**************** latest*******************/
+div#account_user_semons {
+    text-align: start;
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+h3.heading_account {
+    font-size: 30px;
+}
+p.nameoftheuser {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 15px;
+    color: #5F5B5B;
+}
+input.inputboxforusersinfo {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: 0;
+    color: #757575;
+}
+h4#Shoots, p#account_buttons, #account_buttons_shoot, #account_buttons {
+    text-align: start;
+}
+form.form_for_personaldetails {
+    max-width: 450px;
+}
+
+
+h4.profilesectiondeo {
+    margin-top: 40px;
+    color: #5F5B5B;
+    font-size: 20px;
+    font-weight: 300;
+}
+.userpasswordbyju {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+i#togglePassword {
+    position: absolute;
+    right: 10px;
+    color: black;
+}
+.userpasswordbyjuforradio {
+    display: flex;
+    width: 130px;
+    align-items: center;
+    font-size: 11px;
+    margin: 0 18%;
+}
+.submitandupdateform {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100%;
+}
+.submitbuttonfordata {
+    width: 130px;
+    padding: 8px;
+    font-size: 12px;
+    margin: 10px 30px;
+    border: 0;
+    background-color: #d1d1d2;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #5c5b5f;
+}
+#emailadressverif {
+    position: relative;
+    border-bottom: 2px dotted #c7c7c7;
+}
+.verifybuttonforemail {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background: none;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    cursor: pointer;
+    color: #757eab;
+}
+.bi-pencil-fill::before {
+    transform: rotate(280deg) !important;
+    padding: 4px !important;
+    font-size: 10px !important;
+}
+
+.blockfornewaddress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.blockfornewaddress {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    border: 1px solid;
+    height: 200px;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 10px;
+}
+span.filleddetailsofusers {
+    width: 100%;
+    padding: 0 8px;
+}
+.bi-trash-fill::before {
+    content: "\f5a7";
+    padding: 1px 3px !important;
+}
+span.editingandetails {
+    display: flex;
+    width: 70px;
+    align-items: center;
+    font-size: 12px;
+}
+form.formfornewaddress {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.name {
+    width: 100%;
+}
+input#fname {
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin: 5px 0;
+}
+label.heading_label_1 {
+    width: 140px;
+}
+span.stateandcountry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+span.countryspace {
+    display: grid;
+    place-content: baseline;
+    width: 170px;
+    height: 60px;
+}
+input#Add_address {
+    padding: 10px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+}
+select#state {
+    width: 170px;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

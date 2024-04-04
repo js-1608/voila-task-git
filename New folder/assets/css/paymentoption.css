@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    font-family: 'inter' !important;
+    margin: 0;
+    padding: 0;
+  }
+button, input, a, label {
+cursor: pointer;
+} 
+h1, h2, h3, h4, h5,p {
+  font-family: 'inter' !important;
+} 
+p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.payment_option_section {
+    width: 100%;
+    margin: 50px auto 0;
+    max-width: 1300px;
+}
+.paymentoption_sect {
+    width: 65%;
+    position: relative;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+
+}
+.Choose_payment_mode {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.inner_paymentoption_division {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 25px 0;
+    justify-content: space-between;
+
+}
+.aggregators_payements_options {
+    display: grid;
+    place-content: flex-start;
+    width: 50%;
+}
+#phnpay_upi_payment, #debit_card_payment, #wallets_payment, #emis_payment, #netbanking_payment {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+    justify-content: left;
+    background: none;
+    border: 1px solid lightgrey;
+    position: relative;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    border-left: 0;
+}
+.upi_icon {
+    margin: 0 10px;
+}
+#veritcal_left_upi, #veritcal_right_upi, #veritcal_left_card, #veritcal_right_card, #veritcal_left_wallet, #veritcal_right_wallet, #veritcal_left_emi , #veritcal_right_emi , #veritcal_left_banking, #veritcal_right_banking  {
+height: 50px;
+border: 1px solid #8B53B6;
+margin: 0 !important;
+display: none;
+}
+#veritcal_right_upi, #veritcal_right_card, #veritcal_right_wallet,#veritcal_right_emi, #veritcal_right_banking {
+    position: absolute;
+    right: 0;
+}
+.payment_options {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image_payment_options {
+    margin-left: 20px;
+}
+
+#radiobtnsize_easebuzz, #radiobtnsize_avennue, #radiobtnsize_payu {
+    width: 20px;
+    height: 20px;
+}
+.submit_paymentoption {
+    background: linear-gradient(93.41deg, #F93C3C 9.59%, #AE03FF 113.14%);
+    width: 200px;
+    border: 0;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.icon_payment_aggregators {
+    width: 90px;
+    margin-top: 20px;
+}
+.with_hr_line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.with_hr_line_onrightside {
+    border-left: 1px solid lightgrey;
+    margin: 0 25px;
+}
+
+.estimated_price_division {
+    width: 350px;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
+}
+.estimated_price_division_assigned {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.estimated_price_division_assigned_ques, .estimated_price_division_assigned_answ, .estimated_price_division_assigned_TotalAmt, .aggregators_payements_options {
+    width: auto;
+    text-align: left;
+    font-size: 16px;
+}
+.estimated_price_division_assigned_answ, .estimated_price_division_assigned_TotalAmt {
+    width: 30%;
+}
+.estimated_price_division_assigned_Total, .estimated_price_division_assigned_TotalAmt {
+    font-size: 18px;
+    font-weight: 600;
+}
+.totalamountpaymentoption {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    height: 40px;
+}
+.estimated_heading {
+    font-size: 20px;
+}
+.Estimated_price_paymentoption_page {
+    margin-top: 15px;
+}
+form.paymentdivision {
+    margin: 20px;
+}
+.bank_name_details {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    height: 36px;
+}
+.bank_name_heading {
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.bank_name_det {
+    font-size: 15px;
+}
+
+/* adding direct payment option  */
+.answers_payment {
+    width: 55%;
+    position: relative;
+}
+.bankNamespan {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Bankname, .Bankname_ans {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.input-box_pers {
+    padding: 2px !important;
+}
+.gradient {
+    margin: 0 !important;
+}
+.input_field_perso {
+    padding: 0 !important;
+}
+.statement_holdings {
+    width: 95%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.division_logo {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.upload_screenshot {
+    width: 200px !important;
+    border-radius: 10px !important;
+    font-size: 12px;
+    color: #000000ab;
+}
+
+.input-box_pers {
+    margin: 0 !important;
+
+}
+.profilepage_segment {
+    position: relative;
+     top: 0px !important;
+}
+#imageDetails {
+    width: 190px !important;
+    position: absolute !important;
+    top: 62px !important;
+    flex-wrap: nowrap !important;
+
+}
+#defaultImage {
+    width: 30px !important;
+    height: 30px !important;
+}
+#imageName, #imageSize {
+    font-size: 11px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100px;
+}
+.inside_heads_pdf {
+    padding-top: 0px !important;
+    margin: 0 auto !important;
+    font-size: 10px;
+    text-align: center;
+    color: red;
+}
+
+.utrnumber_divi {
+    width: 46% !important;
+    margin: 0 !important;
+}
+input#utr {
+    text-align: center !important;
+} 
+#payment_option_division_details {
+    width: 55%;
+    position: relative;
+    display: none;
+}
+.done_payment_btn {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: -13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .with_hr_line {
+        flex-wrap: wrap;
+    }
+    .paymentoption_sect, .estimated_price_division {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .image_payment_options {
+        margin-left: 20px;
+        width: 95px;
+    }
+    .submit_paymentoption {
+        width: 145px;
+        margin-right: 5px;
+    }
+    .inner_paymentoption_division {
+        justify-content: space-between;
+    }
+    .payment_options {
+        height: 40px;
+    }
+    .payment_option_section {
+        padding: 0 10px;
+    }
+    .icon_payment_aggregators {
+        width: 24%;
+        margin-top: 5px;
+    }
+    .paymentdivision {
+        margin: 5px 0px 0 10px;
+    }
+    
+    
+    
+    
+}

@@ -1,0 +1,23 @@
+
+@font-face{
+  font-family: 'inter';
+  src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+ }
+  * {
+    box-sizing: border-box;
+    font-family: 'inter';
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0px;
+  }
+
+.empty_cart {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading_empty {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+}

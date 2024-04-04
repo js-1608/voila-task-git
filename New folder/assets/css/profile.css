@@ -1,0 +1,1790 @@
+* {
+ margin: 0;
+ padding: 0;   
+}
+
+.heading {
+    font-weight: 600;
+}
+p, label {
+    margin-bottom: 0 !important;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 0px 0 0 !important;
+}
+ .qty, .priceprof {
+    font-weight: 100;
+    font-size: 13px;
+    margin-left: 2px;
+
+}
+html input[disabled] {
+    cursor: no-drop;
+}
+
+
+section.accountprofile {
+    margin-top: 0px;
+}
+.profiledivinoise {
+    background-color: #FBF6F6;
+}
+input.valueamount {
+    display: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    cursor: auto;
+    width: 45%;
+}
+.headinginformation {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+.account_loc {
+    display: grid;
+    width: 350px;
+    font-size: 15px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px;
+    line-height: 25px;
+}
+.username_loc {
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    text-transform: lowercase;
+
+}
+#mobile_current_booking, #mobile_address, div#payment_history_data {
+    margin-left: 40px;
+}
+hr.linebeforeshootsplaced {
+    display: none;    
+}
+.error_on_calculate {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    color: red !important;
+}
+.details_profi {
+    width: 50%;
+}
+.profile_pic_on_profile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar_loc {
+    width: 350px;
+    display: inline-block;
+    position: sticky;
+    top: 100px;
+
+}
+.call_icon, .msg_icon {
+    max-width: 15px;
+    margin-right: 5px;
+}
+.details_profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.account_head_loc, .account_address, .account_current_bookings, .account_previous_bookings {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.profilepagedivi {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+  
+}
+.account_loc_result {
+    width: 100%;
+    margin-top: 5px;
+    border-left: 1px solid #e7e7e7;
+    margin-left: 0px;
+}
+.companyname_prof,.brandname_prof,.firstname_prof, .lastname_prof, .emailadd_prof, .contact_prof, .gst_prof {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #e7e7e7;
+    outline: none;
+    padding-bottom: 0;
+    font-size: 13px;
+    padding-top: 15px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+form.personalinfoform_loc {
+    padding-left: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+input.submit_prof {
+    float: right;
+    width: 130px;
+    height: 40px;
+    background: #3C7CF9 !important;
+    color: white !important;
+    border: 0;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.booking_status_model_tab, .booking_status_product_tab {
+display: none;
+}
+#successMessage {
+    position: relative;
+    right: 30px;
+    color: green !important;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+.modify_btn_divi {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+}
+b.cityanddistrict {
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+}
+ .form__label {
+    font-size: 13px !important;
+    top: 20px;
+    font-weight: 100;
+}
+button.addaddressbtn_proof {
+    border: 1px solid #e7e7e7;
+    width: 95%;
+    margin: 0 auto;
+    margin-left: 17px;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+input.saveadresbtnform {
+    width: 190px;
+    border: 1px solid #e7e7e7;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-right: 0;
+    border-left: 0;
+    margin-top: 15px;
+    background: #3c7cf9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 0 20px 69%;
+}
+
+.address_sect_profiles {
+    width: 94%;
+    margin-left: 40px;
+}
+
+form.adresformbilng {
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.savedaddress {
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    margin: 0 auto 20px;
+    padding: 6px 25px;
+    font-weight: 100;
+    font-size: 12px;
+    position: relative;
+    border-radius: 5px;
+}
+input.radiosaveadrs {
+    position: absolute;
+    left: 5px;
+}
+
+.form__field, .form__field1 {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+
+}
+
+.form__label {
+    font-size: 14px !important;
+}
+p.innerheadingformtop {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.Total_pricey {
+    margin-left: 5px;
+}
+p.innerheadingform, p.innerheadingformadd {
+    position: absolute;
+    z-index: 2;
+    font-size: 13px;
+    margin-top: -35px;
+    letter-spacing: 1px;
+}
+.modelthanku_prof, img.modelthanku_pro_product {
+    width: 130px;
+}
+.orderid_prof  {
+    display: flex;
+    width: 190px;
+    justify-content: left;
+    font-size: 14px;
+}
+p.typeofshoots_prof {
+    font-size: 14px;
+}
+.profilemodelbox_prof {
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 100;
+    position: relative;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.booking_history_profile {
+    width: 94%;
+    margin-left: 40px;
+}
+.dateofordersprofile {
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+}
+span.textofmodeldetail_prof {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.shootdetail_proof {
+    width: 90%;
+    padding-left: 15px;
+    position: relative;
+}
+
+p.kindofshoots_prof {
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: 300;
+    /* color: #d1467b !important; */
+
+}
+span.shootdetailwithshot_proof {
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    width: 95%;
+    margin: 10px 0 10px;
+    overflow: auto;
+    position: relative;
+}
+.sticks {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: white;
+
+}
+.error_bag_demand {
+    position: absolute !important;
+    top: -15px !important;
+    font-size: 11px !important;
+    color: red !important;
+}
+p.diliverables_prof {
+    font-size: 11px;
+    padding: 6px 0;
+}
+.optiononshoots {
+    font-size: 12px;
+    color: #d1467b;
+    position: relative;
+    top: 0;
+}
+p.progress_circle {
+    border: 1px solid #d3d3d345;
+    border-radius: 50%;
+    background-color: #75B436 !important;
+    width: 45px;
+    height: 45px;
+    border: 3px solid white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+.profilefews {
+    width: auto !important;
+}
+img.right_circle_between {
+    width: 25px;
+    height: 25px;
+    margin: -2px 8px;
+}
+img.small_circle_between {
+    margin: -7px 0px;
+    width: 12px;
+    border-radius: 50%;
+}
+.marginleftright {
+    margin: 0 10px;
+    font-size: 12px;
+}
+.small_circle {
+    margin-right: 1px !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.big_circle {
+    margin-top: -11px;
+}
+hr.progressline {
+    border: 1px dashed #d3d3d345;
+    width: 91px;
+    margin: 0 2px;
+    position: absolute;
+    margin-left: -22px;
+}
+img.down_arrow_prof {
+    width: 15px;
+    float: right;
+}
+.dimensions_prof {
+    text-align: center;
+}
+#easyshipform_prof {
+    width: 96%;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin-top: -20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.box_prof {
+    width: 95% !important;
+    height: 35px;
+    padding: 0 6px;
+    color: #313547;
+    border: 1px solid #e7e7e7;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: -2px;
+}
+.boxes_prof {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: baseline;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    width: 97%;
+    height: 98px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.lightgrey_prof {
+    color: #6D6B6B !important;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+}
+.enterdetailheads {
+    margin-left: 10px;
+    background: #3c7cf9;
+    color: white !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 98%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+b.progresscircle {
+    display: grid;
+    width: 50px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    height: fit-content;
+    place-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.progress_slab_prof {
+    display: flex;
+    width: 96%;
+    margin: 10px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+
+}
+b.awbbuttons {
+    width: 320px;
+    display: flex;
+    justify-content: space-around;
+    margin: 12px auto 0;
+}
+b.progresscircle_hr {
+    margin-top: 12px;
+    margin-left: -10px;
+    width: 40px;
+    height: 1px;
+}
+b.progresscircle p {
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    z-index: 22;
+    position: relative;
+}
+span.awbandremain {
+    width: 98%;
+    margin-left: 10px;
+    display: none;
+}
+
+.enterawbno, .remainingpaymentdrop {
+    border: 1px solid;
+    width: 200px;
+    padding: 8px 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    font-weight: 700;
+}
+.submitawb, .submitingpayment{
+    border: 1px solid;
+    width: 100px;
+    padding: 9px 20px 8.5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #3C7CF9 !important;
+    color: white !important;
+    letter-spacing: 2px;
+    border: 1px solid #3C7CF9;
+}
+p.progress_circle.white {
+    background: #E0E2DE !important;
+    height: 45px;
+    width: 45px;
+}
+span.shootcompleted {
+    display: flex;
+    align-items: center;
+    width: 96%;
+    justify-content: end;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+p.headingshotcomplete {
+    margin-left: 10px;
+}
+img.shotcomp {
+    width: 30px;
+}
+p.saveadress {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+}
+span.savingadres {
+    width: 92%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    line-height: 25px;
+}
+p.textofcheckbox, .pricey {
+    font-weight: 100;
+    display: flex;
+    font-size: 13px;
+    justify-content: left;
+}
+
+ .pricey {
+    justify-content: center;
+}
+input.samediliveras {
+    margin-right: 5px;
+}
+.adresformbilng {
+    display: block;
+}
+span.totalpricey {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    margin: 0 auto;
+    border-top: 1px solid #d3d3d338;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 0 10px;
+}
+p.totalpriceyhead {
+    margin-right: 8px;
+}
+
+.adresformbilngqwert {
+    display: none;
+}
+p#addaddressbtn_proof {
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    }
+    .mobileviewsect {
+        display: none;
+    }
+    .heading_profiles {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 40px;
+    }
+    button.dataidshell {
+        border: 0;
+        background-color: #FBF6F6;
+        text-align: left;
+        padding: 0px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+    }
+    .ecomerce_booking_heads {
+        font-size: 13px;
+    }
+    
+    
+    .account_head_loc, .account_heading_loc {
+        font-weight: 700;
+        cursor: no-drop;
+    }
+
+    /* added profile pic */
+    span.image_sect {
+        width: 120px;
+        height: 120px;
+        display: block;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid #e5e5e5;
+        background-color: white;
+      }
+      div#uploader {
+        margin-top: -40px;
+        font-size: 10px;
+    }
+      canvas {
+        z-index: 999;
+        position: relative;
+        width: 100%;
+      
+      
+      }
+      img.profile_pic {
+        width: 40px;
+      }
+      input#finput {
+        position: absolute;
+        left: 0;
+        width: 120px;
+        height: 120px;
+        opacity: 0;
+        z-index: 9999999;
+        top: 0;
+      
+      }
+      p.image_uploader {
+        position: relative;
+        width: 80px;
+        top: -80px;
+      }
+    span.profile_picture_upload {
+        width: 120px;
+        height: 120px;
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+    }
+    p.nameown {
+        text-transform: capitalize;
+    }
+    .addressown, .country, .phnnumberown {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    
+    input.input_uplaod_file {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid;
+        left: 1px;
+        top: -2px;
+        opacity: 0;
+    }
+    .account_head_loc_mobileview, .username_mobile_view {
+        display: none;
+    }
+    span.textofmodeldetail_prof_mobile {
+        display: none;
+    }
+    .shipping_method_mobile, .personal_currentbooking_mobile, .personal_address_mobile, .personal_info_mobile, .personal_payment_history {
+        display: none;
+    }
+    .calculateandsavebtn_profile {
+        display: flex;
+        margin-top: -32px;
+        justify-content: end;
+        width: 97%;
+    }
+    .valueanswerprofile {
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+    }
+    p.addbtntoaddmoreboxeprofile {
+        margin-top: 15px !important;
+    }
+
+    p.addbtntoaddmoreboxeprofile, .calculatebtn_profile {
+        background: #3c7cf9;
+        color: white !important;
+        width: 30%;
+        text-align: center;
+        padding: 9.1px;
+        border-radius: 5px;
+        margin-left: 19px;
+        font-size: 13px;
+        display: none;
+        margin-top: -1px;
+        cursor: pointer;
+    }
+    .shipmentvalue_divi {
+        display: grid;
+        width: 70%;
+        margin: 20px auto 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        display: none;
+    }
+    button.pay_easyship_amt {
+        border: 0;
+        background: none;
+        position: absolute;
+        top: 31px;
+        right: 1px;
+        padding: 10px 20px;
+        background-color: #3c7cf9;
+        color: white;
+        border-radius: 5px;
+    }
+    
+    /* slideup and down placeholder */
+    .label_perso {
+        left: 5px;
+        position: relative;
+        display: inline-block;
+        color: #8D8484;
+        top: 100px;
+        transition: all .2s ease;
+        z-index: 10;
+        position: relative;
+        top: -60px;
+        background: white;
+        height: auto;
+        line-height: 15px;
+        padding: 0 5px;
+        z-index: 999;
+        font-size: 14px;
+      }
+      
+      .input-box_pers {
+        width: 100%;
+        position: relative;
+        margin: 15px auto -25px !important;
+        z-index: 1;
+        top: 10px;
+
+      }
+      
+      .input_field_perso {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        padding: 10px 11px 8px;
+        color: #393939;
+        background-color: white;
+        outline: none;
+        z-index: 20;
+        border: 0;
+        border: 1px solid #e7e7e7;
+        outline: none;
+        font-size: 13px;
+        height: 40px;
+        font-weight: 400;
+      }
+      .gradient {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .input_field_perso:focus ~ .label_perso, .input_field_perso:valid ~ .label_perso {
+        top: -60px !important;
+      }
+      hr#veritcal_right_per, hr#veritcal_left_per, #veritcal_left_adr, #veritcal_right_adr, #veritcal_right_pay, #veritcal_left_pay, #veritcal_left_curr, #veritcal_right_curr, #veritcal_left_pay_current, #veritcal_right_pay_current {
+        height: 40px;
+        border: 1px solid #8B53B6;
+        margin: 0 !important;
+        display: none;
+    }
+    .small_circle {
+        padding-top: 5px !important;
+    }
+    hr#veritcal_right_per, #veritcal_right_adr, #veritcal_right_pay, #veritcal_right_curr, #veritcal_right_pay_current {
+        position: absolute;
+        right: 0;
+    }
+    #veritcal_left_curr, #veritcal_right_curr {
+        display: block;
+    }
+      .verified_symbol {
+        position: relative;
+        width: 100%;
+    }
+    .verifiedTextting {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        z-index: 99;
+        margin: 0;
+    }
+      .disabled {
+        top: -60px !important;
+        cursor: not-allowed;
+      }  
+      .payment_history_profile {
+        width: 94%;
+        margin-left: 40px;
+    }  
+
+
+    /* slideup and down placeholder  end*/
+    
+    section.payment_hist_data {
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        font-weight: 300;
+        border-top: 10px solid #E5E5E5;
+
+    }
+    p.orderid_attched {
+        background-color: #E9E6E6;
+        font-size: 14px;
+        width: 200px;
+        text-align: center;
+        margin: -5px auto;
+        border-radius: 20px;
+        padding: 10px;
+        display: none;
+    }
+    b.sapples {
+        display: flex;
+        width: 100% !important;
+        font-size: 13px;
+        align-items: center;
+    }
+    .transaction_hist_trans, .transaction_hist_amaount {
+        width: 50%;
+        display: grid;
+        align-items: baseline;
+    }
+    .transaction_hist_amaount { 
+        float: right;
+    }
+    .transition_column {
+        width: 100%;
+        display: flex;
+        line-height: 25px;
+        padding: 5px;
+        border-bottom: 1px solid #e5e5e5;
+
+
+    }
+    span.orderid_attched_value {
+        color: #0D973C;
+        font-weight: 700;
+    }
+    p.payment_head_value {
+        margin-left: 3px;
+    }
+    .rightone {
+        justify-content: end;
+        display: grid !important;
+        width: 40% !important;
+    }
+    .profileside {
+        margin-left: 10px;
+        border-radius: 5px;
+        border-collapse: separate !important;
+        width: 98% !important;
+    }
+    .shipping_method_Heads {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .shipping_method_box {
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        line-height: 20px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .change_shipping_method, .done_shipping_method {
+        border-bottom: 1px solid;
+        cursor: pointer;
+        color: #3c7cf9 !important;
+
+    }
+    table.payment_solution_shipping {
+        margin-top: 20px;
+    }
+
+
+    button:focus-visible {
+        outline: 4px dashed black;
+      }
+      span.gridwithnames {
+        margin-left: -2px !important;
+    }
+      .highlight_color {
+          background-color: white !important;
+          color: black;
+          display: flex;
+          position: relative;
+      
+      }
+      #imageInput {
+          display: none;
+      }
+      .inside_heads_pdf {
+          margin-left: -5px;
+          margin-top: -10px;
+      }
+      .upload_resume_file {
+          margin: -5px 0px;
+          text-align: center;
+          cursor: pointer;
+      }
+      .profilepage_segment {
+          position: relative;
+          top: -15px;
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          justify-content: space-between;
+      }
+      #imageDetails {
+        display: flex;
+        flex-wrap: wrap;
+        width: 380px;
+        border: 1px solid lightgrey;
+        position: relative;
+        top: 0px;
+        padding: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+      #defaultImage {
+          width: auto;
+          height: 50px;
+      }
+      #hideDetails {
+        position: absolute;
+        right: 2px;
+        padding: 3px;
+        max-width: 24px;
+        top: 0;
+      }
+      #imageName, #imageSize {
+        height: 18px;
+        line-height: 18px;
+      }
+      .imageandsizeofimgdiscription {
+          margin-left: 10px;
+          font-size: 11px;
+          text-transform: capitalize;
+      }
+
+
+      /* stage detail  */
+      .stage_history_heading {
+        background: #E9E6E6;
+        font-size: 15px;
+        padding: 10px 0;
+        padding-left: 15px;
+        margin-bottom: 15px !important;
+    }
+      .color_less, .color_less_square {
+        width: 21px;
+        height: 18px;
+        background-color: #9A9797;
+        border-radius: 3px;
+    }
+    .stage_history_division {
+        width: auto;
+        display: grid;
+        position: relative;
+        place-items: center;
+        margin-bottom: 20px;
+    }
+    .stage_details_stages {
+        border: 1px dashed #8b8b8b61;
+        height: 15px;
+        width: 1px;
+        margin: 0 auto;
+    }
+    .heading_stage, .heading_stage_details {
+        position: absolute !important;
+        left: 50px;
+        width: max-content;
+        text-align: left;
+        top: -6px;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stage_status, .stage_change_timming, .stage_change_date {
+        font-size: 11px !important;
+    }
+    .color_less {
+        height: 5px;
+        margin-top: 7px;
+        padding: 0 !important;
+    }
+    .stage_actions {
+        position: relative;
+    }
+    .heading_stage {
+        font-size: 12px !important;
+        font-weight: 600;
+    }
+    .stage_status {
+        width: 400px;
+    }
+    .stage_change_timming, .stage_change_date {
+        width: 25%;
+        text-align: end;
+    }
+    .Name_profile_divi1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+     /* current booking latest css  */
+     .profile_colapsible_current_booking {
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        width: 100%;
+    }
+    .current_booking_profile_details_box {
+        font-weight: 500;
+        width: 100%;
+        margin-left: 20px;
+        font-size: 13px;
+    }
+    .current_booking_profile_img {
+        width: 130px;
+    }
+    .current_profile_img {
+        width: 100%;
+    }
+    .current_booking_model_and_date {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .current_booking_box_details {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    .current_booking_box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .kindofshoots_prof_mobile {
+        margin-top: 5px;
+    }
+    .garment_size_details_box {
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .noticeline {
+        color: red !important;
+        margin-top: 0 !important;
+    }
+    .tentative_shoot_date {
+        font-size: 13px;
+        font-weight: 500;
+        text-align: end;
+    }
+    .dateofordersprofile {
+        color: #02862F !important;
+        font-size: 12px !important;
+        font-weight: 600 !important;
+        text-align: end;
+        letter-spacing: 1px;
+    }
+    .typeofshoots_mobile {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .view_details_current_booking {
+        width: 130px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #3c7cf9;
+        align-items: center;
+        color: white !important;
+        letter-spacing: 1px;
+        font-size: 13px;
+        padding: 2px;
+        border-radius: 10px;
+        height: 40px;
+    }
+    .right_arrow_current_bookings {
+        width: 20px;
+        height: 20px;
+    }
+    .view_details_spans {
+        width: fit-content;
+        display: flex;
+        margin: 0 0 0 auto;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+     /* current booking latest css ends  */
+
+    
+@media screen and (max-width: 1000px) {
+    .account_loc_result {
+        width: 96%;
+        border-left: 1px solid #e7e7e7;
+        margin: 0 auto;
+    }
+    .profilemodelbox_prof {
+        margin-left: 0px;
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .current_booking_profile_details_box, .tentative_shoot_date, .dateofordersprofile, .garment_size_details_box, .view_details_current_booking {
+        font-size: 11px !important;
+    }
+    .current_booking_profile_img {
+        width: 80px;
+    }
+    .current_booking_box_tentative_date {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+  
+    .view_details_current_booking {
+        width: 110px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .current_booking_profile_details_box {
+        margin-left: 5px;
+    }
+    .current_booking_model_and_date {
+        align-items: flex-start;
+    }
+    .right_arrow_current_bookings {
+        width: 13px;
+        height: 13px;
+        font-weight: 900;
+    }
+    .current_booking_box_details {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 17px;
+    }
+    .garment_size_details_box {
+        margin-top: 0;
+    }
+    
+    
+
+
+
+
+
+    .heading_profiles {
+        display: none;
+    }
+    .self_courier {
+        padding: 5px;
+    }
+    .profilepage_segment {
+        flex-wrap: wrap;
+    }
+    #mobile_current_booking, #mobile_address, div#payment_history_data {
+        margin-left: 0px;
+    }
+    .small_circle {
+        margin-right: -4px !important;
+    }
+    .bookedhr {
+        right: -1px !important;
+    }
+    
+    
+    p.progress_circle.white {
+        background: #E0E2DE !important;
+        height: 45px;
+        width: 45px;
+        margin-right: -2px !important;
+    }
+    p.payment_head {
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .rightone {
+        justify-content: end;
+        display: grid !important;
+        width: 90% !important;
+    }
+    b.sapples {
+        display: flex;
+        width: 103% !important;
+    }    
+    section.payment_hist_data {
+        width: 100%;
+        border: 1px solid #e5e5e5;
+        font-weight: 300;
+        border-top: 10px solid #E5E5E5;
+        margin-left: 0;
+    }
+    .calculateandsavebtn_profile {
+        display: flex;
+        margin-top: 6px;
+        justify-content: end;
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 0;
+    }
+    p.calculatebtn_profile {
+        width: 50%;
+        margin: 5px;
+    }
+    p.addbtntoaddmoreboxeprofile, .calculatebtn_profile {
+        background: #3c7cf9;
+        color: white !important;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 0px;
+        font-size: 11px;
+        display: none;
+    }
+    .account_head_loc_mobileview, .username_mobile_view {
+        margin: 5px 0;
+        font-weight: 700;
+        display: block;
+    }
+    .username_mobile_view {
+        margin: 0;
+    }
+    .hiddenonmobileviewsec {
+        display: none;
+    }
+    .account_loc {
+        border-bottom: 0;
+    }
+    .personal_info_mobile, .personal_address_mobile , .personal_currentbooking_mobile , .personal_payment_history {
+        display: block;
+        border: 1px solid #e7e7e7 !important;
+        padding: 4px;
+        width: 100%;
+        height: 45px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        border-radius: 5px;
+    
+    }
+    .personal_arrow, .address_arrow, .current_booking_arrow , .payment_history_arrow{
+        width: 13px;
+        transform: rotate(270deg);
+    }
+    
+    .booking_status_arrow {
+        width: 15px;
+        transform: rotate(270deg);
+    }
+    .account_loc_result {
+        border-left: 0;
+        width: 93vw;
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+    }
+  
+    span.textofmodeldetail_prof_mobile {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 70px;
+        font-size: 11px;
+        line-height: 20px;
+        width: 76%;
+    }
+    span.textofmodeldetail_prof, .kindofshoots_prof {
+        display: none;
+    }
+    span.shootdetailwithshot_proof {
+        margin: -5px 0 10px;
+        width: 100%;
+    }
+
+ 
+    
+   
+    .enterawbno, .remainingpaymentdrop {
+        border: 1px solid ;
+        width: 55%;
+        margin: 10px auto;
+        outline: 0;
+    
+    }
+    b.awbbuttons {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+
+    hr.progressline {
+        border: 1px dashed #d3d3d345;
+        width: 21px;
+        margin: 0 2px;
+        position: absolute;
+        margin-left: -7px;
+        margin-top: -5px;
+        display: none;
+        z-index: 1;
+    }    
+    b.progresscircle_hr {
+        margin-top: 8px;
+        margin-left: 21px;
+        width: 50px;
+        height: 1px;
+        display: block;
+        background: #e7e7e7;
+        transform: rotate(90deg);
+        z-index: 1;
+        position: relative;
+        right: 6px;
+    }
+    
+    b.progresscircle {
+        display: grid;
+        width: 45px;
+    }
+        
+    .progress_slab_prof {
+        display: none;
+        width: 100%;
+    }
+    span.awbandremain {
+        flex-wrap: wrap;
+        width: 100%;
+
+    }   
+    .submitawb, .submitingpayment {
+        border: 1px solid;
+        width: 90px;
+        margin: 10px auto;
+    } 
+    .submitingpayment {
+        border: 1px solid;
+        width: 35%;
+        margin: 10px auto;
+
+    }  
+    span.shootdetail_proof {
+        padding-left: 0px;
+    }       
+    .modelthanku_prof {
+        margin-bottom: 15px;
+        margin-left: 3px;
+    }
+    p.diliverables_prof {
+        font-size: 10px;
+        padding: 6px;
+        line-height: 18px;
+    }   
+  
+    input.submit_prof {
+        float: right;
+        width: 120px;
+        height: 35px;
+        background: #3C7CF9 !important;
+        color: white !important;
+        border: 0;
+        border-radius: 5px;
+        text-transform: capitalize;
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 35px;
+
+    }  
+    .heading {
+        font-weight: 600;
+        font-size: 11px;
+        padding: 0 3px;
+    }      
+    .qty {
+        font-weight: 100;
+        font-size: 11px;
+        width: 100px;
+        height: 25px;
+
+    }
+    .note {
+        font-size: 12px;
+    }
+    p.textofcheckbox {
+        font-weight: 100;
+        font-size: 9px;
+
+    }    
+    .shipmentvalue {
+        display: grid;
+        width: 100%;
+    }    
+    b.progresscircle p {
+        font-size: 7px;
+        padding: 5px;
+    }  
+    .profilemodelbox_prof {
+        width: 96%;
+        margin: 10px auto;
+        }    
+
+/* new changes on mobile view*/
+p#addaddressbtn_proof {
+    margin-left: 9px;
+}
+input.saveadresbtnform {
+    width: 130px;
+    border: 1px solid #e7e7e7;
+    height: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-right: 0;
+    border-left: 0;
+    margin-top: 15px;
+    background: #3c7cf9;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px 0 10px 58%;
+    font-size: 13px;
+}
+
+
+.profilepicsandname {
+    text-align: center;
+    width: 100%;
+}
+.paybtnremains {
+    margin-left: 10px;
+}
+.profile_img {
+    width: 100px;
+}
+.accountname {
+    margin: 6px;
+    font-weight: 700;
+}
+.account-dropdown {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .account-dropdown .form {
+    display: flex;
+  }
+  .paybtnremains {
+    width: 97% !important;
+    margin-left: 11px;
+}
+.valueamount {
+    border: 1px solid #adadad;
+    width: 36%;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    margin: 10px auto;
+
+}
+
+  .account-infoform .fa-sm1 {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+    color: black;
+  }
+  .account-infoform .fa-sm1.active {
+    transform: rotate(180deg);
+  }
+
+  .account-infoaddress .fa-sm2 {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+    color: black;
+  }
+  .account-infoaddress .fa-sm2.active {
+    transform: rotate(180deg);
+  }
+
+
+  .account-infohistory .fa-sm3 {
+    transform: rotate(0deg);
+    transition: all 0.3s;
+    color: black;
+  }
+  .account-infohistory .fa-sm3.active {
+    transform: rotate(180deg);
+  }
+  .account-dropdown .form input,
+  .account-dropdown .form button {
+    padding: 10px 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #D4CFCF;
+    border-radius: 10px;
+    width: 96%;
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .account-dropdown .form input:focus,
+  .account-dropdown .form button:focus {
+    outline: none;
+  }
+  .account-dropdown .account-dropdownListform, .account-dropdownListaddress, .account-dropdownListhistory {
+    display: none;
+    background-color: white;
+  }
+  form.account-form {
+    width: 94%;
+    margin: 0 auto;
+}
+.modelthanku_prof {
+    width: 50px;
+}
+img.modelthanku_pro_product {
+    width: 65px;
+    margin: -1px -8px;
+}
+
+.optiononshoots {
+    font-size: 9px;
+    color: #d1467b;
+    position: relative;
+    top: -5px;
+}
+.mobileviewsect {
+    display: block;
+}
+
+.shipping_method_mobile {
+    display: block;
+    background-color: #ECECEC;
+    line-height: 25px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.heading_slipping_method {
+    width: 100%;
+    font-size: 13px;
+}
+span.Self_ship_profile {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.profile_radio_mob {
+    position: relative;
+    top: 3px;
+}
+
+img.right_circle_between {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+}
+
+img.small_circle_between {
+    margin: -1px -1px;
+    border-radius: 50%;
+    max-width: 12px;
+}
+b.progresscircle {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-evenly;
+
+}
+p.shoot_name_details {
+    width: 180px !important;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 10px !important;
+}
+.img_progressBar {
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.big_circle {
+    margin-top: 0px;
+}
+p.progress_circle {
+    width: 35px;
+    height: 35px;
+}
+p.progress_circle.white {
+    background: #E0E2DE !important;
+    height: 35px;
+    width: 35px;
+}
+.profile_mobile_Self_tooltip {
+    width: 85vw !important;
+    left: 9vw !important;
+}
+span.tooltiptext.profile_mobile_easy_tooltip {
+    left: -24vw !important;
+    width: 85vw !important;
+}
+.heads_prof {
+    display: none;
+}
+section.accountprofile {
+    margin-top: 0px;
+}
+.address_sect_profiles, p#addaddressbtn_proof, .booking_history_profile, span.shootdetail_proof, .payment_history_profile {
+    width: 100%;
+    margin-left: 0;
+}
+.pricey {
+    justify-content: left;
+}
+form.personalinfoform_loc {
+    padding-left: 10px;
+    line-height: 40px;
+    width: 98% !important;
+}
+.shipmentvalue_divi {
+    display: grid;
+    width: 97%;
+    margin: -22px auto 10px;
+    display: none;
+}
+.enterdetailheads {
+    margin-left: 0;
+    font-size: 11px;
+    font-weight: 300;
+    padding: 10px 6px;
+}
+.input-box_pers {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    height: 60px;
+}
+.mobilehideprofileheads {
+    display: none;
+}
+p#addaddressbtn_proof {
+    margin-bottom: 10px;
+}
+.transaction_hist_trans {
+    width: 60%;
+}
+
+.transaction_hist_amaount {
+    width: 40%;
+}
+
+.payment_head_value {
+    font-size: 10px;
+    margin-top: 2px !important;
+}
+.priceprof {
+    justify-content: center;
+    font-size: 11px;
+}
+.profilefews {
+    width: 50% !important;
+}
+.error_on_calculate {
+    font-size: 9px;
+}
+.half {
+    width: 85%;
+    font-size: 11px;
+}
+.booking_status_model_tab, .booking_status_product_tab {
+    display: flex;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-size: 10px;
+    background: white;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+hr.linebeforeshootsplaced {
+    display: block;
+    border-top: 0px solid #e5e5e5;
+}
+.rotate180degree{
+    transform: rotate(360deg);
+    transition: 0.3s;
+   }
+   .sticky {
+    background: white;
+    position: sticky;
+    left: 0; 
+    padding-bottom: 10px;  
+
+}
+.label_perso {
+    font-size: 12px;
+}
+.Name_profile_divi1 {
+    flex-wrap: wrap;
+}
+
+
+}
+

@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    font-family: 'inter' !important;
+    margin: 0;
+    padding: 0;
+  }
+button, input, a, label {
+cursor: pointer;
+} 
+h1, h2, h3, h4, h5 {
+  font-family: 'inter' !important;
+} 
+p {
+    margin-bottom: 0;
+}
+.career_act {
+    width: 100%;
+    position: relative;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}
+.why_work_with_voila_div {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.career_growth_div {
+    width: 220px;
+    text-align: center;
+}
+.voila_division_path {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    margin-top: 40px;
+    align-items: center;
+}
+.positions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    border: 1px solid;
+    padding: 0;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.fulltime {
+    display: flex;
+    align-items: center;
+    font-size: 6px;
+    background: green;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+
+}
+.location_name {
+    font-size: 12px;
+}
+.applyNowBtn {
+    background: #3C7CF9;
+    box-shadow: 0px 0.664px 5.98px 0px rgba(255, 255, 255, 0.25) inset;
+    filter: drop-shadow(0px 2.658px 2.658px rgba(0, 0, 0, 0.25));
+    color: white !important;
+    border: 0;
+    padding: 14px 30px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    height: 47px;
+}
+.jobs_created {
+    padding: 5px 15px;
+}
+.why_work_with_voila_img {
+    width: 80%;
+}
+.office_division {
+    display: grid;
+    width: 40%;
+    margin-left: 30px;
+}
+.office_img {
+    margin-top: 40px;
+}
+.positon_heading {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 30px 0;
+    font-size: 25px;
+}
+/* .name_of_the_position {
+    width: 100%;
+    display: flex;
+} */
+.positionandtag {
+    width: 100%;
+    display: flex;
+}
+.location_icon {
+    width: 15px;
+}
+.mobile_images, .mobile_images_1 {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+.office_division {
+    display: grid;
+    width: 40%;
+    margin-left: 30px;
+    place-items: end;
+}
+.office_img {
+    margin-top: 40px;
+    width: 100%;
+}
+.why_work_with_voila_div {
+    width: 55%;
+}
+.why_work_with_voila {
+    width: 100%;
+}
+    }
+
+
+@media screen and (max-width: 900px) {
+    .career_act, .voila_division_path {
+        flex-wrap: wrap;
+    }
+    .why_work_with_voila_div {
+        width: 100%;
+        margin-top: 0;
+    }
+    .mobileviewgap {
+        margin-bottom: 20px;
+    }
+     
+    .why_work_with_voila_img {
+        width: 100%;
+    }
+    .career_growth_div {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        height: 80px;
+        display: flex;
+        align-items: center;
+
+    }
+    .inside_para_mobile {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        height: 40px;
+    }
+    .division_path_img {
+        width: 50px;
+    }
+    img.mobile_imgs_1 {
+        width: 60%;
+    }
+    img.mobile_imgs_2 {
+        width: 38%;
+    }
+    img.mobile_imgs_3 {
+        width: 10%;
+    }
+    img.mobile_imgs_4 {
+        width: 89%;
+    }
+    .mobile_images, .mobile_images_1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: end;
+        padding: 0 10px;
+    
+    }
+    .mobile_images_1 {
+        align-items: start;
+    }
+    .office_division {
+        display: none;
+    }
+    .applyNowBtn {
+        background: #3C7CF9;
+        box-shadow: 0px 0.664px 5.98px 0px rgba(255, 255, 255, 0.25) inset;
+        filter: drop-shadow(0px 2.658px 2.658px rgba(0, 0, 0, 0.25));
+        color: white;
+        border: 0;
+        padding: 12px;
+        border-radius: 5px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+
+    }
+    .name_of_the_position {
+        font-size: 12px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .career_act {
+        padding: 0;
+    }  
+    .jobs_created {
+        padding: 5px 2px;
+    }  
+    .location_name {
+        font-size: 10px;
+    }
+    .positions {
+        height: 40px;
+        margin: 0 10px;
+        width: 94%;
+    }
+    .voila_division_path {
+        margin-top: 10px;
+        padding: 0 10px;
+
+    }
+    .fulltime {
+        margin-left: 0px;
+}  
+    }  
+

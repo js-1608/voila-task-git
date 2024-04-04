@@ -1,0 +1,90 @@
+@font-face{
+  font-family: 'inter';
+  src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+ }
+
+
+ 
+.mobile_view_detailedPage {
+    display: none;
+}
+  @media screen and (max-width: 600px) {
+/* .mobile_view_detailedPage {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    display: block;
+  } */
+
+
+  .my_mobile_view.fade {
+    width: 100%;
+}
+  
+  /* The dot_views/bullets/indicators */
+  .dot_view {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    display: none;
+  }
+  
+  .activea {
+    background-color: #717171 !important;
+    margin-top: 3px;
+  }
+ 
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  p#lookshot_p_extra_mobile {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 80%;
+      font-size: 20px;
+      height: 30px;
+      color: white;
+      background-color: rgba(0,0,0,0.2);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+  }
+  img.corousel_img {
+      width: 40px;
+      position: absolute;
+      bottom: 1px;
+      z-index: 1;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 50%;
+      background-color: #a39a9a6b;
+  }
+
+.detailed_rating {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+p.detailed_model_heading {
+    text-align: left;
+}
+.detailed_more_angle {
+    margin: 0;
+}
+  }
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }

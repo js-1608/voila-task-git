@@ -1,0 +1,284 @@
+
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+  
+  
+    * {
+      box-sizing: border-box;
+      font-family: 'inter';
+      margin: 0;
+      padding: 0;
+      color: black;
+    }
+
+    .sectiondivision {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 25px;
+        /* flex-wrap: wrap; */
+
+    }
+    .footerlinkdivi1, .footerlinkdivi2, .footerlinkdivi3, .footerlinkdivi4, .footerlinkdivi5, .footerlinkdivi6 {
+        list-style-type: none;
+    }
+    .linkdivi {
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    a.linkdivi:hover {
+        transform: translate(1px);
+        font-weight: 700;
+    }
+    .highlight {
+        font-weight: 700;
+        color: #d01f5b !important;
+        font-size: 16px !important;
+
+    }
+    .black {
+        font-weight: 700;
+        color: black !important;
+        border-bottom: 1px solid;
+    }
+    .getintouchmesage.highlight {
+        font-size: 20px !important;
+        height: 25px;
+        width: 150px;
+        text-align: center; 
+        margin: 0 auto;
+        letter-spacing: 1px;
+        margin-bottom: 10px !important;
+
+    }
+    .linklitagfooter {
+        padding: 3px 10px;
+        letter-spacing: 2px;
+        list-style-type: none;
+    }
+    .footerlinkdivi3 {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .footerlinkdivi9 {
+        text-align: center;
+        padding: 0;
+        width: 40%;
+    }
+    .imgofvoila {
+        width: 200px;
+    }
+    .socialiconsfootervoila {
+        width: 200px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .socialiconsvoila {
+        width: 32px;
+    }
+    .sectiondivision2 {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 40px;
+        font-size: 14px;
+        align-items: center;
+    }
+    .footerlinkdivicenterofline {
+        border: 1px solid;
+        list-style-type: none;
+        padding: 0;
+        width: 1px;
+        margin: 0 auto;
+        height: 100%;
+        display: none;
+    }
+    .footercontainer {
+        background: #fafbfc;
+        padding: 30px 30px 35px 30px;
+        margin-top: 30px;
+        border-radius: 0 200px 0 0;
+    }
+    
+    .footerlinkdivi1 {
+        width: 15%;
+    }
+
+    .footerlinkdivi4, .footerlinkdivi5 {
+        width: 330px;
+    }
+    .footerlinkdivi4 {
+        border-right: 2px solid;
+        height: 160px;
+    }
+    .footerlinkdivi5 {
+        border-left: 2px solid;
+        height: 160px;
+        width: 45%;
+    }
+    .getintouchsppan {
+        display: none;
+    }
+    .emaillinks {
+        color: black;
+        font-size: 15px;
+        text-decoration: none;
+        letter-spacing: 1px;
+    }
+    .footerlinkdivi2 {
+        width: 15%;
+    }
+    .numberslinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerlinkinmobilecenter {
+        display: none;
+    }
+    .footerlinkdivi4 {
+        width: 42%;
+    }
+    .footerlinkdivi3getin {
+        width: 44%;
+        margin-top: 26px;
+    }
+    .mobileViewfooter {
+        display: none;
+    }
+
+    @media screen and (max-width: 1150px) {
+        .sectiondivision {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .footerlinkdivi1, .footerlinkdivi2 {
+            width: 165px;
+        }
+        .footerlinkdivi9 {
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            margin-top: 30px;
+        }  
+        a.linkdivi {
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+        }  
+        
+        a.emaillinks {
+            color: black;
+            font-size: 13px;
+            }
+        }
+    
+    @media screen and (max-width: 850px) {
+        .footerlinkinmobilecenter {
+            display: block;
+        }
+        .mobileViewfooter {
+            display: block;
+            padding: 10px;
+            margin: 20px 0 10px;
+            background: #fafbfc;
+        
+        }
+        .footerforvoila {
+            display: none;
+        }
+
+/* mobile view footer */
+   .topheadings {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        /* letter-spacing: 1px; */
+    }
+    .pink {
+        color: #D01F5B !important;
+    }
+    .blackm {
+        color: black !important;
+    }
+    .grey {
+        color: #545454 !important;
+    }
+    .underdivtext {
+        width: fit-content;
+        display: flex;
+        line-height: 25px;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    
+    }
+    .paraheadings{
+        font-size: 13px;
+        text-decoration: none;
+        margin: 0;
+        line-height: 18px;
+        /* letter-spacing: 1px; */
+    }
+    .newfooterco {
+        padding: 5px 0;
+    }
+    .sepratorline {
+        margin: 0 5px;
+    }
+    .detaileddiv {
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid lightgrey;
+        margin-bottom: 5px;
+        line-height: 20px;
+    
+    }
+    .logo_voilastudio {
+        width: 165px;
+        margin-top: 15px;
+    }
+     
+    .social_icons {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .social_img {
+        width: 38px;
+        padding: 5px;
+    }
+    .addressdiv {
+        width: 100%;
+        line-height: 25px;
+        display: grid;
+    
+    }
+    .bottomten {
+        margin-bottom: 10px;
+    }
+    .bottomfifteen {
+        margin-bottom: 15px;
+    }
+    
+    .borderbottom {
+        border-bottom: 1px solid black;
+        width: max-content;
+        line-height: 16px;
+        margin-bottom: 5px;
+    }
+  
+}    

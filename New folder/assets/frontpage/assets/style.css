@@ -1,0 +1,1116 @@
+
+
+@font-face{
+  font-family: 'inter';
+  src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+ }
+  * {
+    box-sizing: border-box;
+    font-family: 'inter';
+    color: black;
+
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'inter !important';
+  }
+
+/* new slider  */
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+  }
+  
+  body { margin: 0; } 
+  div#slider { overflow: hidden; }
+  div#slider figure img { width: 20%; float: left; }
+  div#slider figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite; 
+  }
+
+  img.mobileBannerfront {
+    display: none;
+}
+
+
+/* new slider end  */
+
+
+.headingfrontpage {
+  font-size: 5vw;
+  /* font-family: "lovelo"; */
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+section.anaotherdivis {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: clip;
+  padding: 0 30px;
+}
+.parafrontpage {
+  font-size: 15px;
+  font-family: "Glacial";
+  padding: 15px 0px;
+}
+section.frontpage_voilastudio {
+  width: 100%;
+margin: 0 auto;
+}
+#Banner_slideshow { 
+  position: relative; 
+  width: 90%;  
+  height: 30vw;
+}
+img.banner_slider {
+    width: 100%;
+}
+#Banner_slideshow > div { 
+  position: absolute;  
+  width: 110%;
+  right: 57%;
+  top: 45px;
+}
+.frontpagebannerdiivision {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+p#ecomercephotographyheading {
+  font-family: "lovelo";
+  width: 100%;
+  letter-spacing: 2px;
+  margin-top: 60px;
+
+}
+span.frontbannerbutton {
+  position: relative;
+  width: 140px;
+}
+p.buttontext {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  color: white;
+  font-weight: 700;
+}
+img#buttonimagebanners {
+  width: 150px;
+  margin-left: -8px;
+}
+.frontingbannervoilastudio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 37vw;
+}
+span.catalogandpremium {
+  display: grid;
+  place-content: baseline;
+  width: 400px;
+}
+ul.voilastudio_trendingshoots {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+li.container_creativeshoot, li.container_creativeshootcatalog {
+  width: 34vw;
+}
+img#imagecreative, .bigbannertheroy {
+  width: 100%;
+  margin-top: 5px;
+}
+a.heroimagesunglasses {
+  width: 40px;
+  height: 35px;
+  display: block;
+  border: none;
+  margin: -12px;
+  /* display: none; */
+}
+a.heroimagebra {
+  width: 100px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 245px;
+  left: 420px;
+}
+a.heroimageundergrament {
+  width: 100px;
+  height: 50px;
+  display: block;
+  position: absolute;
+  top: 245px;
+  left: 605px;
+}
+
+li.container_creativeshootcatalog {
+  margin: -4px 0;
+}
+.frontdevelopmentbanners {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+b.selctionslidingbanner {
+  position: absolute;
+  width: 100%;
+  right: 0;
+}
+img.lookbookshoot_category {
+  width: 100%;
+  aspect-ratio: 2/3;
+  max-width: inherit;
+}
+h2.headingfrontpageabc, h2.headingfrontpageabcwithstroke {
+  text-align: center;
+  color: #d01f5b;
+  letter-spacing: 2px;
+  font-size: 22px;
+  z-index: 0;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+h2.headingfrontpageabcwithstroke {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  letter-spacing: 6px;
+    opacity: 0.2;
+    z-index: 0 !important;
+    margin: 0 !important;
+}
+.spcialize_servces {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  flex-wrap: wrap;
+  /* max-width: 1300px; */
+  margin: 5px auto 0;
+  
+}
+img#imagepremium, img#imagecaltalog {
+  padding: 0 10px;
+  width: 98%;
+}
+img#imagecaltalog {
+  padding: 8px 10px;
+}
+.specialheadings {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: center;
+  margin: 25px auto 10px;
+  flex-wrap: wrap;
+  position: relative;
+}
+img.wearebestinn {
+  width: 100%;
+}
+.categorylikemyntraformation {
+    margin-top: 15px;
+}
+img#headersss {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+img.verticalsimges {
+  width: 100%;
+}
+
+a.verticalslinnks {
+  width: 230px;
+}
+.small {
+  font-size: 25px !important;
+}
+.verticalimglinks {
+  position: relative;
+  width: 100%;
+}
+.voilabizlinkimg, .voilastudiolinkimg, .voilakartlinkimg, .voilaretaillinkimg {
+  width: 25vw;
+  height: 15vw;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.voilabizlinkimg {
+  top: 1.5vw;
+  left: 17vw;
+}
+.voilastudiolinkimg {
+  top: 1.5vw;
+  right: 15vw;
+}
+.voilakartlinkimg {
+  bottom: 3vw;
+  left: 54vw;
+}
+.voilaretaillinkimg {
+  bottom: 3.5vw;
+  right: 52vw;
+}
+/********* Premium shoot *************/
+h2.headingonlinking {
+  font-size: 18px;
+  font-weight: 800;
+  /* font-family: "lovelo-bold"; */
+  /* text-transform: uppercase; */
+
+}
+div#showmorepositive {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+.ty-compact-list, .ty-compact-list1 {
+  font-size: 14px;
+  font-weight: 100;
+padding: 5px 5px 5px 0px;
+float: left;
+width: 100%;
+text-decoration: none;
+  color: black;
+  line-height: 15px;
+}
+.ty-compact-list:hover, .ty-compact-list1:hover {
+    font-weight: 600;
+  }
+.show-more , .show-more1{
+display: none;
+cursor: pointer;
+}
+span.popularshoots {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-image: url(../assets/images/Newcategory/modelandproductshootbanner.webp);
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  /* border-radius: 10px; */
+  padding-top: 30px;
+  margin-top: 35px;
+}
+
+
+span.popularshoots123 {
+  width: 100%;
+  display: block;
+  position: relative;
+  height: auto;
+  margin-top: 30px;
+
+}
+img.modelandproductshootimg {
+  position: absolute;
+  top: 0;
+}
+section.added_area_for_links {
+  display: flex;
+  width: 60%;
+  position: relative;
+  justify-content: right;
+  text-align: center;
+  border-radius: 100px 5px 5px 5px;
+  margin: 0 auto;
+  padding-left: 9vw;
+}
+.added_wrapper{
+  padding: 40px 10px 40px 8px;
+  width: 50%;
+  margin: 0;
+  line-height: 10px;
+  text-align: left;
+  }
+.added_wrapper1 {
+  padding: 40px 25px 40px 0px;
+  width: 50%;
+  margin: 0;
+  line-height: 10px;
+  text-align: left;
+  padding-left: 95px;
+
+
+}
+a.categoryofanker {
+  width: 25%;
+  padding: 5px;
+}
+.categoryviewallfunct {
+  background-color: white;
+  border: 0;
+  font-size: 10px !important;
+  color: black;
+  cursor: pointer; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  
+}
+.categoryviewallfunct:hover {
+  font-weight: 700 !important;
+  font-size: 12px !important;
+}
+
+.added_wrapper {
+/* box-shadow: 2px -3px 8px 0 rgba(0,0,0,0.2); */
+text-align: left;
+}
+a.show-more, a.show-more1 {
+padding: 6px 30px;
+  position: relative;
+  top: 25px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: .5 ease-in-out;
+  text-transform: capitalize;
+
+}
+
+a.show-more:hover {
+  background-color: black;
+  color: white !important;
+}
+a#showmorepositive {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.ourverticalsnew {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+h2.headingfrontpageabcwithstroke {
+  opacity: 0.1 !important;
+}
+
+h2.headingfrontpageabc {
+  z-index: 0;
+  -webkit-text-stroke-width: 2px;
+}
+a#cardcate {
+  width: 25%;
+  padding: 3px;
+}
+img.firstfrontbanner {
+  width: 100%;
+}
+
+.categoriesforselect {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  width: 25%;
+  padding: 10px;
+  color: black;
+}
+
+button#clickformorebutton {
+  background: none;
+  border: none;
+  font-size: 11px;
+  width: 100%;
+  text-align: end;
+  padding: 0 35px;
+}
+span.divisionforwomenshake {
+  width: 200px;
+}
+img.categories_women_img {
+  width: 100%;
+}
+.container1 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+ul.bookingcarding {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  list-style-type: none;
+  justify-content: space-between;
+  max-width: 1400px !important;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+}
+li.bookingcarding_li {
+  width: 15vw;
+  box-shadow: 0px 2px 8px 0 rgb(0 0 0 / 20%);
+  padding: 0 5px;
+  line-height: 5px;
+  text-align: center;
+  /* border: 1px solid #9f9f9f; */
+  border-radius: 15px;
+  margin: 4px;
+  position: relative;
+}
+.modelmodalforcaln, .productmodalforcaln {
+  border: 1px solid #9f9f9f;
+  padding: 5px;
+  border-radius: 10px;
+}
+.modelmodalforcaln {
+  margin-bottom: 20px;
+}
+.productmodalforcaln {
+  position: relative;
+}
+
+
+  button.booknowmodelbooking {
+    margin: 13px auto;
+    padding: 5px;
+    font-size: 13px;
+    box-shadow: 0px 3px 6px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    width: 80%;
+    font-weight: 600;
+    height: 30px;
+    text-transform: uppercase;
+    background-color: #3C7CF9;
+    color: white !important;
+      }
+  p.msq {
+    margin: 10px auto 5px;
+    font-size: 9px;
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+span.bookingstatus {
+  margin-bottom: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  height: 10px !important;
+
+}
+  .progressionbar {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+  p.nameofthemodelbooking, p.nameoftheshoot {
+  font-size: 13px;
+  margin: 0 !important;
+  font-weight: 600;
+}
+span.date, span.day {
+  font-size: 17px;
+  font-weight: 700;
+}
+span.nameanddates {
+  width: 95%;
+  align-items: center;
+  margin: 0 auto 10px;
+  text-align: left;
+  position: relative;
+  height: 20px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+}
+
+a.viewprofileind {
+  float: right;
+  margin-top: 0 !important;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  color: #d01f5b !important;
+
+}
+p.nameoftheproductshot {
+  width: 100%;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+  img#img_for_model_booking {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 0;
+  }
+  progress {
+      border: none;
+      width: 99%;
+      height: 12px;
+      background: #E05252;
+  }
+
+progress {
+color: lightblue;
+border-radius: 20px;
+box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2) inset;
+}
+
+progress::-moz-progress-bar {
+background: lightblue;
+border-radius: 20px;
+
+}
+
+progress::-webkit-progress-value {
+  background: radial-gradient(circle at 10% 20%, rgb(122, 209, 91) 0%, rgb(213, 230, 230) 100.2%);
+  border-radius: 20px;
+  
+
+}
+
+progress::-webkit-progress-bar {
+background: rgb(241, 240, 240);
+border-radius: 20px;
+box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.1) inset;
+
+}
+ul.bookingcarding_mob {
+  display: none;
+}
+span.imgmodelforbooks {
+  width: auto;
+  display: block;
+  margin: 20px auto 0px;
+  height: 20vw;
+  overflow: hidden;
+}
+a.model_view_profile_page {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #D1226C;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+a.model_view_profile_page_left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #D1226C;
+  text-decoration: none;
+  /* text-transform: lowercase; */
+  font-size: 12px;
+}
+
+
+
+
+
+/* .details {
+  display: none; 
+ }
+.show {
+display: block;
+ } */
+
+ /*********** new index css **************/
+ .sidebar_line {
+  position: fixed;
+  z-index: 99;
+  left: -9px !important;
+  margin-top: 30px;
+}
+ a.desktopessen {
+  width: 16%;
+}
+
+
+ b.categorywithnamingbobs, .offerforyouindi, .secondlimi  {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 30px;
+  
+}
+.offerforyouindi, .secondlimi  {
+  flex-wrap: wrap;
+}
+.categorywithnames {
+  width: 100%;
+  text-decoration: none !important;
+  height: min-content;
+}
+img.categoryimg {
+  width: 100%;
+  padding: 5px;
+  
+}
+p.categorynming {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+p.categorynames {
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+span.categoryandviewallspan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px 35px 5px;
+  font-size: 13px;
+  height: 35px;
+}
+p.subheading_regardingtittle {
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px !important;
+  font-size: 20px;
+  margin-bottom: -35px !important;
+
+}
+
+p.text_display_overImg {
+  transform: rotate(270deg);
+  position: absolute;
+  width: 38vw;
+  background: white;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  padding: 10px;
+  left: 29px;
+  transform-origin: 0 0;
+  margin-top: -29px;
+}
+.hideqwe {
+  display: none;
+}
+    
+.sidebar_line:hover + .hideqwe {
+  display: block;
+}
+b.categorywithnamingbobsforicons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+img.iconsformutlipleshoots {
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: rgb(0 0 0 / 13%) 0px 3px 8px;
+  margin: 10px;
+  width: 13%;
+}
+.categorywithnamingbobsforiconsupperdiv {
+  text-align: center;
+  width: 100%;
+  padding: 0 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+p.parainsideicons {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.fashinessentialindi, .oferforyoulinks {
+  width: 16%;
+}
+.categorywithnamesqa {
+  width: 16%;
+}
+img.offerimagesindi {
+
+  width: 100%;
+}
+
+span.divisionforwomenshake {
+  width: 95px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin: 16px auto 0;
+}
+a.goingtopageanker {
+  color: black;
+  text-decoration: underline;
+  font-size: 10px;
+  font-weight: 500;
+}
+a.goingtopageanker:hover {
+  font-weight: 800;
+  font-size: 11px;
+}
+.mobsilemob, .bigbannertheroyformobile {
+  display: none;
+}
+.toping {
+  margin-top: 50px;
+}
+
+img.eyeiconinde {
+  width: 11px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  li.bookingcarding_li {
+    width: 32%;
+  }
+  span.imgmodelforbooks { 
+    height: auto;
+  }
+  section.added_area_for_links {
+    width: 40%;
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .specialheadings {
+    width: 95%;
+    z-index: 0;
+  }
+  h2.headingfrontpageabc, h2.headingfrontpageabcwithstroke {
+    font-size: 22px;
+    z-index: 2;
+  }
+  .frontingbannervoilastudio {
+    height: 50vw;
+  }
+  .spcialize_servces {
+     justify-content: center;
+     width: 95%;
+  }
+  li.container_creativeshoot, li.container_creativeshootcatalog {
+    width: 100%;
+  }
+  section.frontpage_voilastudio {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  img#imagepremium, img#imagecaltalog {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+  img#imagecaltalog {
+    padding: 13px 0 0;
+}
+
+}
+@media screen and (max-width: 600px) {
+   .categorywithnamingbobsforiconsupperdiv, .swiper, .secondlimi   {
+    padding: 0 10px !important;
+}  
+.heroimageswithwings {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.offerforyouindi, section.anaotherdivis {
+  padding: 0 5px !important;
+}
+img.desktopBannerfront {
+  display: none;
+}
+img.mobileBannerfront {
+  display: block;
+}
+.marginbottomformobile {
+  margin-bottom: 20px !important;
+}
+  .removefrommob {
+    display: none;
+}
+a.desktopessen {
+  width: 49%;
+}
+  span.imgmodelforbooks {
+    height: 215px !important;
+}
+  img.bigbannertheroyformobile {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+  .mobsile, .girlmobsile, .bigbannertheroy, .blinkcircledivi1, .blinkcircledivi2, .blinkcircledivi, .videofoedesktop {
+    display: none;
+  }
+  .categorywithnamingbobsforiconsupperdiv {
+    padding-right: 0 !important;
+}
+img.categoryimg {
+  width: 100%;
+  padding: 5px 0px;
+}
+  .mobsilemob, .girlmobsilemob {
+    display: block;
+}
+  img.headerLogo {
+    margin-top: 10px;
+}
+  .small {
+    font-size: 14px !important;
+    letter-spacing: 1px !important;
+}
+  .icons_voila_new {
+    margin-top: 9px;
+  }
+  
+  .fashinessentialindi, .oferforyoulinks {
+    width: 50%;
+  }
+  b.sectionbslection {
+    width: 100%;
+}
+  a.verticalslinnks {
+    width: 130px;
+}
+img.verticalsimges {
+  width: 100%;
+}
+  h2#headingleftt {
+    left: 0 !important;
+    padding-top: 5px !important;
+}
+ul.voilastudio_trendingshoots {
+  display: flex;
+  width: 95%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+h2#headingrightt {
+  right: 0 !important;
+  padding-top: 5px !important;
+
+}
+section.added_area_for_links {
+  height: auto;
+  flex-wrap: wrap;
+}
+#Banner_slideshow_second, #Banner_slideshow, .frontpagebannerdiivision {
+  display: none;
+}
+.frontingbannervoilastudio {
+  display: none;
+}
+b.categorywithnamingbobs {
+  flex-wrap: wrap;
+}
+.categorywithnames {
+  width: 32%;
+}
+p.categorynames {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+li.bookingcarding_li {
+  width: 47%;
+  margin-top: 10px;
+}
+img.wearebestinn {
+  width: 100%;
+  margin-bottom: -4px;
+  padding: 6px 0px;
+}
+.added_wrapper {
+  padding: 0;
+  margin: 0;
+  width: 70%;
+  font-size: 12px !important;
+  margin: 0 auto;
+  margin-left: 70px;
+}
+.added_wrapper1 {
+  padding: 0;
+  margin-bottom: 70px;
+  width: 80%;
+  font-size: 12px !important;
+  margin: 0 auto 70px;
+  margin-left: 70px;
+}
+
+span.popularshoots {
+  background-image: url(../assets/images/test1.jpg);
+  background-position: right;
+  margin-top: 20px;
+}
+h2.headingonlinking {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 20px 0 4px;
+}
+h2.headingfrontpageabc, h2.headingfrontpageabcwithstroke {
+font-size: 15px;
+z-index: 2;
+margin-top: 15px;
+-webkit-text-stroke-width: 1px;
+}
+p.subheading_regardingtittle {
+font-size: 12px;
+margin-top: 10px !important;
+margin-bottom: 10px !important;
+}
+.nameofthemodelbooking, .viewprofileind {
+  margin: 0 !important;
+}
+
+.nameanddates {
+  width: 95%;
+  align-items: center;
+  margin: 0 auto 10px;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+span.categoryandviewallspan {
+padding: 15px 16px 0px;
+font-size: 9px;
+}
+p.categorynming {
+font-size: 11px;
+}
+p.categorynames {
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 9px;
+}
+.specialheadings {
+margin: 10px auto 10px;
+}
+button.booknowmodelbooking {
+  font-size: 10px;
+  width: 85%;
+  margin: 8px auto;
+  padding: 8px;
+  }
+  p.nameofthemodelbooking, p.nameoftheshoot {
+    font-size: 13px;
+  }
+  span.date, span.day {
+    font-size: 12px;
+  }
+  p.msq {
+    margin: 5px auto 5px;
+    font-size: 7px;
+    width: 96%;
+  }
+  b.categorywithnamingbobsforicons {
+    overflow: scroll;
+    margin-top: -15px;
+  
+}
+b.categorywithnamingbobsforicons::-webkit-scrollbar {
+  display: none;
+}
+img.iconsformutlipleshoots {
+  width: 70px;
+}
+b.categorywithnamingbobs {
+  padding: 0 5px;
+}
+ul.bookingcarding {
+  padding: 0 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+a.viewprofileind {
+  font-size: 8px;
+}
+
+p.parainsideicons {
+  font-size: 10px;
+  text-align: center;
+  font-family: 'inter';
+  letter-spacing: 0;
+  padding: 0 10px;
+
+}
+img.bigbannertheroy {
+  margin-top: 0;
+}
+img.offerimagesindi {
+  width: 100% !important;
+  margin-top: 6px;
+}
+.categorywithnamesqa {
+  width: 50%;
+}
+.three {
+  width: 33%;
+}
+.pair2 {
+  width: 50% !important;
+}
+b.categorywithnamingbobs, .offerforyouindi {
+  padding: 0 10px
+
+}
+a.model_view_profile_page_left, a.model_view_profile_page {
+  font-size: 10px;
+  } 
+  .spcialize_servces {
+    justify-content: space-between;
+    width: 99%;
+    margin-top: -10px;
+    /* padding: 0 3px; */
+  } 
+  a#cardcate {
+    width: 49%;
+    padding: 1px 2px;
+  } 
+  a.categoryofanker {
+    width: 50%;
+    padding: 5px;
+}
+.categorylikemyntraformation {
+  margin-top: -12px;
+}
+  }
+
+  @media screen and (max-width: 400px) {
+    img.headerLogo {
+      margin-top: 3px;
+  }
+  .spaceabove {
+    margin-top: 25px !important;
+    }
+  }

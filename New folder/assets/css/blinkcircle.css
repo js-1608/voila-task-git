@@ -1,0 +1,78 @@
+
+.blinkcircledivi {
+    position: absolute;
+    top: 6vw;
+    left: 18vw;
+}
+.blinkcircledivi1 {
+    position: absolute;
+    top: 14vw;
+    left: 17vw;
+}
+.blinkcircledivi2 {
+    position: absolute;
+    top: 20vw;
+    left: 15vw;
+}
+  
+.blinkcircledivi3 {
+    position: absolute;
+    top: 19vw;
+    right: 14vw;
+}
+
+.blinkcircledivi4 {
+    position: absolute;
+    top: 8vw;
+    right: 18vw;
+}
+.blinkcircledivi5 {
+  position: absolute;
+  top: 24vw;
+  right: 28vw;
+}
+
+
+  .circle, .circle::before {
+    content: " ";
+    margin: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.3s;
+    background-color: white;
+  }
+  
+  .circle::before {
+    animation: mymove 3s infinite;
+    position: absolute;
+    background-color: black;
+  }
+  a.heroimagesunglasses, .heroimagesunglassescircle3 {
+    display: block;
+    width: 24px;
+    height: 24px;
+    /* border: 1px solid; */
+    margin: -4px;
+    position: absolute;
+}
+  
+  @-webkit-keyframes mymove {
+    50%   {
+      transform: scale(2);
+      opacity: 0
+    }
+    100%   {
+      transform: scale(2);
+      opacity: 0
+    }
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .blinkcircledivi, .blinkcircledivi1, .blinkcircledivi2, .blinkcircledivi3, .blinkcircledivi4, .blinkcircledivi5 {
+  display: none;
+  
+    }
+      }

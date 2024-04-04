@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Accordion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<!-- ==================
+css for mobile payment 
+======================-->
+<style>
+    .accordion {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .accordion-item {
+        border-bottom: 1px solid #ccc;
+
+    }
+
+
+    .accordion-header {
+        background-color: #f4f4f4;
+        padding: 10px;
+        cursor: pointer;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .bank_type_img {
+        width: 20%;
+        justify-content: center;
+        /* height: 15%; */
+        margin: auto 0;
+        margin-right: 1vh;
+
+
+    }
+
+
+    .accordion-content {
+        padding: 10px;
+        display: none;
+    }
+
+    .accordion-content p {
+        margin: 0;
+    }
+
+    .bank {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+
+        justify-content: space-around;
+    }
+
+    .bankDetails {
+        width: 42%;
+        margin: 2%;
+        text-align: center;
+        /* border: 1px solid black; */
+        padding: 1%;
+        /* height: 10rem; */
+
+    }
+
+
+    .conDetails {
+
+        text-align: center;
+        padding: 1%;
+        font-size: 10px;
+        color: red;
+        margin: 10px;
+    }
+
+    .conDetails_img {
+        width: 35%;
+    }
+
+    .scanner_details {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+
+    .utr_detail>input {
+        width: 100%;
+    }
+
+    .payment_gateway {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .payment_gateway_icon {
+        width: 50%;
+        /* text-align: center; */
+
+    }
+
+    .upload_button {
+        border: 1px solid;
+        background-color: #fff;
+        border-image-source: linear-gradient(180deg, #A25AAB 0%, #F04458 100%);
+    }
+    .active_header{
+    background: linear-gradient(91.18deg, rgba(158, 0, 255, 0.15) -27.77%, rgba(255, 0, 0, 0) 173.04%);
+    }
+.bank_type{
+    justify-content:left;
+    align-items: center;
+    display: flex;
+}
+</style>
+
+<body>
+
+    <!-- ====================================
+     payment system for  mobile view
+    ======================================== -->
+
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <div class="bank_type">
+                    <img src="./img/direct.png" class="bank_type_img">
+                    <h4>Direct Transfer</h4>
+                </div>
+                <div class="bank_type">
+                    <img src="./img/mdi_arrow-drop-up.svg" class="toggle_image">
+                </div>
+            </div>
+            <div class="accordion-content">
+                <div class="bank">
+                    <div class="bankDetails">
+                        <h3>BANK:HDFC BANK</h2>
+                            <h3>IFSC:SBIN0061173</h3>
+                            <h3>ACC No.:1234567891011</h3>
+                    </div>
+                    <div class="bankDetails">
+                        <h3>BANK:HDFC BANK</h2>
+                            <h3>IFSC:SBIN0061173</h3>
+                            <h3>ACC No.:1234567891011</h3>
+                    </div>
+
+                </div>
+                <div class="scanner_details">
+                    <div class="scanner">
+                        <img src="https://dummyimage.com/150x150/" alt="" />
+                    </div>
+                    <div class="utr_detail">
+                        <input type="number" placeholder="utr number">
+                        
+                        <h3>OR</h3>
+                        <button type="button" class="upload_button">Upload screenshot</button>
+                        <div class="division_logo">
+							
+                            <label class="gradient" for="imageInput" id="file-label">Upload Screenshot</label>
+                            <p class="inside_heads_pdf">PNG, JPEG, JPG (2 MB)</p>
+                            <input type="file" id="imageInput" accept="image/*" />
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header">
+                    <div class="bank_type">
+                        <img src="./img/upi.png" class="bank_type_img">
+                        <h4>PhonePe/Google Pay/BHIMUPI</h4>
+                    </div>
+                    <div class="bank_type">
+                        <img src="./img/mdi_arrow-drop-up.svg" class="toggle_image">
+                    </div>
+                </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <div class="conDetails">
+                            <img src="./ccavenue.png" alt="cc avenue payment gateway" class="conDetails_img">
+                           <p> Convenience fee 4%</p>
+                        </div>
+                    </div>
+                    <div class="payment_gateway_icon">
+                        <div class="conDetails">
+                            <img src="./payu.png" alt="cc avenue payment gateway" class="conDetails_img">
+                            <p>  Convenience fee 4%</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header"> <img src="./img/credit.png">
+                <h4> Credit/Debit Card</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <img src="./ccavenue.png" alt="cc avenue payment gateway">
+                    </div>
+                    <div>
+                        <img src="./payu.png" alt="cc avenue payment gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header"> <img src="./img/tabler_wallet.png">
+                <h4>Paytm/Wallets</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <img src="./ccavenue.png" alt="cc avenue payment gateway">
+                    </div>
+                    <div>
+                        <img src="./payu.png" alt="cc avenue payment gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header"> <img src="./img/emi.png">
+                <h4>EMI</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <img src="./ccavenue.png" alt="cc avenue payment gateway">
+                    </div>
+                    <div>
+                        <img src="./payu.png" alt="cc avenue payment gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header"> <img src="./img/lazy.png">
+                <h4>LazyPay</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <img src="./ccavenue.png" alt="cc avenue payment gateway">
+                    </div>
+                    <div>
+                        <img src="./payu.png" alt="cc avenue payment gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header"> <img src="./img/international.png">
+                <h4>International Payments</h4>
+            </div>
+            <div class="accordion-content">
+                <div class="payment_gateway">
+                    <div class="payment_gateway_icon">
+                        <img src="./ccavenue.png" alt="cc avenue payment gateway">
+                    </div>
+                    <div>
+                        <img src="./payu.png" alt="cc avenue payment gateway">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ====================================
+     payment system for  mobile view end
+    ======================================== -->
+
+
+    <!-- ====================================
+     script payment system for  mobile view 
+    ======================================== -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+    
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                const toggleImage = header.querySelector('.toggle_image'); // Reference to the toggle image
+    
+                header.addEventListener('click' || 'onClick', () => {
+                    // Close all accordion items except the one clicked
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.accordion-header').classList.remove('active_header');
+                            otherItem.querySelector('.accordion-content').style.display = 'none';
+                            const otherToggleImage = otherItem.querySelector('.toggle_image');
+                            if (otherToggleImage) {
+                                otherToggleImage.src = './img/mdi_arrow-drop-up.svg'; // Reset other toggle images
+                            }
+                        }
+                    });
+    
+                    // Toggle active class and active_header class on clicked accordion header
+                    item.classList.toggle('active');
+                    header.classList.toggle('active_header');
+                    
+                    // Toggle display of accordion content
+                    const content = item.querySelector('.accordion-content');
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                        toggleImage.src = './img/mdi_arrow-drop-up.svg'; // Change the toggle image src to drop-up when closing the accordion
+                    } else {
+                        content.style.display = 'block';
+                        toggleImage.src = './img/mdi_arrow-drop-down.svg'; // Change the toggle image src to dropdown when opening the accordion
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+    
+    
+    
+
+    <!-- ====================================
+     script payment system for  mobile view end
+    ======================================== -->
+</body>
+
+</html>

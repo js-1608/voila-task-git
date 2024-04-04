@@ -1,0 +1,434 @@
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+  
+  
+* {
+      box-sizing: border-box;
+      font-family: 'inter' !important;
+      margin: 0;
+      padding: 0;
+    }
+button, input, a, label {
+  cursor: pointer;
+} 
+h1, h2, h3, h4, h5 {
+    font-family: 'inter' !important;
+  }   
+.margintop5px {
+    margin-top: 5px;
+}
+.margintopzero {
+    margin-top: 0;
+
+}
+
+.width25percent {
+    width: 23% !important;
+}
+
+.width35percent {
+    width: 33% !important;
+}
+/* career page css  */
+
+.career_page {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0 10px;
+        }
+
+.stylewidth240px {
+    width: 240px;
+}        
+.Career_heading {
+        text-align: center;
+        color: #d01f5b;
+        font-weight: 600;
+        }
+.career_subheadings {
+        font-size: 14px;
+        line-height: 25px;
+        }
+.headings_details {
+        margin: 20px 0 5px;
+        text-transform: capitalize;
+        }
+.career_details_resume {
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+    justify-content: left;
+    margin-top: 5px;
+}
+.link_icons_career {
+    position: absolute;
+    width: 16px;
+    top: 13px;
+    left: 15px;
+    z-index: 99;
+}
+.input-box_pers {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        z-index: 1;
+        top: 0;
+        margin-bottom: -15px !important;
+        padding: 2px 10px;
+    }
+    .label_perso {
+        font-size: 12px;
+        top: -30px;
+    }
+.input_field_perso:focus ~ .label_perso, .input_field_perso:valid ~ .label_perso {
+        top: -51px !important;
+      }
+.input_field_perso {
+        width: 100%;
+        border-radius: 5px;
+      }
+#file-input {
+      display: none;
+    }
+.resumeheading {
+    color: #8D8484;
+    font-size: 15px;
+    font-weight: 400;
+}
+.upload_resume_file {
+  width: 130px !important;
+    margin: 0;
+    font-size: 12px;
+    border-radius: 5px !important;
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px !important;
+    margin: 10px 0px 0;
+}
+.inside_heads_pdf {
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    width: 150px;
+    padding-top: 15px;
+    margin-left: -5px;
+}
+#file-info {
+    width: 100%;
+    position: relative;
+    margin-right: 5px;
+
+
+}
+.info_details {
+    display: flex;
+    width: 100%;
+    border: 1px solid lightgrey;
+    height: 60px;
+    border-radius: 5px;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    text-transform: capitalize;
+    padding-left: 0px;
+    font-size: 11px;
+    font-weight: 400;
+}
+.file-icon {
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    left: 5px;
+}
+.file_name, .file_size {
+    margin-left: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+.cross-icon {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    width: 18px;
+}
+#error-message {
+    color: red;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.submit_career_form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(100deg, #935EBA,#FF4048 100%);
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 0;
+    display: block;
+}
+.hiringtags {
+    font-size: 25px;
+    font-weight: 700;
+    color: #c64f83;
+    margin-top: 15px;
+    text-align: center;
+}
+.names_career {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .names_career {
+        flex-wrap: wrap;
+    }
+    .division_logo {
+        width: 100%;
+    }
+  .career_details_resume {
+    flex-wrap: wrap;
+    margin-top: -5px;
+}
+.Career_heading {
+    font-size: 20px;
+}
+.stylewidth240px {
+    width: 100%;
+}       
+.career_page {
+    padding: 0 10px;
+    width: 100%;
+    max-width: 100%;
+}
+/* .label_perso {
+    top: -51px;
+} */
+
+.input-box_pers {
+    width: 100%;
+    margin-bottom: -20px !important;
+}
+#file-info {
+    width: 96%;
+    position: relative;
+    margin-top: 45px;
+}
+.file_name, .file_size {
+    font-size: 10px;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.career_subheadings {
+    font-size: 12px;
+}
+.upload_resume_file {
+    margin: 6px 0px 0;
+    width: 100% !important;
+    height: 35px !important;
+
+}
+.submit_career_form {
+    margin-top: 20px;
+}
+.inside_heads_pdf {
+    padding-top: 14px;
+    margin-left: 0px;
+ }
+}
+
+
+/* Myntra guidlines css  */
+
+.guidlines_sect {
+    width: 90%;
+    margin: 0 auto;
+}
+.guideline_heading {
+    text-align: center;
+    color: #d01f5b;
+    font-weight: 600;
+}
+.guideline_heading_inner {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+p.video_guidelines {
+    font-size: 13px;
+}
+p.inner_paragraph {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+td, th {
+    padding: 0 10px 0 0;
+    font-size: 13px;
+}
+
+
+
+/* studio partner  */
+.fifty_fifty {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    gap: 25px;
+}
+
+.halftofull {
+    width: 50%;
+}
+.studio_partner_sect, .studio_model_sect {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.margin-left_40px {
+    margin-left: 40px;
+}
+.briefly_introduction {
+    color: #393939;
+    background-color: white;
+    outline: none;
+    z-index: 20;
+    border: 0;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    font-size: 13px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.modal_term_and_condition {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modal-content_term_and_condition {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
+.conditionsonterms {
+    font-size: 11px;
+    line-height: 20px;
+    text-align: left !important;
+    letter-spacing: 0.5px;
+}
+.termandconditionscontents {
+    width: 100%;
+    list-style-type: circle;
+    height: 100%;
+}
+.close_term_and_condition {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    border: 1px solid #e5e5e5;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    top: 10px;
+    height: 25px;
+    align-items: center;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+.term_condition_btnn {
+    border: 0;
+    background: white;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+input#term_and_condition {
+    margin-top: 1px;
+}
+
+.term_and_condition_divi {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 3px;
+}
+b.terms_and_blues {
+    color: #3C7CF9;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    .fifty_fifty {
+        display: inline;
+        width: 100%;
+    }
+  
+    .modal-content_term_and_condition {
+        padding: 18px;
+    }
+    .halftofull {
+        width: 100%;
+    }
+    .margin-left_40px {
+        margin-left: 0px;
+    }
+    .headings_details {
+        margin: 10px 0 25px;
+    }
+    .term_and_condition_divi {
+        display: flex;
+        align-items: baseline;
+}
+.guideline_heading {
+    font-size: 18px;
+}
+.studio_partner_sect, .studio_model_sect {
+    max-width: 100%;
+    padding: 0 10px;
+}
+.width25percent {
+    width: 100% !important;
+}
+.width35percent {
+    width: 100% !important;
+}
+.briefly_introduction {
+    font-size: 12px;
+}
+
+
+}

@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+  
+  
+    * {
+      box-sizing: border-box;
+      font-family: 'inter' !important;
+      margin: 0;
+      padding: 0;
+    }
+
+    .payment_unsuccessful {
+        width: 100%;
+        text-align: center;
+    }
+    .error_img {
+        width: 150px;
+    }
+    .payment_headings {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #433D3D;
+    }
+    .payement_subheading {
+        color: #7D7979;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .line_after_unsuccessful_mesage {
+        width: 200px;
+        margin: 20px auto;
+        border: 2px solid #FD656D;
+        border-radius: 10px;
+
+    }
+    .retry_btn {
+        width: 150px;
+        height: 45px;
+        font-size: 20px;
+        background-color: #FD656D;
+        border: 0;
+        color: white;
+        border-radius: 10px;
+    }
+    .error-container {
+        animation: shake 0.5s;
+      animation-iteration-count: 1;
+    }
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+
+    @media screen and (max-width: 600px) {
+        .payment_img_status {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .payement_subheading {
+            font-size: 13px;
+            text-align: center;
+        }
+        .line_after_unsuccessful_mesage {
+            width: 150px;
+            margin: 10px auto;
+            border: 1px solid #FD656D;
+            border-radius: 10px;
+        }
+        .retry_btn {
+            width: 130px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }

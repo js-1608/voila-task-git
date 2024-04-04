@@ -1,0 +1,81 @@
+
+@font-face{
+  font-family: 'inter';
+  src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+ }
+  * {
+    box-sizing: border-box;
+    font-family: 'inter';
+    letter-spacing: 1px;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  h1, h2, h3, h4, h5,p, h6, a {
+    font-family: 'inter' !important;
+  }
+
+ 
+a {
+    text-decoration: none;
+}
+section.Privacy_policy {
+  width: 70%;
+  margin: 20px auto;
+}
+.fontheavy {
+  font-weight: 600;
+}
+.heading_privacy {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 10px;
+}
+.interpretation {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.privacy_dark p {
+  margin: 0;
+}
+.color_black {
+  color: black;
+}
+
+.color_grey {
+  color: #767676;
+}
+.small_heads {
+  margin: 0;
+  font-weight: 600;
+  margin-top: 5px !important;
+  margin-bottom: 4px !important;
+}
+.small_text_policy {
+  margin: 6px 0;  
+}
+.medium_heads {
+  font-size: 13px;
+}
+.medium_heads {
+  font-size: 12px;
+  height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  section.Privacy_policy {
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px;
+}
+  .heading_privacy {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0 0px;
+}
+
+
+}

@@ -1,0 +1,1823 @@
+
+@font-face{
+    font-family: 'inter';
+    src: url("../mega_menu/fonts/inter/Inter-Regular.ttf") format("truetype");
+   }
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: "inter";
+    letter-spacing: 0;
+
+   }
+
+   .headingfrontpage, .parafrontpagemess, .parafrontpage, .orderid, .dateoforders, p.typeofshoots, p.kindofshoots, .diliverablecontect, .parafrontpageimgqa, span.quantitydist, .parafrontpageimg, .nameoftheshhot, .nameoftheshhotqty, span,p,h1,h2,h3,h4,h5,button, table, td , th, tr, label {
+    font-family: "inter" !important;
+
+   }
+   .textleft {
+    text-align: left !important;
+}
+  
+   .note {
+    font-weight: 700 !important;
+    text-align: left;
+    
+}
+   .headingfrontpage {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .parafrontpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 100;
+    margin-top: 12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  section.thankyoupage {
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto 20px;
+}
+.profilemodelbox {
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 0 auto;
+
+}
+div#paymentShippingmethod {
+    display: none;
+}
+span.datespaningorderid {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.orderid {
+    display: flex;
+    width: auto;
+    justify-content: left;
+    font-size: 14px;
+}
+p.dateoforders {
+    font-size: 10px;
+    color: #d01f5b !important;
+    font-weight: 700;
+    position: absolute;
+    right: 5px;
+}
+p.orderidValue {
+    color: #068832 !important;
+    letter-spacing: 0px;
+}
+.orderiddiv {
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 7px;
+    
+}
+img.modelthanku {
+    width: 225px;
+}
+.basebox_error {
+    position: absolute;
+    font-size: 10px;
+    top: 83px;
+    color: red !important;
+    left: 10px;
+
+}
+p.parafrontpagemess {
+    margin: 6px;
+}
+
+
+
+.correctweight_error {
+    position: absolute;
+    right: 130px;
+    font-size: 10px;
+    color: red;
+    top: 39px;
+}
+.orderidheading, .orderidValue {
+    font-size: 11px;
+}
+
+.typeofshoots, .kindofshoots {
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top: -7px;
+}
+.kindofshootsprod {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 6px;
+}
+.totalamount_headsval {
+    width: 85px;
+    text-align: end;
+}
+.dateofordersmobileview {
+    font-size: 11px;
+    color: #d01f5b;
+    width: auto;
+    right: 5px;
+    position: absolute;
+}
+.parafrontpagemobile {
+    display: block;
+    color: red;
+    height: 20px;
+
+}
+.kindofshoots {
+    font-size: 14px;
+}
+.parafrontpageimg {
+    text-align: left;
+    padding: 5px;
+    font-size: 13px;
+}
+p.kindofshoots {
+    font-size: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: -7px;
+
+}
+.modelprofileanddetail {
+    max-width: 97%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+    /* border-bottom: 1px solid #d3d3d37d; */
+    padding-bottom: 16px !important;
+    margin-top: 0px;
+
+}
+.modelprofileanddetailmesage {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px -7px;
+}
+img.modelthankumessageinprint {
+    width: 50px;
+}
+span#underline {
+    border-bottom: 1px solid black;
+}
+
+button#underline, .termandconditionformat {
+    background: white;
+    border: 0;
+    border-bottom: 1px solid;
+    color: #3C7CF9 !important;
+}
+b.easyshipformb {
+    display: none;
+}
+.diliverabledoes {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: left;
+
+}
+.Shipping_method_opt {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+.shipment_method_radios_btn, .pickup_method_radios_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #3c7cf929;
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+.checkboxlater {
+    width: 293px;
+    font-size: 12px;
+    margin: 10px auto 0;
+    display: flex;
+    align-items: center;
+}
+.radio_self_btn, .radio_easy_btn {
+    display: flex;
+    width: 105px;
+    justify-content: space-around;
+    align-items: center;
+}
+.self_ship_inner_division, .pickup_inner_division {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.self_courier {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.self_courier_message {
+    font-size: 11px;
+    margin: 5px;
+}
+.label_for_ship_opt {
+    font-size: 14px;
+}
+
+.addingbox {
+    border: 1px solid #e7e7e7;
+    padding: 5px 5px 5px 1px;
+    border-radius: 5px;
+    margin: 3px 3px 0 0;
+
+}
+.heads {
+    text-align: left;
+    place-content: baseline;
+    position: relative;
+    top: 0;
+
+}
+h3.diliverablecontect {
+    padding: 6px;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+p.parafrontpageimgqa {
+    font-size: 14px;
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+}
+p.nameoftheshhot {
+    font-size: 11px;
+}
+span.quantitydist {
+    display: grid;
+    width: auto;
+    justify-content: center;
+    line-height: 20px;
+    margin-top: 1px;
+    padding: 5px 5px 15px;
+    place-content: baseline;
+}
+.diliverableproducts {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+    margin: 0 auto;
+}
+p.nameoftheshhotqty {
+    font-size: 11px;
+}
+b.modelanddateqwe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 100;
+}
+span.typeofportal {
+    font-size: 10px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+p.garmentsizing, .parafrontpagemesslsize {
+    font-size: 11px;
+    text-align: left;
+    padding: 5px;
+}
+p.parafrontpagemesslsize {
+    padding: 0 5px;
+    color: black !important;
+}
+span.quantitydistqwer {
+    font-size: 11px;
+    display: grid;
+    text-align: justify;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 6px 2px 0;
+    position: relative;
+    font-weight: 100;
+
+}
+.inoutfunction, .inoutfunctionrefernce, .inoutfunctionproducts, .reference_imagesproducts {
+    /* display: none; */
+    width: 100% !important;
+}
+img.downarrow {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: 10px;
+    top: 15px;
+}
+.nameoftheshhotimg, .nameoftheshhotimgreference, .nameoftheshhotimgproducts, .nameoftheshhotimgreferenceproducts {
+    text-transform: capitalize;
+    font-size: 13px;
+    font-weight: 100;
+    padding-bottom: 5px;
+    border: 1px solid #e7e7e7;
+    padding: 5px;
+    
+    border-radius: 5px;
+
+}
+img.modelimgforshake {
+    width: 216px;
+    max-width: none;
+}
+span.tetativeshoot, span.dispatchaddressform {
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+}
+p.tentativeshootdate {
+    margin-top: 15px;
+}
+span.shootdatetentative,p.addressfordispatchhead {
+    font-weight: 600;
+}
+p.garmentreach {
+    color: #ff4048 !important;
+}
+p.headingdispatch {
+    border-bottom: 1px solid #787878;
+    max-width: fit-content;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+img.modelthankumessagein {
+    width: 70px;
+}
+span.textofmodeldetail {
+    width: 75%;
+}
+p.termandconditionformat {
+    text-align: left;
+    max-width: fit-content;
+}
+span.textofmodeldetail {
+    width: 75%;
+    margin-top: 0;
+    padding-left: 15px;
+}
+span.modelnamefortheshot {
+    font-weight: 600;
+}
+
+
+.total_amount_onthanku, .total_amount_onthanku_paid {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin: -25px auto 9px -1px;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 12px;
+
+}
+.total_amount_onthanku_paid {
+    border: 0;
+}
+p.nameoftheshhotimgvid {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.dilive {
+    margin-left: 20px;
+    width: 90%;
+    justify-content: space-between;
+}
+ul.termandconditions {
+    /* margin: 10px; */
+    width: 95%;
+    list-style-type: circle;
+    text-align: inherit;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 13px;
+}
+p.termandconditionformat {
+    text-align: left;
+    max-width: initial;
+    font-size: 16px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0 rgba(0,0,0,0.2);
+    color: black !important;
+    padding: 10px 15px;
+    border-bottom: 0;
+    cursor: pointer;
+
+}
+span.paymentstatement {
+    text-align: center;
+    width: 92%;
+    display: grid;
+    margin: 0 auto 30px;
+}
+p.innerstatement, p.statement_heads {
+    font-size: 11px;
+    text-align: left;
+}
+p.statement_heads {
+    font-size: 12px;
+    font-weight: 700;
+}
+.reference_images {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+img.referenceImg_data {
+    width: 85px;
+    margin: 5px 2px -1px;
+    border: 1px solid #e5e5e5;
+
+}
+.reference_imagesproducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.mobileviewthankyou  {
+    display: none;
+}
+.mobileviewthankyou, .termandconditionscontents {
+    display: none;
+    list-style-type: circle;
+    padding-left: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    font-family: "inter";
+}
+.thanku_termcondition_spans {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+
+.downarrowterms {
+    position: absolute;
+    right: 10px;
+    width: 10px;
+}
+.typeofportalmobileview {
+    font-weight: 100;
+}
+#easyshipbtn {
+    width: 100%;
+    margin: 20px 0;
+    padding: 8px;
+    color: white !important;
+    background-color: #3C7CF9;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+
+
+#easyshipform {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin-top: -20px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.weightofews {
+    display: grid;
+    width: 33%;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 0px;
+    place-items: baseline;
+   
+}
+img.addpluswhitebtn {
+    max-width: 100%;
+    height: auto;
+    z-index: 9;
+    position: relative;
+    width: 15px;
+    margin: 1px 5px 0 -5px;
+    width: 12px;
+}
+
+.lightgrey {
+    color: #6D6B6B !important;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+}
+.box {
+    width: 95% !important;
+    height: 35px;
+    padding: 0 6px;
+    color: #313547;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: -2px;
+
+}
+.lengthwidtheight {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #e7e7e7;
+    align-items: center;
+    border-radius: 5px;
+}
+.kginclude {
+    position: relative;
+}
+
+.kg {
+    position: absolute;
+    top: 31px;
+    right: 5px;
+    color: #e7e7e7;
+}
+.withoutborder {
+    border: 0;
+}
+.lengthwidtheight {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.widthlenghtwidthheight {
+    /* background: #d3d3d31c; */
+    width: 75px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.box::-webkit-input-placeholder {
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    font-size: 12.5px;
+    color: #e7e7e7;
+}
+.multiplesign {
+    font-size: 11px;
+    font-weight: 600;
+}
+.calculateandsavebtn {
+    width: 100%;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    position: static;
+    top: -57px;
+    left: 210px;
+}
+.calculatebtn {
+    background-color: white;
+    color: black;
+    border: 1px solid #e5e5e5;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.color_blue {
+    background-color: #3c7cf9 !important;
+    color: white !important;
+
+}
+.calculatebtn:hover {
+    background-color: #3C7CF9;
+    color: white !important;
+
+
+
+}
+
+.shipmentvalue {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 30px;
+    text-align: left;
+}
+
+input.valueanswer.box {
+    text-align: center;
+    font-weight: 300;
+    width: 100%;
+}
+#easyshipformbold {
+    display: none;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: baseline;
+    border: 1px solid #e7e7e7;
+    position: relative;
+    width: 95%;
+    height: 98px;
+    padding-bottom: 10px;
+}
+.dimentions {
+    width: 70% !important;
+}
+.onebox {
+    display: none;
+} 
+.weightdimen {
+    width: 85%;
+    border-right: 1px solid #e7e7e7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+input#weight {
+    width: 100%;
+}
+
+
+
+
+.crossicontodeltebox {
+    color: black;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    opacity: 0.7;
+}
+.half {
+    width: 60%;
+    text-align: center;
+}
+.auto {
+    width: auto;
+    padding: 10px;
+
+}
+.weightdimenasd {
+    width: 40%;
+    margin-top: 2px;
+}
+
+.placecenter {
+    place-items: end;
+    width: 28%;
+}
+.addbtntoaddmoreboxes {
+    width: auto;
+    background-color: #3C7CF9;
+    color: white !important;
+    border: 0;
+    padding: 10px;
+    float: left;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+
+hr.hrlinebot {
+    margin: 10px 0;
+    border-top: 1px;
+    width: 100%;
+}
+.last_div_on_thanks {
+    margin-left: 15px;
+}
+.itemboxtag {
+    display: none;
+    position: absolute;
+    top: 0;
+    border: 0;
+    padding: 4px 20px;
+    border-radius: 0px;
+}
+.addbtntoaddmoreboxes, .calculatebtn, #calculateshipodd {
+    display: none;
+}
+
+.payment_for_shipping_charge {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+
+.payment_btn_shipping {
+    width: 96%;
+    position: relative;
+}
+input.inputbox_shopping {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    margin: -1px 1px;
+}
+
+img.rightarrow_ship {
+    width: 25px;
+}
+button.paymentbtn_with_arrow {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3c7cf9;
+    color: white;
+    border: 0;
+    top: 0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+.return_buttons {
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+a.return_page {
+    width: 150px;
+    display: block;
+    background-color: #3c7cf9;
+    font-size: 14px;
+    color: white !important;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@media print {
+    html, body {
+        border: 1px solid white;
+        height: 99%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+}
+table.payment_solution_shipping {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 98%;
+    line-height: 25px;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    border-radius: 5px !important;
+
+}
+
+tr.tr_table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    height: 30px;
+
+}
+
+
+td.td_tablevalue {
+    float: right;
+    width: 80px;
+    font-size: 12px;
+}
+
+.hrlinetop {
+    border-top: 2px solid #e5e5e5;
+}
+@media screen and (max-width: 700px) {
+    table.payment_solution_shipping {
+        width: 100%;
+        line-height: 15px;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 98%;
+        line-height: 15px;
+        font-size: 10px;
+        font-weight: 600;
+        border: 1px solid #e5e5e5;
+        margin-bottom: 20px;
+        border-radius: 5px !important;
+        }
+    .widthlenghtwidthheight {
+        width: 40px;
+        padding: 0 5px;
+        text-align: center;
+    }
+    .note {
+        font-weight: 700 !important;
+        width: 40px;
+    }
+ 
+    span.textofmodeldetail {
+        width: 90%;
+    }
+    span.quantitydistqwer {
+        font-size: 10px;
+        display: grid;
+        text-align: justify;
+        width: 143px;
+    }
+    p.nameoftheshhotimg {
+        text-transform: capitalize;
+        font-size: 11px;
+    }
+    p.nameoftheshhot {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .weightdimen {
+        width: 80%;
+        padding: 5px;
+        margin-top: 3px;
+
+    }
+    
+    
+    
+}
+@media screen and (max-width: 600px) {
+    a.return_page {
+        background-color: white;
+        color: black !important;
+        text-transform: capitalize;
+        padding: 5px;
+        height: 30px;
+        font-size: 12px;
+        border: 1px solid;
+    }
+    .return_buttons {
+        width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 15px; */
+    position: fixed;
+    bottom: 0;
+    background: white;
+    height: 55px;
+    align-items: center;
+    margin: 0;
+    margin-left: -10px;
+    z-index: 99;
+    }
+
+    .profilepagedivi {
+        display: grid;
+        width: fit-content;
+
+    }
+    form.personalinfoform_loc {
+        padding-left: 10px;
+        line-height: 40px;
+        width: 92%;
+    }
+    
+
+    
+    input.valueanswer.box {
+        width: 78px;
+    }
+    
+ 
+    .half {
+        width: 50px;
+    }
+    .addbtntoaddmoreboxes {
+        margin: 0px;
+        width: 60px;
+        padding: 7px;
+        font-size: 11px;
+    
+
+    }
+    .basebox_error {
+        position: absolute;
+        font-size: 9px;
+        top: 82px;
+    }
+    .calculateandsavebtn {
+        justify-content: space-between;
+        padding: 10px;
+        margin: 0;
+    }
+    .calculatebtn {
+        background-color: white;
+        border: 1px solid #e5e5e5;
+        color: black;
+        font-weight: 600;
+        padding: 7px;
+        width: 48%;
+    }
+    .placecenter {
+        width: 55px !important;
+    }
+    .half {
+        width: 85%;
+    } 
+    #easyshipbtn {
+        width: 100%;
+        margin: 10px 0 0;
+        padding: 7px;
+    border-radius: 5px;
+        font-size: 12px;
+    
+    }
+    .weightofews {
+        display: grid;
+        width: 50%;
+    }  
+    .widthlenghtwidthheight {
+        width: 35px;
+        font-size: 11px;
+    
+    }      
+    a.imageofthankyou, b.modelanddateqwe, p.kindofshoots , p.garmentsizing, .parafrontpagemesslsize {
+        display: none;
+    }
+    .mobileviewthankyou {
+
+        display: flex;
+        width: 100%;
+    }
+    .dimentions {
+        width: 70%;
+    }
+    span.imageofthankyoumobile {
+        width: 20%;
+    }
+    span.textofmobileviewshows {
+        width: 80%;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    p.kindofshootsmobileview {
+        font-size: 10px;
+        padding: 8px 0px;
+    }
+
+    b.modelanddateqwemobileview {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    p.garmentsizingmobileview, p.parafrontpagemesslsizemobileview {
+        font-size: 10px;
+    }
+    p.typeofshootsmobileview {
+        text-transform: uppercase;
+        font-size: 10px;
+    }
+    
+    
+    .modelprofileanddetail {
+        flex-wrap: wrap;
+        margin-left: 0;
+        max-width: 100%;
+        justify-content: center;
+        }
+        img.modelthanku {
+            width: 100%;
+        }
+    ul.termandconditions {
+        width: 100%;
+        line-height: 20px;
+        font-size: 12px;
+        background-color: white;
+        margin-top: 10px;
+    }
+    
+    .profilemodelbox {       
+    width: 96%;
+    margin: 0 auto;
+}
+
+section.thankyoupage {
+    margin: 20px auto 20px;
+}
+
+p.typeofshoots, p.kindofshoots {
+    font-size: 12px;
+}
+p.kindofshoots {
+    font-size: 10px;
+}
+.headingfrontpage {
+    font-size: 20px;
+}
+.parafrontpage {
+    font-size: 8.8px;
+}
+section.thankyoupage {
+    padding: 10px;
+    margin-bottom: 0;
+}
+span.textofmodeldetail {
+    width: 100%;
+}
+p.nameoftheshhotqty {
+    font-size: 10px;
+}
+span.total_amount_onthanku {
+    width: 100%;
+    font-size: 12px;
+}
+span.quantitydist {
+    display: grid;
+    width: 22%;
+    margin-top: -5px;
+    line-height: 20px;
+}
+
+
+
+   .note {
+    font-weight: 700 !important;
+}
+   .headingfrontpage {
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .parafrontpage {
+    display: none;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 11px;
+    text-align: left;
+    color: black;
+    width: 80%;
+    margin: 5px auto 0;
+  }
+  section.thankyoupage {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto 20px;
+}
+.profilemodelbox {
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 0 auto;
+
+}
+.orderid , .dateofordersmobileview{
+    display: flex;
+    justify-content: left;
+    font-size: 14px;
+    width: 100px !important;
+    flex-wrap: wrap;
+    line-height: 16px;  
+    margin-top: 10px;
+}
+
+p.dateoforders {
+    font-size: 10px;
+    color: #d01f5b;
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 5px 0 10px;
+    text-align: end;
+    width: 110px !important;
+    line-height: 16px;
+}
+
+p.orderidValue {
+    color: #068832 !important;
+    letter-spacing: 0px;
+}
+.orderiddiv {
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 7px;
+    
+}
+img.modelthanku {
+    width: 225px;
+}
+p.orderidheading, p.orderidValue {
+    font-size: 11px;
+}
+
+p.typeofshoots, p.kindofshoots {
+    font-size: 12px;
+    padding: 5px;
+    text-align: left;
+    text-transform: capitalize;
+
+}
+p.totalamount_headsval {
+    width: auto;
+    margin-left: 5px;
+}
+p.kindofshoots {
+    font-size: 14px;
+}
+p.parafrontpageimg {
+    text-align: left;
+    padding: 5px;
+    font-size: 13px;
+}
+p.kindofshoots {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: -7px;
+
+}
+.modelprofileanddetail {
+    max-width: 97%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+    /* border-bottom: 1px solid #d3d3d37d; */
+    padding-bottom: 16px !important;
+
+}
+.modelprofileanddetailmesage {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 20px -7px;
+}
+img.modelthankumessageinprint {
+    width: 50px;
+}
+span#underline {
+    border-bottom: 1px solid black;
+}
+
+button#underline, .termandconditionformat {
+    background: white;
+    border: 0;
+    border-bottom: 1px solid;
+    color: #3C7CF9 !important;
+}
+.diliverabledoes {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+    justify-content: left;
+}
+
+.addingbox {
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    width: auto;
+    margin-left: 15vw;
+    position: relative;
+
+}
+.heads, .headsmulti {
+    text-align: left;
+    place-content: baseline;
+    margin-right: 0 !important;
+    position: sticky;
+    left: 0;
+    background: white;
+    top: -10px;
+    width: 52px !important;
+
+}
+.headsproducts {
+    width: 52px !important;
+    position: sticky;
+    left: 0;
+    background: white;
+}
+h3.diliverablecontect {
+    padding: 6px;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+p.parafrontpageimgqa {
+    font-size: 14px;
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+}
+p.nameoftheshhot {
+    font-size: 11px;
+}
+span.quantitydist {
+    display: grid;
+    width: 130px;
+    justify-content: center;
+    line-height: 20px;
+    margin-top: 1px;
+    padding: 5px 5px 15px;
+    place-content: baseline;
+}
+.diliverableproducts {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+    margin: 0 auto;
+}
+p.nameoftheshhotqty {
+    font-size: 11px;
+}
+b.modelanddateqwe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 100;
+}
+span.typeofportal {
+    font-size: 10px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+p.garmentsizing, .parafrontpagemesslsize {
+    font-size: 11px;
+    text-align: left;
+    padding: 5px;
+}
+p.parafrontpagemesslsize {
+    padding: 0 5px;
+    color: #FF4048 !important;
+}
+span.quantitydistqwer {
+    font-size: 11px;
+    display: grid;
+    text-align: justify;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 6px 2px 0;
+    position: relative;
+    font-weight: 100;
+
+}
+.inoutfunction, .inoutfunctionrefernce, .inoutfunctionproducts {
+    /* display: none; */
+    width: 100% !important;
+}
+img.downarrow {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: 22px;
+    top: 14px;
+}
+.nameoftheshhotimg, .nameoftheshhotimgreference, .nameoftheshhotimgproducts {
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: 100;
+    padding-bottom: 5px;
+    border: 1px solid #e7e7e7;
+    padding-top: 6px;
+    padding-left: 12px;
+    border-radius: 5px;
+
+}
+img.modelimgforshake {
+    width: 80px;
+    max-width: none;
+}
+span.tetativeshoot, span.dispatchaddressform {
+    text-align: left;
+    font-size: 13px;
+    line-height: 20px;
+}
+p.tentativeshootdate {
+    margin-top: 15px;
+}
+span.shootdatetentative,p.addressfordispatchhead {
+    font-weight: 600;
+}
+p.garmentreach {
+    color: #ff4048 !important;
+}
+p.headingdispatch {
+    border-bottom: 1px solid #787878;
+    max-width: fit-content;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+img.modelthankumessagein {
+    width: 70px;
+}
+span.textofmodeldetail {
+    width: 75%;
+}
+p.termandconditionformat {
+    text-align: left;
+    max-width: fit-content;
+}
+span.textofmodeldetail {
+    width: 75%;
+    margin-top: 0;
+    padding-left: 15px;
+}
+span.modelnamefortheshot {
+    font-weight: 600;
+}
+
+
+.total_amount_onthanku, .total_amount_onthanku_paid {
+    width: 99%;
+    display: flex;
+    justify-content: left;
+    margin-top: -20px;
+    border-top: 1px solid #d3d3d385;
+    border-bottom: 1px solid #d3d3d385;
+    margin: -25px auto 9px -1px;
+    font-weight: 600;
+    padding: 5px;
+    font-size: 12px;
+
+}
+.total_amount_onthanku_paid {
+    border: 0;
+}
+p.nameoftheshhotimgvid {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.dilive {
+    margin-left: 20px;
+    width: 90%;
+    justify-content: space-between;
+}
+ul.termandconditions {
+    /* margin: 10px; */
+    width: 95%;
+    list-style-type: circle;
+    text-align: inherit;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 13px;
+}
+p.termandconditionformat {
+    text-align: left;
+    max-width: initial;
+    font-size: 12px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 1px 0 rgba(0,0,0,0.2);
+    color: black !important;
+    padding: 6px;
+}
+span.paymentstatement {
+    text-align: center;
+    width: 92%;
+    display: grid;
+    margin: 0 auto 30px;
+}
+p.innerstatement, p.statement_heads {
+    font-size: 11px;
+    text-align: left;
+}
+p.statement_heads {
+    font-size: 12px;
+    font-weight: 700;
+}
+.reference_images {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+}
+img.referenceImg_data {
+    width: 14.8%;
+    margin-bottom: 4px;
+    margin-right: 4px;
+
+}
+.productsheight {
+    height: 60px;
+}
+
+.mobileviewthankyou {
+    display: none;
+}
+}
+
+
+
+
+
+
+@media print {
+    html, body {
+        border: 1px solid white;
+        height: 99%;
+        page-break-after: avoid;
+        page-break-before: avoid;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .note {
+        font-weight: 700 !important;
+        width: auto;
+        font-size: 10px;
+        margin-right: 5px;
+    }
+ 
+    span.textofmodeldetail {
+        width: 90%;
+    }
+    span.quantitydistqwer {
+        font-size: 10px;
+        display: grid;
+        text-align: justify;
+        width: 100%;
+        overflow: hidden;
+    }
+    p.nameoftheshhotimg {
+        text-transform: capitalize;
+        font-size: 11px;
+    }
+    p.nameoftheshhot {
+        font-size: 10px;
+        font-weight: 600;
+        width: 70px;
+    
+    }
+    
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .box {
+        height: 25px;
+        color: #818181;
+        font-size: 11px;
+    }
+    .termandconditionscontents {
+        display: none;
+        padding-left: 20px;
+        line-height: 20px;
+        font-size: 11px;
+    }
+    li.conditionsonterms {
+        margin-bottom: 5px;
+    }
+    .lengthwidtheight {
+        height: 25px;
+    }
+ 
+    a.imageofthankyou, b.modelanddateqwe, p.kindofshoots , p.garmentsizing, .parafrontpagemesslsize {
+        display: none;
+    }
+    .lightgrey {
+        font-size: 11px;
+    }
+    .mobilecalculate {
+        left: 0 !important;
+        width: 100% !important;
+        top: 0px !important;
+    }
+    span.correctweight_error {
+        position: absolute;
+        right: 130px;
+        font-size: 10px;
+        color: red;
+        top: 53px;
+        left: -45px;
+    }
+    .payment_btn_shipping {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    p.kindofshootsprod {
+        font-size: 10px;
+        text-align: left;
+        padding-left: 5px;
+        text-transform: lowercase;
+        margin-left: 3vw;
+        line-height: 15px;
+    
+    }
+    a.modelimgprods {
+        position: absolute;
+        left: -10px;
+        top: -8px;
+    }
+    b.modelanddateqweprod {
+        display: grid;
+        width: 100%;
+        margin-left: 4vw;
+    }
+    .mobileviewthankyou {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    span.imageofthankyoumobile {
+        width: 60px;
+        position: absolute;
+    }
+    span.textofmobileviewshows {
+        width: 100%;
+        font-size: 12px;
+        text-align: left;
+        padding-left: 19vw;
+        }
+    p.kindofshootsmobileview {
+        padding: 0 0px 8px;
+        line-height: 20px;
+        width: auto;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 12px;
+        margin-top: 6px;
+
+    }
+    p.dateofordersmobileview {
+        font-weight: 600;
+        font-size: 10px;
+        padding-top: 3px;
+        display: flex;
+        width: 110px !important;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 0px;
+        justify-content: end !important;
+    }
+    b.modelanddateqwemobileview {
+        width: auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        /* margin-left: 11vh; */
+    
+    }
+    p.garmentsizingmobileview, p.parafrontpagemesslsizemobileview {
+        font-size: 10px;
+        line-height: 15px;
+        color: black;
+        }
+    p.typeofshootsmobileview {
+        text-transform: uppercase;
+        font-size: 10px;
+        width: 100%;
+        line-height: normal;
+        margin-bottom: 8px;
+    }
+    .orderiddiv {
+        width: 100%;
+        padding: 5px 0;
+    }
+    
+    p.garmentsizingmobileview {
+        margin-top: 20px;
+        color: black;
+    }
+    
+    .modelprofileanddetail {
+        flex-wrap: wrap;
+        margin-left: 0;
+        max-width: 100%;
+        justify-content: left;
+        width: 100%;
+        position: relative;
+        padding: 0 !important;
+        }
+        
+        
+        img.modelthanku {
+            width: 100%;
+        }
+    ul.termandconditions {
+        width: 100%;
+        line-height: 20px;
+        font-size: 12px;
+        background-color: white;
+        margin-top: 10px;
+    }
+    b.garmetsizeshoots {
+        /* margin-left: 11vw; */
+        width: auto;
+        display: block;
+        margin-top: -20px;
+        /* padding-left: 36px; */
+    }
+    
+    .profilemodelbox {       
+    width: 96%;
+    margin: 0 auto;
+}
+.paddingtopsw {
+    padding-top: 30px;
+}
+
+section.thankyoupage {
+    margin: 8px 0 20px;
+}
+
+p.typeofshoots, p.kindofshoots {
+    font-size: 12px;
+}
+p.kindofshoots {
+    font-size: 10px;
+}
+.headingfrontpage {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+section.thankyoupage {
+    padding: 10px;
+    margin-bottom: 0;
+}
+span.textofmodeldetail {
+    width: 100%;
+    padding: 0;
+
+}
+p.nameoftheshhotqty {
+    font-size: 10px;
+    width: 60px;
+}
+span.total_amount_onthanku {
+    width: 100%;
+    font-size: 11px;
+    margin: -4px 0 -2px;
+}
+span.quantitydist {
+    display: grid;
+    width: auto;
+    margin-top: -5px;
+    line-height: 20px;
+    margin-right: 10px;
+    height: 60px;
+    padding: 0;
+}
+.note {
+    font-weight: 700 !important;
+    width: 55px;
+    font-size: 11px;
+    margin-right: -10px;
+
+}
+button#underline {
+    display: none;
+}
+p.parafrontpagemess {
+    font-size: 11px;
+    margin-top: 5px;
+}
+.enterdetailheads {
+    margin-left: 0;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 12px 6px;
+    background: #3c7cf9;
+    color: white !important;
+    border: 0;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.shipmentvalue {
+    display: grid;
+    width: auto;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0px;
+    line-height: 30px;
+    font-size: 12px;
+}
+p.parafrontpagemobile {
+    font-size: 11px;
+    color: red;
+    display: block;
+}
+input.valueanswer.box {
+    width: 100px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.boxes {
+    align-items: baseline;
+    margin: 10px 0;
+    width: 100%;
+    height: 95px;
+    }
+    img.addpluswhitebtn {
+        margin: 1px 5px -2px -8px;
+    }
+
+    .last_div_on_thanks, .payment_for_shipping_charge {
+        margin-left: 0;
+    }
+    b.hidenelement {
+        display: none;
+    }
+    tr.tr_table {
+        font-size: 11px;
+    }
+    td.td_tablevalue {
+        font-size: 11px;
+        width: 65px;
+    }
+}

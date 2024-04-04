@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive carousel_voila</title>
+  <style>
+    .carousel_voila-container_voila {
+      position: relative;
+      overflow: hidden;
+    }
+    .carousel_voila {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      text-align: center;
+      justify-content: left;
+      margin-bottom: -15px; /* Hide the bottom scrollbar */
+    }
+    .item_voiila {
+      flex: 0 0 auto;
+      width: 300px; 
+      scroll-snap-align: start;
+      margin-right: 10px; 
+      height: 10rem;
+      border: 1px solid red;
+    }
+    @media (max-width: 768px) {
+      .item_voiila {
+        width: calc(50% - 10px); 
+      }
+    }
+    @media (max-width: 480px) {
+      .item_voiila {
+        width: calc(50% - 10px); 
+      }
+    }
+    .carousel_voila-button {                                                                 
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .carousel_voila-button.left {
+      left: 10px;
+    }
+    .carousel_voila-button.right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="carousel_voila-container_voila">
+  <button class="carousel_voila-button left" onclick="scrollcarousel_voila('left')">◄</button>
+  <div class="carousel_voila">
+    <div class="item_voiila">caritem_voiila 1</div>
+    <div class="item_voiila">caritem_voiila 2</div>
+    <div class="item_voiila">caritem_voiila 3</div>
+    <div class="item_voiila">caritem_voiila 4</div>
+    <div class="item_voiila">caritem_voiila 5</div>
+  </div>
+  <button class="carousel_voila-button right" onclick="scrollcarousel_voila('right')">►</button>
+</div>
+
+
+<script>
+  const carousel_voila = document.querySelector('.carousel_voila');
+  
+  // Sample data structure representing booking availability
+  const itemData = [
+    { image: 'image1.jpg', available: true, bookings: 10 },
+    { image: 'image2.jpg', available: false, bookings: 15 },
+    { image: 'image3.jpg', available: true, bookings: 10 },
+    { image: 'image4.jpg', available: false, bookings: 15 },
+    { image: 'image5.jpg', available: true, bookings: 10 },
+    { image: 'image6.jpg', available: false, bookings: 15 },
+    { image: 'image7.jpg', available: true, bookings: 10 },
+    { image: 'image8.jpg', available: false, bookings: 15 },
+    { image: 'image4.jpg', available: false, bookings: 15 },
+    { image: 'image5.jpg', available: true, bookings: 10 },
+    { image: 'image6.jpg', available: false, bookings: 15 },
+    { image: 'image7.jpg', available: true, bookings: 10 },
+    { image: 'image8.jpg', available: false, bookings: 15 },
+    { image: 'image4.jpg', available: false, bookings: 15 },
+    { image: 'image5.jpg', available: true, bookings: 10 },
+    { image: 'image6.jpg', available: false, bookings: 15 },
+    { image: 'image7.jpg', available: true, bookings: 10 },
+    { image: 'image8.jpg', available: false, bookings: 15 },
+  ];
+  
+  function populateCarouselItems() {
+    carousel_voila.innerHTML = ''; 
+    itemData.forEach(item => {
+      const itemDiv = document.createElement('div');
+      itemDiv.classList.add('item_voiila');
+      
+      // Image
+      const img = document.createElement('img');
+      img.src = item.image;
+      img.alt = 'Image';
+      itemDiv.appendChild(img);
+      
+      // Booking availability status
+      const statusDiv = document.createElement('div');
+      statusDiv.classList.add('booking_status');
+      statusDiv.textContent = item.available ? 'Booking available' : 'Booking closed';
+      if (item.available) {
+        // Display number of bookings if available
+        const bookingsSpan = document.createElement('span');
+        bookingsSpan.textContent = ` (${item.bookings} bookings)`;
+        statusDiv.appendChild(bookingsSpan);
+      }
+      itemDiv.appendChild(statusDiv);
+      
+      carousel_voila.appendChild(itemDiv);
+    });
+  }
+  
+  populateCarouselItems();
+  
+  function scrollcarousel_voila(direction) {
+    const scrollAmount = direction === 'left' ? -300 : 300; 
+    carousel_voila.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+
+</body>
+</html>

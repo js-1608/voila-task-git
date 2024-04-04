@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    font-family: 'inter' !important;
+    margin: 0;
+    padding: 0;
+  }
+button, input, a, label {
+cursor: pointer;
+} 
+h1, h2, h3, h4, h5,p {
+  font-family: 'inter' !important;
+} 
+p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.orange_color {
+    color: #FF4048;
+}
+.color_purple {
+    color: #8A51B5;
+}
+.about_section_sect {
+    padding: 0px 40px;
+}
+.enlarge_your_bussiness_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.enlarge_your_bussiness_left {
+    width: 55%;
+    margin-right: 20px;
+}
+.enlarge_your_bussiness_right {
+    width: 40%;
+}
+.enlarge_your_bussiness_video {
+    width: 100%;
+    height: 285px;
+    border-radius: 10px;
+}
+.enlarge_your_bussiness_heading {
+    font-size: 30px;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.integrity_inovation_collaboration {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(270deg, #F9F9F9 -9.87%, rgb(200 143 245 / 42%) 204.17%);
+    padding: 20px;
+    margin-top: 25px;
+    
+}
+.integrity_div, .inovation_div, .collaboration_div {
+    width: 32%;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.integrity_img, .inovation_img, .collaboration_img {
+    width: auto;
+    margin-top: 30px;
+
+}
+.integrity_heading, .inovation_heading, .collaboration_heading {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.integrity_div_paragraph, .inovation_div_paragraph, .collaboration_div_paragraph {
+    width: 70%;
+    margin-left: 10px;
+}
+
+.four_verticals {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.voilabiz, .voilastudio, .voilaretail, .voilakart {
+    width: 25%;
+    padding: 10px;
+}
+.voilabiz_img, .voilastudio_img, .voilaretail_img, .voilakart_img {
+    width: 100%;
+}
+.voila_biz_paragraph, .voila_studio_paragraph, .voila_retail_paragraph, .voila_kart_paragraph {
+    width: 95%;
+    padding-left: 15px;
+    text-align: justify;
+}
+
+.gurugram_center_images {
+    position: relative;
+    width: 70%;
+    margin-right: 20px;
+}
+.big_img_gurugram_center {
+    width: 90%;
+    float: right;
+    margin-top: 30px;
+}
+.small_img_gurugram_center {
+    width: 30%;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+}
+.gurugram_center_address {
+    float: right;
+    width: 30%;
+}
+.our_centers_first_divi {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.gurugram_center_address_heading {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.gurugram_center_address_paragraph {
+    font-size: 18px;
+}
+.big_img_banglore_center {
+    width: 90%;
+    float: left;
+    margin-top: 30px;
+}
+.small_img_bangalore_center {
+    width: 30%;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+}
+.bangalore_center_images {
+    position: relative;
+    width: 70%;
+    margin-left: 20px;
+    }
+    .our_journey_banner {
+        width: 100%;
+        /* background: linear-gradient(270deg, #F9F9F9 -9.87%, rgb(200 143 245 / 7%) 204.17%); */
+        padding: 30px 20px;
+    }
+    .services {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    .services_voila_studio_logo {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+    .services_division {
+        width: 200px;
+        position: relative;
+    }
+    .services_img {
+        width: 100%;
+        vertical-align: bottom;
+
+    }
+    .background_text {
+    background: url(../../assets/img/about_us/services_background.webp);
+    font-size: 12px;
+    text-align: center;
+    background-position: center;
+    padding: 0;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 3px 9px 3px rgba(0,0,0,0.2);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    }
+    .services_division {
+        width: 9.5vw;
+        position: relative;
+        box-shadow: 0px 1px 8px 0 rgba(0,0,0,0.2);
+    }
+    a.services_links {
+        width: 100%;
+        display: block;
+    }
+    .integrity_paragraph, .inovation_paragraph, .collaboration_paragraph {
+        text-align: justify;
+        width: 100%;
+    }
+    .services_headings {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 0.2px;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+        border-image-slice: 1;
+    }
+    .bizservice {
+        box-shadow: none !important;
+    }
+    .background_text_normal {
+        margin-top: 5px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .mobile {
+        display: none;
+    }
+    @media screen and (max-width: 1100px) {
+        
+    .mobile {
+        display: block;
+    }
+    .enlarge_your_bussiness_left, .enlarge_your_bussiness_right {
+        width: 100%;
+    }
+    .enlarge_your_bussiness_heading {
+        display: none;
+    }
+
+        .integrity_div, .inovation_div, .collaboration_div {
+            width: 100%;
+            height: 100px;
+            text-align: left;
+        }
+        .integrity_inovation_collaboration {
+            flex-wrap: wrap;
+            justify-content: space-around;
+    }
+    .integrity_img, .inovation_img, .collaboration_img {
+        width: 100px;
+        margin-right: 20px;
+    }
+    .enlarge_your_bussiness_div {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .enlarge_your_bussiness_video {
+        height: auto;
+    }
+    .voilabiz, .voilastudio, .voilaretail, .voilakart {
+        width: 50%;
+    }
+    .four_verticals {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    .big_img_gurugram_center, .gurugram_center_images, .big_img_banglore_center, .bangalore_center_images, .our_journey_banner_mobile  {
+        width: 100%;
+    }
+    .about_section_sect {
+        padding: 0px 10px;
+    }
+    .integrity_img, .inovation_img, .collaboration_img {
+        width: 50px;
+    }
+    .voilabiz_img, .voilastudio_img, .voilaretail_img, .voilakart_img, .small_img_gurugram_center, .small_img_bangalore_center {
+        display: none;
+    }
+    .voilabiz, .voilastudio, .voilaretail, .voilakart {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+    .voilabiz_img_mobile, .voilastudio_img_mobile, .voilaretail_img_mobile, .voilakart_img_mobile {
+        width: 85px;
+    }
+    .gurugram_center_address {
+        float: right;
+        width: 100%;
+        position: absolute;
+        line-height: 20px; 
+        z-index: 2;
+        bottom: 0;
+        color: white;
+        background: linear-gradient(0.94deg, rgba(143, 0, 255, 0.53) 1.02%, rgba(255, 0, 0, 0.01) 99.12%);
+        padding: 0 10px;
+
+    }
+    .gurugram_center_images, .bangalore_center_images {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .our_centers_first_divi {
+        position: relative;
+    }
+    .gurugram_center_address_heading {
+        font-size: 14px;
+        margin-bottom: 2px;
+        color: white;
+        font-weight: 600;
+    }
+    .gurugram_center_address_paragraph {
+        font-size: 13px;
+        color: white;
+        font-weight: 600;
+    }
+    .our_journey_banner {
+        display: none;
+    }
+    .services {
+        flex-wrap: wrap;
+    }
+    .services_division {
+        width: 30.5vw;
+        margin-bottom: 15px;
+    }
+    .integrity_paragraph, .inovation_paragraph, .collaboration_paragraph {
+       font-size: 12px;
+    }
+    .integrity_div, .inovation_div, .collaboration_div {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+    } 
+}
+    /* slider  */
+     
+    .swiper {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        position: relative;
+        max-width: max-content;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+  
+      .swiper-slide {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: auto;
+        transition: 0.3s;
+        background-color: white;
+      }
+      
+      .modalnameques {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        padding: 10px 0;
+        color: white !important;
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin: 0;
+  }
+  
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        transition: 0.3s;
+        position: relative;
+        height: 98%;
+        object-fit: cover;
+        box-shadow: 1px 1px 8px 0 rgba(0,0,0,0.2);
+        padding: 5px;
+      }
+      #next1_btn,#prev1_btn {
+        font-weight: 600;
+        color: black;
+        font-size: 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+      }
+      .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
+        background-image: none; 
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 2vw;
+    background: none !important;
+    outline: none !important;
+    }
+    @media screen and (min-width:448px)
+    {
+    .cust-des {
+    text-align:left;
+    padding-left:35%;
+    }
+    }
+     @media screen and (max-width:448px)
+    {
+    .cust-des {
+    text-align:left;
+   
+    }
+    }
+
+    /* slider end  */
